@@ -27,7 +27,7 @@ def setConfigSetting(key, value):
     #TODO:check for nullability of config.
     config[key] = value
 
-    with getFile('w') as f:
+    with getFile('w') as f: 
         json.dump(config, f, sort_keys=True, indent=4)
         loggerHelper.log(key + ': ' + str(value) + ' saved in Json config file')
 
