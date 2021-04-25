@@ -63,14 +63,11 @@ else
  echo "Remote GPIO is Enabled"
 fi
 
-#clone git repo
-git clone https://github.com/nileshkinge/Raspi_DashCam
-
 #write out current crontab
 crontab -l > dashcamcron
 #echo new cron into cron file
 echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.txt 2>&1" >> dashcamcron
-#echo "@reboot sleep(500) python2 /home/pi/Raspi_DashCam/code/mailer.py >>/home/pi/Raspi_DashCam/code/log.txt 2>&1" >> dashcamcron
+echo "@reboot sleep(500) python2 /home/pi/Raspi_DashCam/code/mailer.py >>/home/pi/Raspi_DashCam/code/log.txt 2>&1" >> dashcamcron
 #install new cron file
 crontab dashcamcron
 rm dashcamcron
