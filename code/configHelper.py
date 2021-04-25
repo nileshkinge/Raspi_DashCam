@@ -45,6 +45,7 @@ def getDefaultConfig():
     config['piStartTimeDelay'] = 2
     config['piShutdownDelay'] = 5
     config['gpioPinNumber'] = 3
+    config['rotationAngle'] = 90
 
     return config
 

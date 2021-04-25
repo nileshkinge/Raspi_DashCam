@@ -19,8 +19,8 @@ import configHelper
 #Global Variable declaration
 
 absolute_path = str(pathlib.Path(__file__).parent.absolute()) + "/"
-Folder_Root = "/home/pi/dashcam/"
-Videos_Folder = "videos/"
+Folder_Root = absolute_path
+Videos_Folder = absolute_path + "videos/"
 Log_File = Folder_Root + "dashcamlogs.txt"
 
 SWITCH_PIN = 3
@@ -90,7 +90,7 @@ def startDashCam():
 
     setGPIOForShutdown()
     fileNumber = configHelper.getConfigSetting('fileNumber')
-    fileName = Folder_Root + Videos_Folder + "Video" + str(fileNumber).zfill(5) + "." + "h264"
+    fileName = Videos_Folder + "Video" + str(fileNumber).zfill(5) + "." + "h264"
     print(fileName)
     
     startRecording()
@@ -124,8 +124,10 @@ def startRecording():
             camera.resolution = (resolutionX,resolutionY)
             framerate = configHelper.getConfigSetting('framerate')
             camera.framerate = framerate
-               
-            fileName = Folder_Root + Videos_Folder + "video%05d.h264" % fileNumber
+            rotationAngle = configHelper.getConfigSetting('rotationAngle')
+            camera.rotation = rotationAngle
+
+            fileName = Videos_Folder + "video%05d.h264" % fileNumber
             print('Recording to %s' % fileName)
             loggerHelper.log('Recording to next file %s' % str(fileName))
             cntr = 0

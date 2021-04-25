@@ -1,6 +1,7 @@
 import os
+import pathlib
 
-folderRoot = "/home/pi/dashcam/"
+folderRoot = str(pathlib.Path(__file__).parent.absolute()) + "/"
 logFile = folderRoot + "dashcamlogs.txt"
 
 def log(msg):
