@@ -63,5 +63,3 @@ def sendMessage():
 
 def init():
     sendMessage()
-
-init()
