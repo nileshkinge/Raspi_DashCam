@@ -1,5 +1,8 @@
 #!/bin/bash
 
+IYellow='\e[93m'      # Yellow
+reset='\e[0m'         # reset
+
 #sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean
 echo "Updating OS, please wait..."
 
@@ -65,10 +68,10 @@ fi
 
 #!/bin/bash
 
-read -p "Do you want to setup email? (Y/N): " wantToSetupEmail
-read -p "Enter 'To: ' email: " toEmail
-read -p "Enter 'From: ' email (gmail account): " fromEmail
-read -sp "Enter your gmail password: " gmailPassword
+read -p "$(echo -e $IYellow "Do you want to setup email? (Y/N): "$reset)" wantToSetupEmail
+read -p "$(echo -e $IYellow "Enter 'To: ' email: "$reset)" toEmail
+read -p "$(echo -e $IYellow "Enter 'From: ' email (gmail account): "$reset)" fromEmail
+read -sp "$(echo -e $IYellow "Enter your gmail password: "$reset)" gmailPassword
 
 python3 -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
 
