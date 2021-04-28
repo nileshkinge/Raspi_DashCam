@@ -170,11 +170,10 @@ def startRecording():
             loggerHelper.log("Recording saved to file " + str(fileNumber))       
             configHelper.setConfigSetting('fileNumber', fileNumber)
             checkSpace()
-            time.sleep(0.02)
-
-            fileNumber = fileNumber +1
+            time.sleep(0.02)            
         
             camera.stop_recording()
-            loggerHelper.log("Recording stopped for file " + str(fileNumber)) 
+            loggerHelper.log("Recording stopped for file " + str(fileNumber))
+            fileNumber = fileNumber +1
 
 startDashCam()
