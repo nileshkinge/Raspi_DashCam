@@ -70,7 +70,7 @@ read -p "Enter 'To: ' email: " toEmail
 read -p "Enter 'From: ' email (gmail account): " fromEmail
 read -sp "Enter your gmail password: " gmailPassword
 
-python -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
+python3 -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
 
 #write out current crontab
 crontab -l > dashcamcron
