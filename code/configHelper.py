@@ -24,7 +24,12 @@ def getConfigSetting(key):
 
 def setConfigSetting(key, value):
     config = loadConfig()
+    
     #TODO:check for nullability of config.
+    if Config is None:
+        createConfig()
+        Config = loadConfig()
+
     config[key] = value
 
     with getFile('w') as f: 

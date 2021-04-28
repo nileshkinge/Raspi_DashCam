@@ -63,11 +63,22 @@ else
  echo "Remote GPIO is Enabled"
 fi
 
+#!/bin/bash
+
+read -p "Do you want to setup email? (Y/N): " wantToSetupEmail
+read -p "Enter 'To: ' email: " toEmail
+read -p "Enter 'From: ' email (gmail account): " fromEmail
+read -sp "Enter your gmail password: " gmailPassword
+
+python -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
+
 #write out current crontab
 crontab -l > dashcamcron
 #echo new cron into cron file
 echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.txt 2>&1" >> dashcamcron
-echo "@reboot sleep(500) python2 /home/pi/Raspi_DashCam/code/mailer.py >>/home/pi/Raspi_DashCam/code/log.txt 2>&1" >> dashcamcron
+if [ "$wantToSetupEmail" == "Y" ]
+    echo "@reboot sleep(500) python3 /home/pi/Raspi_DashCam/code/mail.py >>/home/pi/Raspi_DashCam/code/log.txt 2>&1" >> dashcamcron
+fi
 #install new cron file
 crontab dashcamcron
 rm dashcamcron
