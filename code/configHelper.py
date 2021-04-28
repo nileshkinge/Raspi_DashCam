@@ -26,9 +26,9 @@ def setConfigSetting(key, value):
     config = loadConfig()
     
     #TODO:check for nullability of config.
-    if Config is None:
+    if config is None:
         createConfig()
-        Config = loadConfig()
+        config = loadConfig()
 
     config[key] = value
 
