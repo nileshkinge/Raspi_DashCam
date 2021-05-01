@@ -8,24 +8,36 @@ import configHelper
 import loggerHelper
 
 def initValues(toMail, fromMail, password):
-    configHelper.setConfigSetting('toMail', toMail)
-    configHelper.setConfigSetting('fromMail', fromMail)
-    configHelper.setConfigSetting('password', password)
+    try:
+        configHelper.setConfigSetting('toMail', toMail)
+        configHelper.setConfigSetting('fromMail', fromMail)
+        configHelper.setConfigSetting('password', password)
+    except:
+        loggerHelper.error('Could not init mail setting ins config.')
+        raise
 
 def setupSMTPServer():
-    gmail_user = configHelper.getConfigSetting('fromMail')
-    gmail_password = configHelper.getConfigSetting('password')
+    try:
+        gmail_user = configHelper.getConfigSetting('fromMail')
+        gmail_password = configHelper.getConfigSetting('password')
 
-    smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
-    smtpserver.ehlo()
-    smtpserver.starttls()
-    smtpserver.ehlo
-    smtpserver.login(gmail_user, gmail_password)
+        smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
+        smtpserver.ehlo()
+        smtpserver.starttls()
+        smtpserver.ehlo
+        smtpserver.login(gmail_user, gmail_password)
 
-    return smtpserver
+        return smtpserver
+    except:
+        loggerHelper.error('Could not setup SMTP Server.')
+        raise
 
 def getIp():
-    return (([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not ip.startswith("127.")] or [[(s.connect(("8.8.8.8", 53)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]]) + ["no IP found"])[0]
+    try:
+        return (([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not ip.startswith("127.")] or [[(s.connect(("8.8.8.8", 53)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]]) + ["no IP found"])[0]
+    except:
+        loggerHelper.error('Could not get IP.')
+        raise
 
 def getIp_old():
     arg='ip route list'
@@ -62,4 +74,15 @@ def sendMessage():
     smtpserver.quit()
 
 def init():
-    sendMessage()
+    loop_value = True
+        while loop_value:
+            try:
+                urlopen("http://google.com")
+            except urllib2.URLError, e:
+                loggerHelper.warning('Could not send mail yet, Network currently down.')
+                raise
+            else:
+                loggerHelper.info('Connected to internet successfuly, sending email..')
+                sendMessage()
+                loop_value = False
+    

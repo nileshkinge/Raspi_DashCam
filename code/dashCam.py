@@ -43,17 +43,17 @@ GPIO.setmode(GPIO.BOARD)
 if not os.path.exists(Folder_Root):
     os.makedirs(Folder_Root)
     print("dashcam folder created")
-    loggerHelper.log('Config file created')
+    loggerHelper.info('Config file created')
 
 # Create videos folder.
 if not os.path.exists(Videos_Folder):
     os.makedirs(Videos_Folder)
     print('videos folder created')
-    loggerHelper.log('videos folder created')
+    loggerHelper.info('videos folder created')
 
 # Function to delete files (per number from Json config file) if disk space is more than threshold (from condig file)
 def clearSpace():
-    loggerHelper.log('Creating disk space by deleting old recorded files.')    
+    loggerHelper.info('Creating disk space by deleting old recorded files.')    
     i = 0
     filesDeleted = 0
     maxFiles = configHelper.getConfigSetting('maxFiles')
@@ -66,7 +66,7 @@ def clearSpace():
             #print('Deleting some files to create space on the drive, please wait ...')
             os.remove(delFilePath)
             print( 'Deleted file ' + delFilePath ) 
-            loggerHelper.log('Deleted file ' + delFilePath)
+            loggerHelper.info('Deleted file ' + delFilePath)
             filesDeleted = filesDeleted + 1
         if(filesDeleted >= deleteFiles):
             break
@@ -74,15 +74,19 @@ def clearSpace():
 # Function to check available disk space. If disk space is above threshold mentioned in the Json config file then call clear_space
 def checkSpace():
     print('Checking disk Space...')
-    loggerHelper.log('Checking disk Space...')
+    loggerHelper.info('Checking disk Space...')
     spaceLimitInPercentage = configHelper.getConfigSetting('spaceLimitInPercentage')
     if(psutil.disk_usage(".").percent > spaceLimitInPercentage):        
         clearSpace()
 
 def setGPIOForShutdown():
-    gpioPinNumber = configHelper.getConfigSetting('gpioPinNumber')
-    SWITCH_PIN = gpioPinNumber
-    GPIO.setup(SWITCH_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+    try:
+        gpioPinNumber = configHelper.getConfigSetting('gpioPinNumber')
+        SWITCH_PIN = gpioPinNumber
+        GPIO.setup(SWITCH_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+    except:
+        loggerHelper.error('Could not set GPIO for Shutdown.')
+        raise
 
 def startDashCam():
     if not configHelper.fileExists():
@@ -93,7 +97,11 @@ def startDashCam():
     fileName = Videos_Folder + "Video" + str(fileNumber).zfill(5) + "." + "h264"
     print(fileName)
     
-    startRecording()
+    try:
+        startRecording()
+    except:
+        loggerHelper.error('Recording could not be started or could have been halted.')
+        raise
 
 #Function that actually start recording based on either default or config file parameter values
 # Execution Steps are 
@@ -129,7 +137,7 @@ def startRecording():
 
             fileName = Videos_Folder + "video%05d.h264" % fileNumber
             print('Recording to %s' % fileName)
-            loggerHelper.log('Recording to next file %s' % str(fileName))
+            loggerHelper.info('Recording to next file %s' % str(fileName))
             cntr = 0
             
             durationInMinutes = configHelper.getConfigSetting('durationInMinutes')
@@ -157,23 +165,23 @@ def startRecording():
                         if cntr > piShutdownDelay:
                             shutdown = True
                             print('Shutting down RASPI, please wait...')
-                            loggerHelper.log('Shutting down RASPI, please wait...')
+                            loggerHelper.info('Shutting down RASPI, please wait...')
                             camera.stop_recording()
                             configHelper.setConfigSetting('fileNumber', fileNumber)
                             #WriteFileNumberToConfigFile(fileName)
                             time.sleep(3)
-                            loggerHelper.log('Bye Bye')
+                            loggerHelper.info('Bye Bye')
                             os.system("sudo shutdown -h now")
                             #subprocess.call("/sbin/shutdown -h now", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                 else:
                     cntr = 0                               
-            loggerHelper.log("Recording saved to file " + str(fileNumber))       
+            loggerHelper.info("Recording saved to file " + str(fileNumber))       
             configHelper.setConfigSetting('fileNumber', fileNumber)
             checkSpace()
             time.sleep(0.02)            
         
             camera.stop_recording()
-            loggerHelper.log("Recording stopped for file " + str(fileNumber))
+            loggerHelper.info("Recording stopped for file " + str(fileNumber))
             fileNumber = fileNumber +1
 
 startDashCam()
