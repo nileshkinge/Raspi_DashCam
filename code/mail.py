@@ -75,14 +75,14 @@ def sendMessage():
 
 def init():
     loop_value = True
-        while loop_value:
-            try:
-                urlopen("http://google.com")
-            except urllib2.URLError, e:
-                loggerHelper.warning('Could not send mail yet, Network currently down.')
-                raise
-            else:
-                loggerHelper.info('Connected to internet successfuly, sending email..')
-                sendMessage()
-                loop_value = False
+    while loop_value:
+        try:
+            urlopen("http://google.com")
+        except urllib2.URLError, e:
+            loggerHelper.warning('Could not send mail yet, Network currently down.')
+            raise
+        else:
+            loggerHelper.info('Connected to internet successfuly, sending email..')
+            sendMessage()
+            loop_value = False
     
