@@ -78,7 +78,7 @@ def init():
     while loop_value:
         try:
             urlopen("http://google.com")
-        except urllib.error.URLError, e:
+        except urllib.error.URLError as e:
             loggerHelper.warning('Could not send mail yet, Network currently down.')
             raise
         else:
