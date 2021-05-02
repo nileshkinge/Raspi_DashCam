@@ -1,5 +1,6 @@
 import mail
 import loggerHelper
+from subprocess import check_output
 
 def IsConnectionAvailable():
     wifi_ip = check_output(['hostname', '-I'])
