@@ -5,7 +5,7 @@ from subprocess import check_output
 def IsConnectionAvailable():
     wifi_ip = check_output(['hostname', '-I'])
     if wifi_ip is not None:
-        logMessage = "Connected to wi-fi, ip is : " + wifi_ip 
+        logMessage = "Connected to wi-fi, ip is : " + str((wifi_ip) 
         print(logMessage)
         logMessage.log(logMessage)
 
