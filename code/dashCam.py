@@ -89,6 +89,7 @@ def setGPIOForShutdown():
         raise
 
 def startDashCam():
+    loggerHelper.info("Dash Cam Started.")
     if not configHelper.fileExists():
         configHelper.createConfig()
 
