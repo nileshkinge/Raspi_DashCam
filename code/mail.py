@@ -3,6 +3,8 @@ import smtplib
 import socket
 from email.mime.text import MIMEText
 import datetime
+import urllib.request
+import urllib.error
 
 import configHelper
 import loggerHelper
@@ -77,7 +79,7 @@ def init():
     loop_value = True
     while loop_value:
         try:
-            urlopen("http://google.com")
+            urllib.request.urlopen("http://google.com")
         except urllib.error.URLError as e:
             loggerHelper.warning('Could not send mail yet, Network currently down.')
             raise
