@@ -88,6 +88,32 @@ def setGPIOForShutdown():
         loggerHelper.error('Could not set GPIO for Shutdown.')
         raise
 
+def handleShutdown(camera):
+    cntr = 0
+    start_time = time.time()
+    shutdown = False
+    gpioPinNumber = configHelper.getConfigSetting('gpioPinNumber') 
+    if GPIO.input(gpioPinNumber) == False:
+        time.sleep(1)
+        cntr = cntr +1
+        start_time = time.time()
+        print(cntr)
+        
+        piShutdownDelay = configHelper.getConfigSetting('piShutdownDelay')
+        if cntr > piShutdownDelay:
+            shutdown = True
+            print('Shutting down RASPI, please wait...')
+            loggerHelper.info('Shutting down RASPI, please wait...')
+            camera.stop_recording()
+            configHelper.setConfigSetting('fileNumber', fileNumber)
+            #WriteFileNumberToConfigFile(fileName)
+            time.sleep(3)
+            loggerHelper.info('Bye Bye')
+            os.system("sudo shutdown -h now")
+            #subprocess.call("/sbin/shutdown -h now", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    else:
+        cntr = 0
+
 def startDashCam():
     loggerHelper.info("Dash Cam Started.")
     if not configHelper.fileExists():
@@ -139,7 +165,6 @@ def startRecording():
             fileName = Videos_Folder + "video%05d.h264" % fileNumber
             print('Recording to %s' % fileName)
             loggerHelper.info('Recording to next file %s' % str(fileName))
-            cntr = 0
             
             durationInMinutes = configHelper.getConfigSetting('durationInMinutes')
             durationInMinutes = durationInMinutes * 60
@@ -152,30 +177,9 @@ def startRecording():
                 camera.annotate_background = Color('black')
                 camera.annotate_text = dt.datetime.now().strftime('%Y-%m-%d %a %H:%M:%S')
                 camera.wait_recording(0.1)
-                start_time  = time.time()
-                shutdown = False
-                
-                gpioPinNumber = configHelper.getConfigSetting('gpioPinNumber') 
-                if GPIO.input(gpioPinNumber) == False:
-                        time.sleep(1)
-                        cntr = cntr +1
-                        start_time = time.time()
-                        print(cntr)
-                        
-                        piShutdownDelay = configHelper.getConfigSetting('piShutdownDelay')
-                        if cntr > piShutdownDelay:
-                            shutdown = True
-                            print('Shutting down RASPI, please wait...')
-                            loggerHelper.info('Shutting down RASPI, please wait...')
-                            camera.stop_recording()
-                            configHelper.setConfigSetting('fileNumber', fileNumber)
-                            #WriteFileNumberToConfigFile(fileName)
-                            time.sleep(3)
-                            loggerHelper.info('Bye Bye')
-                            os.system("sudo shutdown -h now")
-                            #subprocess.call("/sbin/shutdown -h now", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                else:
-                    cntr = 0                               
+                                
+                #handleShutdown(camera)
+
             loggerHelper.info("Recording saved to file " + str(fileNumber))       
             configHelper.setConfigSetting('fileNumber', fileNumber)
             checkSpace()
