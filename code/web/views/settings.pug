@@ -1,0 +1,65 @@
+extends layout
+block content
+    .page-header.header-filter(data-parallax='true' style="background-image: url('/img/header.jpg')")
+            .container
+                .row
+                    .col-md-12
+
+    .main.main-raised.settings
+        .info.info-lg
+            .icon.icon-primary
+                i.material-icons settings 
+            h4.info-title Settings
+            form(method='POST' action='/settings/update')
+                .form-group                
+                    lable(for='deleteFiles') Delete Files 
+                    input.form-control(type='number' name='deleteFiles' id='deleteFiles' placeholder=`${config.deleteFiles}`)
+                .form-group
+                    lable(for='durationInMinutes') Duration (minutes) 
+                    input.form-control(type='number' name='durationInMinutes' id='durationInMinutes' placeholder=`${config.durationInMinutes}`)
+                .form-group
+                    lable(for='fileNumber') File Number 
+                    input.form-control(type='number' name='fileNumber' id='fileNumber' placeholder=`${config.fileNumber}` readonly)
+                .form-group
+                    lable(for='framerate') Framerate 
+                    input.form-control(type='number' name='framerate' id='framerate' placeholder=`${config.framerate}`)                
+                .form-group
+                    lable(for='gpioPinNumber') GPIO Pin Number 
+                    input.form-control(type='number' name='gpioPinNumber' id='gpioPinNumber' placeholder=`${config.gpioPinNumber}`)
+                .form-group
+                    lable(for='maxFiles') Max Files 
+                    input.form-control(type='number' name='maxFiles' id='maxFiles' placeholder=`${config.maxFiles}`)
+                .form-group
+                    lable(for='piShutdownDelay') Shutdown Delay 
+                    input.form-control(type='number' name='piShutdownDelay' id='piShutdownDelay' placeholder=`${config.piShutdownDelay}`)
+                .form-group
+                    lable(for='piStartTimeDelay') Start Delay 
+                    input.form-control(type='number' name='piStartTimeDelay' id='piStartTimeDelay' placeholder=`${config.piStartTimeDelay}`)
+                .form-group
+                    lable(for='quality') Quality 
+                    input.form-control(type='number' name='quality' id='quality' placeholder=`${config.quality}`)
+                .form-row
+                    .form-group.col-md-6
+                        lable(for='resolutionX') Resolution X
+                        input.form-control(type='number' name='resolutionX' id='resolutionX' placeholder=`${config.resolutionX}`)
+                    .form-group.col-md-6
+                        lable(for='resolutionY') Y
+                        input.form-control(type='number' name='resolutionY' id='resolutionY' placeholder=`${config.resolutionY}`)
+                .form-group
+                    lable(for='rotationAngle') Rotation Angle 
+                    input.form-control(type='number' name='rotationAngle' id='rotationAngle' placeholder=`${config.rotationAngle}`)                
+                .form-group
+                    lable(for='spaceLimitInPercentage') Space Limit in % 
+                    input.form-control(type='number' name='spaceLimitInPercentage' id='spaceLimitInPercentage' placeholder=`${config.spaceLimitInPercentage}`)
+                .form-group
+                    lable(for='toMail') To Mail 
+                    input.form-control(type='email' name='toMail' id='toMail' placeholder=`${config.toMail}`)
+                .form-group
+                    lable(for='fromMail') From Mail 
+                    input.form-control(type='email' name='fromMail' id='fromMail' placeholder=`${config.fromMail}`)
+                .form-group
+                    lable(for='password') Password 
+                    input.form-control(type='password' name='password' id='password' placeholder='gmail password')
+                button.btn.btn-primary.mr-2(type='submit') Submit
+                a.btn.btn-secondary(href='/') Preview
+            

@@ -1,0 +1,166 @@
+extends layout
+
+
+mixin post-card(post)
+    - var headerColor = post.isFeatured ? 'card-header-danger' : ''
+    .col-md-12
+        .card.info
+            .card-header(class=`${headerColor}`)
+                h3.card-title #{post.title}
+                h6.category #{post.category}
+            .card-body #{post.header}
+
+mixin post-cardd(post)
+    - var headerColor = post.isFeatured ? 'card-header-danger' : ''
+    .card.mb-3
+        video.card-img-top(src=`/img/video.h264` alt='Thumbnail Image' controls)
+        .card-body
+            h4.card-title #{post.title}
+            //- p.card-text #{post.header}
+            .row
+                .col-md-12
+                    span.badge.badge-default.m-1                     
+                        |Duration (minutes) 
+                        span.badge.badge-warning #{config.durationInMinutes}
+                    span.badge.badge-default.m-1                     
+                        |Max Files 
+                        span.badge.badge-success #{config.maxFiles}
+                    span.badge.badge-default.m-1                     
+                        |Space Limit 
+                        span.badge.badge-danger #{config.spaceLimitInPercentage}
+                    span.badge.badge-default.m-1                     
+                        |Delete File 
+                        span.badge.badge-info #{config.deleteFiles}
+                    span.badge.badge-default.m-1                     
+                        |Resolution 
+                        span.badge.badge-danger #{config.resolutionX} 
+                        |  x 
+                        span.badge.badge-danger #{config.resolutionY}
+                    span.badge.badge-default.m-1                     
+                        |Framerate 
+                        span.badge.badge-success #{config.framerate}
+                    span.badge.badge-default.m-1                     
+                        |Quality 
+                        span.badge.badge-warning #{config.quality}
+                    span.badge.badge-default.m-1                     
+                        |Sart Delay 
+                        span.badge.badge-danger #{config.piStartTimeDelay}
+                    span.badge.badge-default.m-1                     
+                        |Shutdown Delay 
+                        span.badge.badge-success #{config.piShutdownDelay}
+                    span.badge.badge-default.m-1                     
+                        |GPIO Pin # 
+                        span.badge.badge-info #{config.gpioPinNumber}
+                    span.badge.badge-default.m-1                     
+                        |Rotaion Angle 
+                        span.badge.badge-warning #{config.rotationAngle}
+
+            a.btn.btn-primary(href='/settings') Edit Settings
+                //- .col-md-3
+                //-     ul.nav.nav-pills.nav-pills-icons.flex-column(role='tablist')
+                //-         li.nav-item 
+                //-             a.nav-link.active(href='#settings1' role='tab' data-toggle='tab' aria-controls='settings1' aria-selected='true')
+                //-                 i.material-icons dashboard
+                //-                 |   Resolution
+                //-         li.nav-item 
+                //-             a.nav-link(href='#settings2' role='tab' data-toggle='tab' aria-controls='settings1' aria-selected='false')
+                //-                 i.material-icons dashboard
+                //-                 | Tests
+                //- .col-md-8
+                //-     .tab-content
+                //-         #settings1.tab-pane(role='tabpanel' aria-labelledby='settings1-tab') 
+                //-             span.badge.badge-pill.badge-primary #{config.Max_Files}
+                //-             .text Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
+                //-     .tab-content
+                //-         #settings2.tab-pane(role='tabpanel' aria-labelledby='settings2-tab') Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
+                        
+        
+mixin team-player(author)
+    .col-md-4
+        .team-player
+            .card.card-plain
+                .col-md-6.ml-auto.mr-auto
+                    a(href=`/authors/${author.id}`)
+                        img.img-raised.rounded-circle.img-fluid(src=`/img/faces/${author.img}` alt='Thumbnail Image')
+                h4.card-title #{author.name}
+                    br
+                    small.card-description.text-muted #{author.title}
+                .card-body
+                    p.card-description #{author.description}
+                .card-footer.justify-content-center
+                    a.btn.btn-link.btn-just-icon(href=`/authors/${author.id}`)
+                        i.fa.fa-twitter
+                    a.btn.btn-link.btn-just-icon(href=`/authors/${author.id}`)
+                        i.fa.fa-instagram
+                    a.btn.btn-link.btn-just-icon(href=`/authors/${author.id}`)
+                        i.fa.fa-github
+
+    
+
+
+block content
+    .page-header.header-filter(data-parallax='true' style="background-image: url('/img/header.jpg')")
+        .container
+            .row
+                .col-md-12
+                    //- h1.title Computer, Coding and Coffee
+                    //- h4
+                    //-     | Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.
+                    //- br
+                    //- a.btn.btn-danger.btn-raised.btn-lg(href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank')
+                    //-     i.fa.fa-play
+                    //-     |  Watch video
+    .main.main-raised
+        //- .card.mb-3
+        //- img.card-img-top(src=`/img/header.jpg` alt='Thumbnail Image')
+        //- .card-body
+        //-     h4.card-title Settings
+        //-     p.card-text Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
+        
+        //- .info.info-lg
+        //-     .icon.icon-primary
+        //-         i.material-icons videocam 
+        //-     h4.info-title Preview
+        each post in posts
+            +post-cardd(post)
+        //- .container
+        //-     .section
+        //-         //- .row
+        //-         //-     .col-md-8.ml-auto.mr-auto
+        //-         //-         h2.title Let&apos;s talk product
+        //-         //-         h5.description
+        //-         //-             | This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.
+        //-         .features
+        //-             .row
+        //-                 //- each post in posts
+        //-                 //-     +post-card(post)
+                        
+        //-     //- .section.text-center
+        //-     //-     h2.title Here is our team
+        //-     //-     .team
+        //-     //-         .row
+        //-     //-             each author in authors
+        //-     //-                 +team-player(author)
+        //-     //- .section.section-contacts
+        //-     //-     .row
+        //-     //-         .col-md-8.ml-auto.mr-auto
+        //-     //-             h2.text-center.title Work with us
+        //-     //-             h4.text-center.description
+        //-     //-                 | Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.
+        //-     //-             form.contact-form
+        //-     //-                 .row
+        //-     //-                     .col-md-6
+        //-     //-                         .form-group
+        //-     //-                             label.bmd-label-floating Your Name
+        //-     //-                             input.form-control(type='email')
+        //-     //-                     .col-md-6
+        //-     //-                         .form-group
+        //-     //-                             label.bmd-label-floating Your Email
+        //-     //-                             input.form-control(type='email')
+        //-     //-                 .form-group
+        //-     //-                     label.bmd-label-floating(for='exampleMessage') Your Message
+        //-     //-                     textarea#exampleMessage.form-control(type='email' rows='4')
+        //-     //-                 .row
+        //-     //-                     .col-md-4.ml-auto.mr-auto.text-center
+        //-     //-                         button.btn.btn-primary.btn-raised
+        //-     //-                             | Send Message

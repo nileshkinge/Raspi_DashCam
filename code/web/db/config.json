@@ -1,0 +1,18 @@
+{
+    "deleteFiles": 10,
+    "durationInMinutes": 1,
+    "fileNumber": 445,
+    "framerate": 30,
+    "fromMail": "uandme77@gmail.com",
+    "gpioPinNumber": 3,
+    "maxFiles": 99999,
+    "password": "dgsgffgqocgxgyrc",
+    "piShutdownDelay": 5,
+    "piStartTimeDelay": 2,
+    "quality": 20,
+    "resolutionX": 1920,
+    "resolutionY": 1000,
+    "rotationAngle": 90,
+    "spaceLimitInPercentage": 80,
+    "toMail": "nkinge@outlook.com"
+}

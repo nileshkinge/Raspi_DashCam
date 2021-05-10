@@ -1,0 +1,2768 @@
+05/08/2021 10:56:12 AM INFO     videos folder created
+05/08/2021 10:56:12 AM INFO     Dash Cam Started.
+05/08/2021 10:56:12 AM INFO     Dash Cam Config is created
+05/08/2021 10:56:13 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00001.h264
+05/08/2021 10:57:13 AM INFO     Recording saved to file 1
+05/08/2021 10:57:13 AM INFO     fileNumber: 1 saved in Json config file
+05/08/2021 10:57:13 AM INFO     Checking disk Space...
+05/08/2021 10:57:13 AM INFO     Recording stopped for file 1
+05/08/2021 10:57:13 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00002.h264
+05/08/2021 10:58:14 AM INFO     Recording saved to file 2
+05/08/2021 10:58:14 AM INFO     fileNumber: 2 saved in Json config file
+05/08/2021 10:58:14 AM INFO     Checking disk Space...
+05/08/2021 10:58:14 AM INFO     Recording stopped for file 2
+05/08/2021 10:58:14 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00003.h264
+05/08/2021 10:59:14 AM INFO     Recording saved to file 3
+05/08/2021 10:59:14 AM INFO     fileNumber: 3 saved in Json config file
+05/08/2021 10:59:14 AM INFO     Checking disk Space...
+05/08/2021 10:59:14 AM INFO     Recording stopped for file 3
+05/08/2021 10:59:14 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00004.h264
+05/08/2021 11:00:14 AM INFO     Recording saved to file 4
+05/08/2021 11:00:14 AM INFO     fileNumber: 4 saved in Json config file
+05/08/2021 11:00:14 AM INFO     Checking disk Space...
+05/08/2021 11:00:14 AM INFO     Recording stopped for file 4
+05/08/2021 11:00:15 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00005.h264
+05/08/2021 11:01:15 AM INFO     Recording saved to file 5
+05/08/2021 11:01:15 AM INFO     fileNumber: 5 saved in Json config file
+05/08/2021 11:01:15 AM INFO     Checking disk Space...
+05/08/2021 11:01:15 AM INFO     Recording stopped for file 5
+05/08/2021 11:01:15 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00006.h264
+05/08/2021 11:01:16 AM INFO     Connected to wi-fi, ip is : b'192.168.0.200 \n'
+05/08/2021 11:01:17 AM INFO     Connected to internet successfuly, sending email..
+05/08/2021 11:01:17 AM ERROR    Could not get value for key: "fromMail"
+192.168.0.200
+Traceback (most recent call last):
+  File "/home/pi/Raspi_DashCam/code/mailer.py", line 13, in <module>
+    mail.init()
+  File "/home/pi/Raspi_DashCam/code/mail.py", line 88, in init
+    sendMessage()
+  File "/home/pi/Raspi_DashCam/code/mail.py", line 70, in sendMessage
+    msg = buildMessage()
+  File "/home/pi/Raspi_DashCam/code/mail.py", line 58, in buildMessage
+    gmail_user = configHelper.getConfigSetting('fromMail')
+  File "/home/pi/Raspi_DashCam/code/configHelper.py", line 36, in getConfigSetting
+    return config[key]
+KeyError: 'fromMail'
+05/08/2021 11:02:15 AM INFO     Recording saved to file 6
+05/08/2021 11:02:15 AM INFO     fileNumber: 6 saved in Json config file
+05/08/2021 11:02:15 AM INFO     Checking disk Space...
+05/08/2021 11:02:15 AM INFO     Recording stopped for file 6
+05/08/2021 11:02:15 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00007.h264
+05/08/2021 11:03:15 AM INFO     Recording saved to file 7
+05/08/2021 11:03:15 AM INFO     fileNumber: 7 saved in Json config file
+05/08/2021 11:03:15 AM INFO     Checking disk Space...
+05/08/2021 11:03:16 AM INFO     Recording stopped for file 7
+05/08/2021 11:03:16 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00008.h264
+05/08/2021 11:04:16 AM INFO     Recording saved to file 8
+05/08/2021 11:04:16 AM INFO     fileNumber: 8 saved in Json config file
+05/08/2021 11:04:16 AM INFO     Checking disk Space...
+05/08/2021 11:04:16 AM INFO     Recording stopped for file 8
+05/08/2021 11:04:16 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00009.h264
+05/08/2021 11:05:16 AM INFO     Recording saved to file 9
+05/08/2021 11:05:16 AM INFO     fileNumber: 9 saved in Json config file
+05/08/2021 11:05:16 AM INFO     Checking disk Space...
+05/08/2021 11:05:16 AM INFO     Recording stopped for file 9
+05/08/2021 11:05:17 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00010.h264
+05/08/2021 11:06:17 AM INFO     Recording saved to file 10
+05/08/2021 11:06:17 AM INFO     fileNumber: 10 saved in Json config file
+05/08/2021 11:06:17 AM INFO     Checking disk Space...
+05/08/2021 11:06:17 AM INFO     Recording stopped for file 10
+05/08/2021 11:06:17 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00011.h264
+05/08/2021 11:07:17 AM INFO     Recording saved to file 11
+05/08/2021 11:07:17 AM INFO     fileNumber: 11 saved in Json config file
+05/08/2021 11:07:17 AM INFO     Checking disk Space...
+05/08/2021 11:07:17 AM INFO     Recording stopped for file 11
+05/08/2021 11:07:17 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00012.h264
+05/08/2021 11:08:17 AM INFO     Recording saved to file 12
+05/08/2021 11:08:17 AM INFO     fileNumber: 12 saved in Json config file
+05/08/2021 11:08:17 AM INFO     Checking disk Space...
+05/08/2021 11:08:17 AM INFO     Recording stopped for file 12
+05/08/2021 11:08:18 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00013.h264
+05/08/2021 11:09:18 AM INFO     Recording saved to file 13
+05/08/2021 11:09:18 AM INFO     fileNumber: 13 saved in Json config file
+05/08/2021 11:09:18 AM INFO     Checking disk Space...
+05/08/2021 11:09:18 AM INFO     Recording stopped for file 13
+05/08/2021 11:09:18 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00014.h264
+05/08/2021 11:10:18 AM INFO     Recording saved to file 14
+05/08/2021 11:10:18 AM INFO     fileNumber: 14 saved in Json config file
+05/08/2021 11:10:18 AM INFO     Checking disk Space...
+05/08/2021 11:10:18 AM INFO     Recording stopped for file 14
+05/08/2021 11:10:18 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00015.h264
+05/08/2021 11:11:19 AM INFO     Recording saved to file 15
+05/08/2021 11:11:19 AM INFO     fileNumber: 15 saved in Json config file
+05/08/2021 11:11:19 AM INFO     Checking disk Space...
+05/08/2021 11:11:19 AM INFO     Recording stopped for file 15
+05/08/2021 11:11:19 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00016.h264
+05/08/2021 11:12:19 AM INFO     Recording saved to file 16
+05/08/2021 11:12:19 AM INFO     fileNumber: 16 saved in Json config file
+05/08/2021 11:12:19 AM INFO     Checking disk Space...
+05/08/2021 11:12:19 AM INFO     Recording stopped for file 16
+05/08/2021 11:12:19 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00017.h264
+05/08/2021 11:13:19 AM INFO     Recording saved to file 17
+05/08/2021 11:13:19 AM INFO     fileNumber: 17 saved in Json config file
+05/08/2021 11:13:19 AM INFO     Checking disk Space...
+05/08/2021 11:13:19 AM INFO     Recording stopped for file 17
+05/08/2021 11:13:20 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00018.h264
+05/08/2021 11:14:20 AM INFO     Recording saved to file 18
+05/08/2021 11:14:20 AM INFO     fileNumber: 18 saved in Json config file
+05/08/2021 11:14:20 AM INFO     Checking disk Space...
+05/08/2021 11:14:20 AM INFO     Recording stopped for file 18
+05/08/2021 11:14:20 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00019.h264
+05/08/2021 11:15:20 AM INFO     Recording saved to file 19
+05/08/2021 11:15:20 AM INFO     fileNumber: 19 saved in Json config file
+05/08/2021 11:15:20 AM INFO     Checking disk Space...
+05/08/2021 11:15:20 AM INFO     Recording stopped for file 19
+05/08/2021 11:15:20 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00020.h264
+05/08/2021 11:16:20 AM INFO     Recording saved to file 20
+05/08/2021 11:16:20 AM INFO     fileNumber: 20 saved in Json config file
+05/08/2021 11:16:20 AM INFO     Checking disk Space...
+05/08/2021 11:16:21 AM INFO     Recording stopped for file 20
+05/08/2021 11:16:21 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00021.h264
+05/08/2021 11:17:21 AM INFO     Recording saved to file 21
+05/08/2021 11:17:21 AM INFO     fileNumber: 21 saved in Json config file
+05/08/2021 11:17:21 AM INFO     Checking disk Space...
+05/08/2021 11:17:21 AM INFO     Recording stopped for file 21
+05/08/2021 11:17:21 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00022.h264
+05/08/2021 11:18:21 AM INFO     Recording saved to file 22
+05/08/2021 11:18:21 AM INFO     fileNumber: 22 saved in Json config file
+05/08/2021 11:18:21 AM INFO     Checking disk Space...
+05/08/2021 11:18:21 AM INFO     Recording stopped for file 22
+05/08/2021 11:18:21 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00023.h264
+05/08/2021 11:19:22 AM INFO     Recording saved to file 23
+05/08/2021 11:19:22 AM INFO     fileNumber: 23 saved in Json config file
+05/08/2021 11:19:22 AM INFO     Checking disk Space...
+05/08/2021 11:19:22 AM INFO     Recording stopped for file 23
+05/08/2021 11:19:22 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00024.h264
+05/08/2021 11:20:22 AM INFO     Recording saved to file 24
+05/08/2021 11:20:22 AM INFO     fileNumber: 24 saved in Json config file
+05/08/2021 11:20:22 AM INFO     Checking disk Space...
+05/08/2021 11:20:22 AM INFO     Recording stopped for file 24
+05/08/2021 11:20:22 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00025.h264
+05/08/2021 11:21:22 AM INFO     Recording saved to file 25
+05/08/2021 11:21:22 AM INFO     fileNumber: 25 saved in Json config file
+05/08/2021 11:21:22 AM INFO     Checking disk Space...
+05/08/2021 11:21:22 AM INFO     Recording stopped for file 25
+05/08/2021 11:21:22 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00026.h264
+05/08/2021 11:22:23 AM INFO     Recording saved to file 26
+05/08/2021 11:22:23 AM INFO     fileNumber: 26 saved in Json config file
+05/08/2021 11:22:23 AM INFO     Checking disk Space...
+05/08/2021 11:22:23 AM INFO     Recording stopped for file 26
+05/08/2021 11:22:23 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00027.h264
+05/08/2021 11:23:23 AM INFO     Recording saved to file 27
+05/08/2021 11:23:23 AM INFO     fileNumber: 27 saved in Json config file
+05/08/2021 11:23:23 AM INFO     Checking disk Space...
+05/08/2021 11:23:23 AM INFO     Recording stopped for file 27
+05/08/2021 11:23:23 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00028.h264
+05/08/2021 11:24:23 AM INFO     Recording saved to file 28
+05/08/2021 11:24:23 AM INFO     fileNumber: 28 saved in Json config file
+05/08/2021 11:24:23 AM INFO     Checking disk Space...
+05/08/2021 11:24:23 AM INFO     Recording stopped for file 28
+05/08/2021 11:24:24 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00029.h264
+05/08/2021 11:25:24 AM INFO     Recording saved to file 29
+05/08/2021 11:25:24 AM INFO     fileNumber: 29 saved in Json config file
+05/08/2021 11:25:24 AM INFO     Checking disk Space...
+05/08/2021 11:25:24 AM INFO     Recording stopped for file 29
+05/08/2021 11:25:24 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00030.h264
+05/08/2021 11:26:24 AM INFO     Recording saved to file 30
+05/08/2021 11:26:24 AM INFO     fileNumber: 30 saved in Json config file
+05/08/2021 11:26:24 AM INFO     Checking disk Space...
+05/08/2021 11:26:24 AM INFO     Recording stopped for file 30
+05/08/2021 11:26:24 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00031.h264
+05/08/2021 11:27:24 AM INFO     Recording saved to file 31
+05/08/2021 11:27:24 AM INFO     fileNumber: 31 saved in Json config file
+05/08/2021 11:27:24 AM INFO     Checking disk Space...
+05/08/2021 11:27:25 AM INFO     Recording stopped for file 31
+05/08/2021 11:27:25 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00032.h264
+05/08/2021 11:28:25 AM INFO     Recording saved to file 32
+05/08/2021 11:28:25 AM INFO     fileNumber: 32 saved in Json config file
+05/08/2021 11:28:25 AM INFO     Checking disk Space...
+05/08/2021 11:28:25 AM INFO     Recording stopped for file 32
+05/08/2021 11:28:25 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00033.h264
+05/08/2021 11:29:25 AM INFO     Recording saved to file 33
+05/08/2021 11:29:25 AM INFO     fileNumber: 33 saved in Json config file
+05/08/2021 11:29:25 AM INFO     Checking disk Space...
+05/08/2021 11:29:25 AM INFO     Recording stopped for file 33
+05/08/2021 11:29:25 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00034.h264
+05/08/2021 11:30:25 AM INFO     Recording saved to file 34
+05/08/2021 11:30:26 AM INFO     fileNumber: 34 saved in Json config file
+05/08/2021 11:30:26 AM INFO     Checking disk Space...
+05/08/2021 11:30:26 AM INFO     Recording stopped for file 34
+05/08/2021 11:30:26 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00035.h264
+05/08/2021 11:31:26 AM INFO     Recording saved to file 35
+05/08/2021 11:31:26 AM INFO     fileNumber: 35 saved in Json config file
+05/08/2021 11:31:26 AM INFO     Checking disk Space...
+05/08/2021 11:31:26 AM INFO     Recording stopped for file 35
+05/08/2021 11:31:26 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00036.h264
+05/08/2021 11:32:26 AM INFO     Recording saved to file 36
+05/08/2021 11:32:26 AM INFO     fileNumber: 36 saved in Json config file
+05/08/2021 11:32:26 AM INFO     Checking disk Space...
+05/08/2021 11:32:26 AM INFO     Recording stopped for file 36
+05/08/2021 11:32:27 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00037.h264
+05/08/2021 11:33:27 AM INFO     Recording saved to file 37
+05/08/2021 11:33:27 AM INFO     fileNumber: 37 saved in Json config file
+05/08/2021 11:33:27 AM INFO     Checking disk Space...
+05/08/2021 11:33:27 AM INFO     Recording stopped for file 37
+05/08/2021 11:33:27 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00038.h264
+05/08/2021 11:34:27 AM INFO     Recording saved to file 38
+05/08/2021 11:34:27 AM INFO     fileNumber: 38 saved in Json config file
+05/08/2021 11:34:27 AM INFO     Checking disk Space...
+05/08/2021 11:34:27 AM INFO     Recording stopped for file 38
+05/08/2021 11:34:27 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00039.h264
+05/08/2021 11:35:27 AM INFO     Recording saved to file 39
+05/08/2021 11:35:27 AM INFO     fileNumber: 39 saved in Json config file
+05/08/2021 11:35:27 AM INFO     Checking disk Space...
+05/08/2021 11:35:27 AM INFO     Recording stopped for file 39
+05/08/2021 11:35:28 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00040.h264
+05/08/2021 11:36:28 AM INFO     Recording saved to file 40
+05/08/2021 11:36:28 AM INFO     fileNumber: 40 saved in Json config file
+05/08/2021 11:36:28 AM INFO     Checking disk Space...
+05/08/2021 11:36:28 AM INFO     Recording stopped for file 40
+05/08/2021 11:36:28 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00041.h264
+05/08/2021 11:37:28 AM INFO     Recording saved to file 41
+05/08/2021 11:37:28 AM INFO     fileNumber: 41 saved in Json config file
+05/08/2021 11:37:28 AM INFO     Checking disk Space...
+05/08/2021 11:37:28 AM INFO     Recording stopped for file 41
+05/08/2021 11:37:28 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00042.h264
+05/08/2021 11:38:28 AM INFO     Recording saved to file 42
+05/08/2021 11:38:28 AM INFO     fileNumber: 42 saved in Json config file
+05/08/2021 11:38:28 AM INFO     Checking disk Space...
+05/08/2021 11:38:28 AM INFO     Recording stopped for file 42
+05/08/2021 11:38:29 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00043.h264
+05/08/2021 11:39:29 AM INFO     Recording saved to file 43
+05/08/2021 11:39:29 AM INFO     fileNumber: 43 saved in Json config file
+05/08/2021 11:39:29 AM INFO     Checking disk Space...
+05/08/2021 11:39:29 AM INFO     Recording stopped for file 43
+05/08/2021 11:39:29 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00044.h264
+05/08/2021 11:40:29 AM INFO     Recording saved to file 44
+05/08/2021 11:40:29 AM INFO     fileNumber: 44 saved in Json config file
+05/08/2021 11:40:29 AM INFO     Checking disk Space...
+05/08/2021 11:40:29 AM INFO     Recording stopped for file 44
+05/08/2021 11:40:29 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00045.h264
+05/08/2021 11:41:29 AM INFO     Recording saved to file 45
+05/08/2021 11:41:29 AM INFO     fileNumber: 45 saved in Json config file
+05/08/2021 11:41:29 AM INFO     Checking disk Space...
+05/08/2021 11:41:30 AM INFO     Recording stopped for file 45
+05/08/2021 11:41:30 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00046.h264
+05/08/2021 11:42:30 AM INFO     Recording saved to file 46
+05/08/2021 11:42:30 AM INFO     fileNumber: 46 saved in Json config file
+05/08/2021 11:42:30 AM INFO     Checking disk Space...
+05/08/2021 11:42:30 AM INFO     Recording stopped for file 46
+05/08/2021 11:42:30 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00047.h264
+05/08/2021 11:43:30 AM INFO     Recording saved to file 47
+05/08/2021 11:43:30 AM INFO     fileNumber: 47 saved in Json config file
+05/08/2021 11:43:30 AM INFO     Checking disk Space...
+05/08/2021 11:43:30 AM INFO     Recording stopped for file 47
+05/08/2021 11:43:30 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00048.h264
+05/08/2021 11:44:31 AM INFO     Recording saved to file 48
+05/08/2021 11:44:31 AM INFO     fileNumber: 48 saved in Json config file
+05/08/2021 11:44:31 AM INFO     Checking disk Space...
+05/08/2021 11:44:31 AM INFO     Recording stopped for file 48
+05/08/2021 11:44:31 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00049.h264
+05/08/2021 11:45:31 AM INFO     Recording saved to file 49
+05/08/2021 11:45:31 AM INFO     fileNumber: 49 saved in Json config file
+05/08/2021 11:45:31 AM INFO     Checking disk Space...
+05/08/2021 11:45:31 AM INFO     Recording stopped for file 49
+05/08/2021 11:45:31 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00050.h264
+05/08/2021 11:46:31 AM INFO     Recording saved to file 50
+05/08/2021 11:46:31 AM INFO     fileNumber: 50 saved in Json config file
+05/08/2021 11:46:31 AM INFO     Checking disk Space...
+05/08/2021 11:46:31 AM INFO     Recording stopped for file 50
+05/08/2021 11:46:32 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00051.h264
+05/08/2021 11:47:32 AM INFO     Recording saved to file 51
+05/08/2021 11:47:32 AM INFO     fileNumber: 51 saved in Json config file
+05/08/2021 11:47:32 AM INFO     Checking disk Space...
+05/08/2021 11:47:32 AM INFO     Recording stopped for file 51
+05/08/2021 11:47:32 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00052.h264
+05/08/2021 11:48:32 AM INFO     Recording saved to file 52
+05/08/2021 11:48:32 AM INFO     fileNumber: 52 saved in Json config file
+05/08/2021 11:48:32 AM INFO     Checking disk Space...
+05/08/2021 11:48:32 AM INFO     Recording stopped for file 52
+05/08/2021 11:48:32 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00053.h264
+05/08/2021 11:49:32 AM INFO     Recording saved to file 53
+05/08/2021 11:49:32 AM INFO     fileNumber: 53 saved in Json config file
+05/08/2021 11:49:32 AM INFO     Checking disk Space...
+05/08/2021 11:49:32 AM INFO     Recording stopped for file 53
+05/08/2021 11:49:33 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00054.h264
+05/08/2021 11:50:33 AM INFO     Recording saved to file 54
+05/08/2021 11:50:33 AM INFO     fileNumber: 54 saved in Json config file
+05/08/2021 11:50:33 AM INFO     Checking disk Space...
+05/08/2021 11:50:33 AM INFO     Recording stopped for file 54
+05/08/2021 11:50:33 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00055.h264
+05/08/2021 11:51:33 AM INFO     Recording saved to file 55
+05/08/2021 11:51:33 AM INFO     fileNumber: 55 saved in Json config file
+05/08/2021 11:51:33 AM INFO     Checking disk Space...
+05/08/2021 11:51:33 AM INFO     Recording stopped for file 55
+05/08/2021 11:51:33 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00056.h264
+05/08/2021 11:52:33 AM INFO     Recording saved to file 56
+05/08/2021 11:52:33 AM INFO     fileNumber: 56 saved in Json config file
+05/08/2021 11:52:33 AM INFO     Checking disk Space...
+05/08/2021 11:52:34 AM INFO     Recording stopped for file 56
+05/08/2021 11:52:34 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00057.h264
+05/08/2021 11:53:34 AM INFO     Recording saved to file 57
+05/08/2021 11:53:34 AM INFO     fileNumber: 57 saved in Json config file
+05/08/2021 11:53:34 AM INFO     Checking disk Space...
+05/08/2021 11:53:34 AM INFO     Recording stopped for file 57
+05/08/2021 11:53:34 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00058.h264
+05/08/2021 11:54:34 AM INFO     Recording saved to file 58
+05/08/2021 11:54:34 AM INFO     fileNumber: 58 saved in Json config file
+05/08/2021 11:54:34 AM INFO     Checking disk Space...
+05/08/2021 11:54:34 AM INFO     Recording stopped for file 58
+05/08/2021 11:54:34 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00059.h264
+05/08/2021 11:55:35 AM INFO     Recording saved to file 59
+05/08/2021 11:55:35 AM INFO     fileNumber: 59 saved in Json config file
+05/08/2021 11:55:35 AM INFO     Checking disk Space...
+05/08/2021 11:55:35 AM INFO     Recording stopped for file 59
+05/08/2021 11:55:35 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00060.h264
+05/08/2021 11:56:35 AM INFO     Recording saved to file 60
+05/08/2021 11:56:35 AM INFO     fileNumber: 60 saved in Json config file
+05/08/2021 11:56:35 AM INFO     Checking disk Space...
+05/08/2021 11:56:35 AM INFO     Recording stopped for file 60
+05/08/2021 11:56:35 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00061.h264
+05/08/2021 11:57:35 AM INFO     Recording saved to file 61
+05/08/2021 11:57:35 AM INFO     fileNumber: 61 saved in Json config file
+05/08/2021 11:57:35 AM INFO     Checking disk Space...
+05/08/2021 11:57:35 AM INFO     Recording stopped for file 61
+05/08/2021 11:57:36 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00062.h264
+05/08/2021 11:58:36 AM INFO     Recording saved to file 62
+05/08/2021 11:58:36 AM INFO     fileNumber: 62 saved in Json config file
+05/08/2021 11:58:36 AM INFO     Checking disk Space...
+05/08/2021 11:58:36 AM INFO     Recording stopped for file 62
+05/08/2021 11:58:36 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00063.h264
+05/08/2021 11:59:36 AM INFO     Recording saved to file 63
+05/08/2021 11:59:36 AM INFO     fileNumber: 63 saved in Json config file
+05/08/2021 11:59:36 AM INFO     Checking disk Space...
+05/08/2021 11:59:36 AM INFO     Recording stopped for file 63
+05/08/2021 11:59:36 AM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00064.h264
+05/08/2021 12:00:37 PM INFO     Recording saved to file 64
+05/08/2021 12:00:37 PM INFO     fileNumber: 64 saved in Json config file
+05/08/2021 12:00:37 PM INFO     Checking disk Space...
+05/08/2021 12:00:37 PM INFO     Recording stopped for file 64
+05/08/2021 12:00:37 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00065.h264
+05/08/2021 12:01:26 PM INFO     Dash Cam Started.
+05/08/2021 12:01:27 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00064.h264
+05/08/2021 12:02:27 PM INFO     Recording saved to file 64
+05/08/2021 12:02:27 PM INFO     fileNumber: 64 saved in Json config file
+05/08/2021 12:02:27 PM INFO     Checking disk Space...
+05/08/2021 12:02:27 PM INFO     Recording stopped for file 64
+05/08/2021 12:02:27 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00065.h264
+05/08/2021 12:03:27 PM INFO     Recording saved to file 65
+05/08/2021 12:03:27 PM INFO     fileNumber: 65 saved in Json config file
+05/08/2021 12:03:27 PM INFO     Checking disk Space...
+05/08/2021 12:03:27 PM INFO     Recording stopped for file 65
+05/08/2021 12:03:28 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00066.h264
+05/08/2021 12:04:28 PM INFO     Recording saved to file 66
+05/08/2021 12:04:28 PM INFO     fileNumber: 66 saved in Json config file
+05/08/2021 12:04:28 PM INFO     Checking disk Space...
+05/08/2021 12:04:28 PM INFO     Recording stopped for file 66
+05/08/2021 12:04:28 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00067.h264
+05/08/2021 12:05:28 PM INFO     Recording saved to file 67
+05/08/2021 12:05:28 PM INFO     fileNumber: 67 saved in Json config file
+05/08/2021 12:05:28 PM INFO     Checking disk Space...
+05/08/2021 12:05:28 PM INFO     Recording stopped for file 67
+05/08/2021 12:05:28 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00068.h264
+05/08/2021 12:06:28 PM INFO     Recording saved to file 68
+05/08/2021 12:06:28 PM INFO     fileNumber: 68 saved in Json config file
+05/08/2021 12:06:29 PM INFO     Checking disk Space...
+05/08/2021 12:06:29 PM INFO     Recording stopped for file 68
+05/08/2021 12:06:29 PM INFO     Connected to wi-fi, ip is : b'192.168.0.200 \n'
+05/08/2021 12:06:29 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00069.h264
+05/08/2021 12:06:29 PM INFO     Connected to internet successfuly, sending email..
+192.168.0.200
+05/08/2021 12:07:29 PM INFO     Recording saved to file 69
+05/08/2021 12:07:29 PM INFO     fileNumber: 69 saved in Json config file
+05/08/2021 12:07:29 PM INFO     Checking disk Space...
+05/08/2021 12:07:29 PM INFO     Recording stopped for file 69
+05/08/2021 12:07:29 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00070.h264
+05/08/2021 12:08:29 PM INFO     Recording saved to file 70
+05/08/2021 12:08:29 PM INFO     fileNumber: 70 saved in Json config file
+05/08/2021 12:08:29 PM INFO     Checking disk Space...
+05/08/2021 12:08:29 PM INFO     Recording stopped for file 70
+05/08/2021 12:08:29 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00071.h264
+05/08/2021 12:09:29 PM INFO     Recording saved to file 71
+05/08/2021 12:09:29 PM INFO     fileNumber: 71 saved in Json config file
+05/08/2021 12:09:29 PM INFO     Checking disk Space...
+05/08/2021 12:09:30 PM INFO     Recording stopped for file 71
+05/08/2021 12:09:30 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00072.h264
+05/08/2021 12:10:30 PM INFO     Recording saved to file 72
+05/08/2021 12:10:30 PM INFO     fileNumber: 72 saved in Json config file
+05/08/2021 12:10:30 PM INFO     Checking disk Space...
+05/08/2021 12:10:30 PM INFO     Recording stopped for file 72
+05/08/2021 12:10:30 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00073.h264
+05/08/2021 12:11:30 PM INFO     Recording saved to file 73
+05/08/2021 12:11:30 PM INFO     fileNumber: 73 saved in Json config file
+05/08/2021 12:11:30 PM INFO     Checking disk Space...
+05/08/2021 12:11:30 PM INFO     Recording stopped for file 73
+05/08/2021 12:11:30 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00074.h264
+05/08/2021 12:12:31 PM INFO     Recording saved to file 74
+05/08/2021 12:12:31 PM INFO     fileNumber: 74 saved in Json config file
+05/08/2021 12:12:31 PM INFO     Checking disk Space...
+05/08/2021 12:12:31 PM INFO     Recording stopped for file 74
+05/08/2021 12:12:31 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00075.h264
+05/08/2021 12:13:31 PM INFO     Recording saved to file 75
+05/08/2021 12:13:31 PM INFO     fileNumber: 75 saved in Json config file
+05/08/2021 12:13:31 PM INFO     Checking disk Space...
+05/08/2021 12:13:31 PM INFO     Recording stopped for file 75
+05/08/2021 12:13:31 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00076.h264
+05/08/2021 12:14:31 PM INFO     Recording saved to file 76
+05/08/2021 12:14:31 PM INFO     fileNumber: 76 saved in Json config file
+05/08/2021 12:14:31 PM INFO     Checking disk Space...
+05/08/2021 12:14:31 PM INFO     Recording stopped for file 76
+05/08/2021 12:14:31 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00077.h264
+05/08/2021 12:15:32 PM INFO     Recording saved to file 77
+05/08/2021 12:15:32 PM INFO     fileNumber: 77 saved in Json config file
+05/08/2021 12:15:32 PM INFO     Checking disk Space...
+05/08/2021 12:15:32 PM INFO     Recording stopped for file 77
+05/08/2021 12:15:32 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00078.h264
+05/08/2021 12:16:32 PM INFO     Recording saved to file 78
+05/08/2021 12:16:32 PM INFO     fileNumber: 78 saved in Json config file
+05/08/2021 12:16:32 PM INFO     Checking disk Space...
+05/08/2021 12:16:32 PM INFO     Recording stopped for file 78
+05/08/2021 12:16:32 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00079.h264
+05/08/2021 12:17:32 PM INFO     Recording saved to file 79
+05/08/2021 12:17:32 PM INFO     fileNumber: 79 saved in Json config file
+05/08/2021 12:17:32 PM INFO     Checking disk Space...
+05/08/2021 12:17:32 PM INFO     Recording stopped for file 79
+05/08/2021 12:17:33 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00080.h264
+05/08/2021 12:18:33 PM INFO     Recording saved to file 80
+05/08/2021 12:18:33 PM INFO     fileNumber: 80 saved in Json config file
+05/08/2021 12:18:33 PM INFO     Checking disk Space...
+05/08/2021 12:18:33 PM INFO     Recording stopped for file 80
+05/08/2021 12:18:33 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00081.h264
+05/08/2021 12:19:33 PM INFO     Recording saved to file 81
+05/08/2021 12:19:33 PM INFO     fileNumber: 81 saved in Json config file
+05/08/2021 12:19:33 PM INFO     Checking disk Space...
+05/08/2021 12:19:33 PM INFO     Recording stopped for file 81
+05/08/2021 12:19:34 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00082.h264
+05/08/2021 12:20:34 PM INFO     Recording saved to file 82
+05/08/2021 12:20:34 PM INFO     fileNumber: 82 saved in Json config file
+05/08/2021 12:20:34 PM INFO     Checking disk Space...
+05/08/2021 12:20:34 PM INFO     Recording stopped for file 82
+05/08/2021 12:20:34 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00083.h264
+05/08/2021 12:21:34 PM INFO     Recording saved to file 83
+05/08/2021 12:21:34 PM INFO     fileNumber: 83 saved in Json config file
+05/08/2021 12:21:34 PM INFO     Checking disk Space...
+05/08/2021 12:21:34 PM INFO     Recording stopped for file 83
+05/08/2021 12:21:34 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00084.h264
+05/08/2021 12:22:34 PM INFO     Recording saved to file 84
+05/08/2021 12:22:34 PM INFO     fileNumber: 84 saved in Json config file
+05/08/2021 12:22:34 PM INFO     Checking disk Space...
+05/08/2021 12:22:34 PM INFO     Recording stopped for file 84
+05/08/2021 12:22:35 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00085.h264
+05/08/2021 12:23:35 PM INFO     Recording saved to file 85
+05/08/2021 12:23:35 PM INFO     fileNumber: 85 saved in Json config file
+05/08/2021 12:23:35 PM INFO     Checking disk Space...
+05/08/2021 12:23:35 PM INFO     Recording stopped for file 85
+05/08/2021 12:23:35 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00086.h264
+05/08/2021 12:24:35 PM INFO     Recording saved to file 86
+05/08/2021 12:24:35 PM INFO     fileNumber: 86 saved in Json config file
+05/08/2021 12:24:35 PM INFO     Checking disk Space...
+05/08/2021 12:24:35 PM INFO     Recording stopped for file 86
+05/08/2021 12:24:35 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00087.h264
+05/08/2021 12:25:35 PM INFO     Recording saved to file 87
+05/08/2021 12:25:35 PM INFO     fileNumber: 87 saved in Json config file
+05/08/2021 12:25:35 PM INFO     Checking disk Space...
+05/08/2021 12:25:35 PM INFO     Recording stopped for file 87
+05/08/2021 12:25:36 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00088.h264
+05/08/2021 12:26:36 PM INFO     Recording saved to file 88
+05/08/2021 12:26:36 PM INFO     fileNumber: 88 saved in Json config file
+05/08/2021 12:26:36 PM INFO     Checking disk Space...
+05/08/2021 12:26:36 PM INFO     Recording stopped for file 88
+05/08/2021 12:26:36 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00089.h264
+05/08/2021 12:27:36 PM INFO     Recording saved to file 89
+05/08/2021 12:27:36 PM INFO     fileNumber: 89 saved in Json config file
+05/08/2021 12:27:36 PM INFO     Checking disk Space...
+05/08/2021 12:27:36 PM INFO     Recording stopped for file 89
+05/08/2021 12:27:36 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00090.h264
+05/08/2021 12:28:37 PM INFO     Recording saved to file 90
+05/08/2021 12:28:37 PM INFO     fileNumber: 90 saved in Json config file
+05/08/2021 12:28:37 PM INFO     Checking disk Space...
+05/08/2021 12:28:37 PM INFO     Recording stopped for file 90
+05/08/2021 12:28:37 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00091.h264
+05/08/2021 12:29:37 PM INFO     Recording saved to file 91
+05/08/2021 12:29:37 PM INFO     fileNumber: 91 saved in Json config file
+05/08/2021 12:29:37 PM INFO     Checking disk Space...
+05/08/2021 12:29:37 PM INFO     Recording stopped for file 91
+05/08/2021 12:29:37 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00092.h264
+05/08/2021 12:30:37 PM INFO     Recording saved to file 92
+05/08/2021 12:30:37 PM INFO     fileNumber: 92 saved in Json config file
+05/08/2021 12:30:37 PM INFO     Checking disk Space...
+05/08/2021 12:30:37 PM INFO     Recording stopped for file 92
+05/08/2021 12:30:38 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00093.h264
+05/08/2021 12:31:38 PM INFO     Recording saved to file 93
+05/08/2021 12:31:38 PM INFO     fileNumber: 93 saved in Json config file
+05/08/2021 12:31:38 PM INFO     Checking disk Space...
+05/08/2021 12:31:38 PM INFO     Recording stopped for file 93
+05/08/2021 12:31:38 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00094.h264
+05/08/2021 12:32:38 PM INFO     Recording saved to file 94
+05/08/2021 12:32:38 PM INFO     fileNumber: 94 saved in Json config file
+05/08/2021 12:32:38 PM INFO     Checking disk Space...
+05/08/2021 12:32:38 PM INFO     Recording stopped for file 94
+05/08/2021 12:32:38 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00095.h264
+05/08/2021 12:33:38 PM INFO     Recording saved to file 95
+05/08/2021 12:33:38 PM INFO     fileNumber: 95 saved in Json config file
+05/08/2021 12:33:38 PM INFO     Checking disk Space...
+05/08/2021 12:33:38 PM INFO     Recording stopped for file 95
+05/08/2021 12:33:39 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00096.h264
+05/08/2021 12:34:39 PM INFO     Recording saved to file 96
+05/08/2021 12:34:39 PM INFO     fileNumber: 96 saved in Json config file
+05/08/2021 12:34:39 PM INFO     Checking disk Space...
+05/08/2021 12:34:39 PM INFO     Recording stopped for file 96
+05/08/2021 12:34:39 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00097.h264
+05/08/2021 12:35:39 PM INFO     Recording saved to file 97
+05/08/2021 12:35:39 PM INFO     fileNumber: 97 saved in Json config file
+05/08/2021 12:35:39 PM INFO     Checking disk Space...
+05/08/2021 12:35:39 PM INFO     Recording stopped for file 97
+05/08/2021 12:35:39 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00098.h264
+05/08/2021 12:36:39 PM INFO     Recording saved to file 98
+05/08/2021 12:36:39 PM INFO     fileNumber: 98 saved in Json config file
+05/08/2021 12:36:39 PM INFO     Checking disk Space...
+05/08/2021 12:36:40 PM INFO     Recording stopped for file 98
+05/08/2021 12:36:40 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00099.h264
+05/08/2021 12:37:40 PM INFO     Recording saved to file 99
+05/08/2021 12:37:40 PM INFO     fileNumber: 99 saved in Json config file
+05/08/2021 12:37:40 PM INFO     Checking disk Space...
+05/08/2021 12:37:40 PM INFO     Recording stopped for file 99
+05/08/2021 12:37:40 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00100.h264
+05/08/2021 12:38:40 PM INFO     Recording saved to file 100
+05/08/2021 12:38:40 PM INFO     fileNumber: 100 saved in Json config file
+05/08/2021 12:38:40 PM INFO     Checking disk Space...
+05/08/2021 12:38:40 PM INFO     Recording stopped for file 100
+05/08/2021 12:38:40 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00101.h264
+05/08/2021 12:39:40 PM INFO     Recording saved to file 101
+05/08/2021 12:39:40 PM INFO     fileNumber: 101 saved in Json config file
+05/08/2021 12:39:40 PM INFO     Checking disk Space...
+05/08/2021 12:39:41 PM INFO     Recording stopped for file 101
+05/08/2021 12:39:41 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00102.h264
+05/08/2021 12:40:41 PM INFO     Recording saved to file 102
+05/08/2021 12:40:41 PM INFO     fileNumber: 102 saved in Json config file
+05/08/2021 12:40:41 PM INFO     Checking disk Space...
+05/08/2021 12:40:41 PM INFO     Recording stopped for file 102
+05/08/2021 12:40:41 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00103.h264
+05/08/2021 12:41:41 PM INFO     Recording saved to file 103
+05/08/2021 12:41:41 PM INFO     fileNumber: 103 saved in Json config file
+05/08/2021 12:41:41 PM INFO     Checking disk Space...
+05/08/2021 12:41:41 PM INFO     Recording stopped for file 103
+05/08/2021 12:41:41 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00104.h264
+05/08/2021 12:42:42 PM INFO     Recording saved to file 104
+05/08/2021 12:42:42 PM INFO     fileNumber: 104 saved in Json config file
+05/08/2021 12:42:42 PM INFO     Checking disk Space...
+05/08/2021 12:42:42 PM INFO     Recording stopped for file 104
+05/08/2021 12:42:42 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00105.h264
+05/08/2021 12:43:42 PM INFO     Recording saved to file 105
+05/08/2021 12:43:42 PM INFO     fileNumber: 105 saved in Json config file
+05/08/2021 12:43:42 PM INFO     Checking disk Space...
+05/08/2021 12:43:42 PM INFO     Recording stopped for file 105
+05/08/2021 12:43:42 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00106.h264
+05/08/2021 12:44:42 PM INFO     Recording saved to file 106
+05/08/2021 12:44:42 PM INFO     fileNumber: 106 saved in Json config file
+05/08/2021 12:44:42 PM INFO     Checking disk Space...
+05/08/2021 12:44:42 PM INFO     Recording stopped for file 106
+05/08/2021 12:44:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00107.h264
+05/08/2021 12:45:43 PM INFO     Recording saved to file 107
+05/08/2021 12:45:43 PM INFO     fileNumber: 107 saved in Json config file
+05/08/2021 12:45:43 PM INFO     Checking disk Space...
+05/08/2021 12:45:43 PM INFO     Recording stopped for file 107
+05/08/2021 12:45:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00108.h264
+05/08/2021 12:46:43 PM INFO     Recording saved to file 108
+05/08/2021 12:46:43 PM INFO     fileNumber: 108 saved in Json config file
+05/08/2021 12:46:43 PM INFO     Checking disk Space...
+05/08/2021 12:46:43 PM INFO     Recording stopped for file 108
+05/08/2021 12:46:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00109.h264
+05/08/2021 12:47:43 PM INFO     Recording saved to file 109
+05/08/2021 12:47:43 PM INFO     fileNumber: 109 saved in Json config file
+05/08/2021 12:47:43 PM INFO     Checking disk Space...
+05/08/2021 12:47:44 PM INFO     Recording stopped for file 109
+05/08/2021 12:47:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00110.h264
+05/08/2021 12:48:44 PM INFO     Recording saved to file 110
+05/08/2021 12:48:44 PM INFO     fileNumber: 110 saved in Json config file
+05/08/2021 12:48:44 PM INFO     Checking disk Space...
+05/08/2021 12:48:44 PM INFO     Recording stopped for file 110
+05/08/2021 12:48:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00111.h264
+05/08/2021 12:49:44 PM INFO     Recording saved to file 111
+05/08/2021 12:49:44 PM INFO     fileNumber: 111 saved in Json config file
+05/08/2021 12:49:44 PM INFO     Checking disk Space...
+05/08/2021 12:49:44 PM INFO     Recording stopped for file 111
+05/08/2021 12:49:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00112.h264
+05/08/2021 12:50:45 PM INFO     Recording saved to file 112
+05/08/2021 12:50:45 PM INFO     fileNumber: 112 saved in Json config file
+05/08/2021 12:50:45 PM INFO     Checking disk Space...
+05/08/2021 12:50:45 PM INFO     Recording stopped for file 112
+05/08/2021 12:50:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00113.h264
+05/08/2021 12:51:45 PM INFO     Recording saved to file 113
+05/08/2021 12:51:45 PM INFO     fileNumber: 113 saved in Json config file
+05/08/2021 12:51:45 PM INFO     Checking disk Space...
+05/08/2021 12:51:45 PM INFO     Recording stopped for file 113
+05/08/2021 12:51:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00114.h264
+05/08/2021 12:52:45 PM INFO     Recording saved to file 114
+05/08/2021 12:52:45 PM INFO     fileNumber: 114 saved in Json config file
+05/08/2021 12:52:45 PM INFO     Checking disk Space...
+05/08/2021 12:52:45 PM INFO     Recording stopped for file 114
+05/08/2021 12:52:46 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00115.h264
+05/08/2021 12:53:46 PM INFO     Recording saved to file 115
+05/08/2021 12:53:46 PM INFO     fileNumber: 115 saved in Json config file
+05/08/2021 12:53:46 PM INFO     Checking disk Space...
+05/08/2021 12:53:46 PM INFO     Recording stopped for file 115
+05/08/2021 12:53:46 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00116.h264
+05/08/2021 12:54:46 PM INFO     Recording saved to file 116
+05/08/2021 12:54:46 PM INFO     fileNumber: 116 saved in Json config file
+05/08/2021 12:54:46 PM INFO     Checking disk Space...
+05/08/2021 12:54:46 PM INFO     Recording stopped for file 116
+05/08/2021 12:54:46 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00117.h264
+05/08/2021 12:55:46 PM INFO     Recording saved to file 117
+05/08/2021 12:55:46 PM INFO     fileNumber: 117 saved in Json config file
+05/08/2021 12:55:46 PM INFO     Checking disk Space...
+05/08/2021 12:55:46 PM INFO     Recording stopped for file 117
+05/08/2021 12:55:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00118.h264
+05/08/2021 12:56:47 PM INFO     Recording saved to file 118
+05/08/2021 12:56:47 PM INFO     fileNumber: 118 saved in Json config file
+05/08/2021 12:56:47 PM INFO     Checking disk Space...
+05/08/2021 12:56:47 PM INFO     Recording stopped for file 118
+05/08/2021 12:56:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00119.h264
+05/08/2021 12:57:47 PM INFO     Recording saved to file 119
+05/08/2021 12:57:47 PM INFO     fileNumber: 119 saved in Json config file
+05/08/2021 12:57:47 PM INFO     Checking disk Space...
+05/08/2021 12:57:47 PM INFO     Recording stopped for file 119
+05/08/2021 12:57:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00120.h264
+05/08/2021 12:58:47 PM INFO     Recording saved to file 120
+05/08/2021 12:58:47 PM INFO     fileNumber: 120 saved in Json config file
+05/08/2021 12:58:47 PM INFO     Checking disk Space...
+05/08/2021 12:58:47 PM INFO     Recording stopped for file 120
+05/08/2021 12:58:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00121.h264
+05/08/2021 12:59:48 PM INFO     Recording saved to file 121
+05/08/2021 12:59:48 PM INFO     fileNumber: 121 saved in Json config file
+05/08/2021 12:59:48 PM INFO     Checking disk Space...
+05/08/2021 12:59:48 PM INFO     Recording stopped for file 121
+05/08/2021 12:59:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00122.h264
+05/08/2021 01:00:48 PM INFO     Recording saved to file 122
+05/08/2021 01:00:48 PM INFO     fileNumber: 122 saved in Json config file
+05/08/2021 01:00:48 PM INFO     Checking disk Space...
+05/08/2021 01:00:48 PM INFO     Recording stopped for file 122
+05/08/2021 01:00:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00123.h264
+05/08/2021 01:01:48 PM INFO     Recording saved to file 123
+05/08/2021 01:01:48 PM INFO     fileNumber: 123 saved in Json config file
+05/08/2021 01:01:48 PM INFO     Checking disk Space...
+05/08/2021 01:01:48 PM INFO     Recording stopped for file 123
+05/08/2021 01:01:49 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00124.h264
+05/08/2021 01:02:49 PM INFO     Recording saved to file 124
+05/08/2021 01:02:49 PM INFO     fileNumber: 124 saved in Json config file
+05/08/2021 01:02:49 PM INFO     Checking disk Space...
+05/08/2021 01:02:49 PM INFO     Recording stopped for file 124
+05/08/2021 01:02:49 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00125.h264
+05/08/2021 01:03:49 PM INFO     Recording saved to file 125
+05/08/2021 01:03:49 PM INFO     fileNumber: 125 saved in Json config file
+05/08/2021 01:03:49 PM INFO     Checking disk Space...
+05/08/2021 01:03:49 PM INFO     Recording stopped for file 125
+05/08/2021 01:03:49 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00126.h264
+05/08/2021 01:04:49 PM INFO     Recording saved to file 126
+05/08/2021 01:04:49 PM INFO     fileNumber: 126 saved in Json config file
+05/08/2021 01:04:49 PM INFO     Checking disk Space...
+05/08/2021 01:04:49 PM INFO     Recording stopped for file 126
+05/08/2021 01:04:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00127.h264
+05/08/2021 01:05:50 PM INFO     Recording saved to file 127
+05/08/2021 01:05:50 PM INFO     fileNumber: 127 saved in Json config file
+05/08/2021 01:05:50 PM INFO     Checking disk Space...
+05/08/2021 01:05:50 PM INFO     Recording stopped for file 127
+05/08/2021 01:05:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00128.h264
+05/08/2021 01:06:50 PM INFO     Recording saved to file 128
+05/08/2021 01:06:50 PM INFO     fileNumber: 128 saved in Json config file
+05/08/2021 01:06:50 PM INFO     Checking disk Space...
+05/08/2021 01:06:50 PM INFO     Recording stopped for file 128
+05/08/2021 01:06:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00129.h264
+05/08/2021 01:07:51 PM INFO     Recording saved to file 129
+05/08/2021 01:07:51 PM INFO     fileNumber: 129 saved in Json config file
+05/08/2021 01:07:51 PM INFO     Checking disk Space...
+05/08/2021 01:07:51 PM INFO     Recording stopped for file 129
+05/08/2021 01:07:51 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00130.h264
+05/08/2021 01:08:51 PM INFO     Recording saved to file 130
+05/08/2021 01:08:51 PM INFO     fileNumber: 130 saved in Json config file
+05/08/2021 01:08:51 PM INFO     Checking disk Space...
+05/08/2021 01:08:51 PM INFO     Recording stopped for file 130
+05/08/2021 01:08:51 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00131.h264
+05/08/2021 01:09:51 PM INFO     Recording saved to file 131
+05/08/2021 01:09:51 PM INFO     fileNumber: 131 saved in Json config file
+05/08/2021 01:09:51 PM INFO     Checking disk Space...
+05/08/2021 01:09:51 PM INFO     Recording stopped for file 131
+05/08/2021 01:09:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00132.h264
+05/08/2021 01:10:52 PM INFO     Recording saved to file 132
+05/08/2021 01:10:52 PM INFO     fileNumber: 132 saved in Json config file
+05/08/2021 01:10:52 PM INFO     Checking disk Space...
+05/08/2021 01:10:52 PM INFO     Recording stopped for file 132
+05/08/2021 01:10:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00133.h264
+05/08/2021 01:11:52 PM INFO     Recording saved to file 133
+05/08/2021 01:11:52 PM INFO     fileNumber: 133 saved in Json config file
+05/08/2021 01:11:52 PM INFO     Checking disk Space...
+05/08/2021 01:11:52 PM INFO     Recording stopped for file 133
+05/08/2021 01:11:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00134.h264
+05/08/2021 01:12:52 PM INFO     Recording saved to file 134
+05/08/2021 01:12:52 PM INFO     fileNumber: 134 saved in Json config file
+05/08/2021 01:12:52 PM INFO     Checking disk Space...
+05/08/2021 01:12:52 PM INFO     Recording stopped for file 134
+05/08/2021 01:12:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00135.h264
+05/08/2021 01:13:53 PM INFO     Recording saved to file 135
+05/08/2021 01:13:53 PM INFO     fileNumber: 135 saved in Json config file
+05/08/2021 01:13:53 PM INFO     Checking disk Space...
+05/08/2021 01:13:53 PM INFO     Recording stopped for file 135
+05/08/2021 01:13:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00136.h264
+05/08/2021 01:14:53 PM INFO     Recording saved to file 136
+05/08/2021 01:14:53 PM INFO     fileNumber: 136 saved in Json config file
+05/08/2021 01:14:53 PM INFO     Checking disk Space...
+05/08/2021 01:14:53 PM INFO     Recording stopped for file 136
+05/08/2021 01:14:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00137.h264
+05/08/2021 01:15:53 PM INFO     Recording saved to file 137
+05/08/2021 01:15:54 PM INFO     fileNumber: 137 saved in Json config file
+05/08/2021 01:15:54 PM INFO     Checking disk Space...
+05/08/2021 01:15:54 PM INFO     Recording stopped for file 137
+05/08/2021 01:15:54 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00138.h264
+05/08/2021 01:16:54 PM INFO     Recording saved to file 138
+05/08/2021 01:16:54 PM INFO     fileNumber: 138 saved in Json config file
+05/08/2021 01:16:54 PM INFO     Checking disk Space...
+05/08/2021 01:16:54 PM INFO     Recording stopped for file 138
+05/08/2021 01:16:54 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00139.h264
+05/08/2021 01:17:54 PM INFO     Recording saved to file 139
+05/08/2021 01:17:54 PM INFO     fileNumber: 139 saved in Json config file
+05/08/2021 01:17:54 PM INFO     Checking disk Space...
+05/08/2021 01:17:54 PM INFO     Recording stopped for file 139
+05/08/2021 01:17:54 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00140.h264
+05/08/2021 01:18:54 PM INFO     Recording saved to file 140
+05/08/2021 01:18:54 PM INFO     fileNumber: 140 saved in Json config file
+05/08/2021 01:18:54 PM INFO     Checking disk Space...
+05/08/2021 01:18:55 PM INFO     Recording stopped for file 140
+05/08/2021 01:18:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00141.h264
+05/08/2021 01:19:55 PM INFO     Recording saved to file 141
+05/08/2021 01:19:55 PM INFO     fileNumber: 141 saved in Json config file
+05/08/2021 01:19:55 PM INFO     Checking disk Space...
+05/08/2021 01:19:55 PM INFO     Recording stopped for file 141
+05/08/2021 01:19:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00142.h264
+05/08/2021 01:20:55 PM INFO     Recording saved to file 142
+05/08/2021 01:20:55 PM INFO     fileNumber: 142 saved in Json config file
+05/08/2021 01:20:55 PM INFO     Checking disk Space...
+05/08/2021 01:20:55 PM INFO     Recording stopped for file 142
+05/08/2021 01:20:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00143.h264
+05/08/2021 01:21:56 PM INFO     Recording saved to file 143
+05/08/2021 01:21:56 PM INFO     fileNumber: 143 saved in Json config file
+05/08/2021 01:21:56 PM INFO     Checking disk Space...
+05/08/2021 01:21:56 PM INFO     Recording stopped for file 143
+05/08/2021 01:21:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00144.h264
+05/08/2021 01:22:56 PM INFO     Recording saved to file 144
+05/08/2021 01:22:56 PM INFO     fileNumber: 144 saved in Json config file
+05/08/2021 01:22:56 PM INFO     Checking disk Space...
+05/08/2021 01:22:56 PM INFO     Recording stopped for file 144
+05/08/2021 01:22:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00145.h264
+05/08/2021 01:23:56 PM INFO     Recording saved to file 145
+05/08/2021 01:23:56 PM INFO     fileNumber: 145 saved in Json config file
+05/08/2021 01:23:56 PM INFO     Checking disk Space...
+05/08/2021 01:23:56 PM INFO     Recording stopped for file 145
+05/08/2021 01:23:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00146.h264
+05/08/2021 01:24:57 PM INFO     Recording saved to file 146
+05/08/2021 01:24:57 PM INFO     fileNumber: 146 saved in Json config file
+05/08/2021 01:24:57 PM INFO     Checking disk Space...
+05/08/2021 01:24:57 PM INFO     Recording stopped for file 146
+05/08/2021 01:24:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00147.h264
+05/08/2021 01:25:57 PM INFO     Recording saved to file 147
+05/08/2021 01:25:57 PM INFO     fileNumber: 147 saved in Json config file
+05/08/2021 01:25:57 PM INFO     Checking disk Space...
+05/08/2021 01:25:57 PM INFO     Recording stopped for file 147
+05/08/2021 01:25:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00148.h264
+05/08/2021 01:26:58 PM INFO     Recording saved to file 148
+05/08/2021 01:26:58 PM INFO     fileNumber: 148 saved in Json config file
+05/08/2021 01:26:58 PM INFO     Checking disk Space...
+05/08/2021 01:26:58 PM INFO     Recording stopped for file 148
+05/08/2021 01:26:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00149.h264
+05/08/2021 01:27:58 PM INFO     Recording saved to file 149
+05/08/2021 01:27:58 PM INFO     fileNumber: 149 saved in Json config file
+05/08/2021 01:27:58 PM INFO     Checking disk Space...
+05/08/2021 01:27:58 PM INFO     Recording stopped for file 149
+05/08/2021 01:27:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00150.h264
+05/08/2021 01:28:58 PM INFO     Recording saved to file 150
+05/08/2021 01:28:58 PM INFO     fileNumber: 150 saved in Json config file
+05/08/2021 01:28:58 PM INFO     Checking disk Space...
+05/08/2021 01:28:58 PM INFO     Recording stopped for file 150
+05/08/2021 01:28:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00151.h264
+05/08/2021 01:29:59 PM INFO     Recording saved to file 151
+05/08/2021 01:29:59 PM INFO     fileNumber: 151 saved in Json config file
+05/08/2021 01:29:59 PM INFO     Checking disk Space...
+05/08/2021 01:29:59 PM INFO     Recording stopped for file 151
+05/08/2021 01:29:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00152.h264
+05/08/2021 01:30:59 PM INFO     Recording saved to file 152
+05/08/2021 01:30:59 PM INFO     fileNumber: 152 saved in Json config file
+05/08/2021 01:30:59 PM INFO     Checking disk Space...
+05/08/2021 01:30:59 PM INFO     Recording stopped for file 152
+05/08/2021 01:30:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00153.h264
+05/08/2021 01:31:59 PM INFO     Recording saved to file 153
+05/08/2021 01:31:59 PM INFO     fileNumber: 153 saved in Json config file
+05/08/2021 01:31:59 PM INFO     Checking disk Space...
+05/08/2021 01:31:59 PM INFO     Recording stopped for file 153
+05/08/2021 01:32:00 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00154.h264
+05/08/2021 01:33:00 PM INFO     Recording saved to file 154
+05/08/2021 01:33:00 PM INFO     fileNumber: 154 saved in Json config file
+05/08/2021 01:33:00 PM INFO     Checking disk Space...
+05/08/2021 01:33:00 PM INFO     Recording stopped for file 154
+05/08/2021 01:33:00 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00155.h264
+05/08/2021 01:34:00 PM INFO     Recording saved to file 155
+05/08/2021 01:34:00 PM INFO     fileNumber: 155 saved in Json config file
+05/08/2021 01:34:00 PM INFO     Checking disk Space...
+05/08/2021 01:34:00 PM INFO     Recording stopped for file 155
+05/08/2021 01:34:00 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00156.h264
+05/08/2021 01:35:00 PM INFO     Recording saved to file 156
+05/08/2021 01:35:00 PM INFO     fileNumber: 156 saved in Json config file
+05/08/2021 01:35:00 PM INFO     Checking disk Space...
+05/08/2021 01:35:00 PM INFO     Recording stopped for file 156
+/home/pi/Raspi_DashCam/code/videos/Video00064.h264
+Recording to /home/pi/Raspi_DashCam/code/videos/video00064.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00065.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00066.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00067.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00068.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00069.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00070.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00071.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00072.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00073.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00074.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00075.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00076.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00077.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00078.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00079.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00080.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00081.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00082.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00083.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00084.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00085.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00086.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00087.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00088.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00089.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00090.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00091.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00092.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00093.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00094.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00095.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00096.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00097.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00098.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00099.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00100.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00101.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00102.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00103.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00104.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00105.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00106.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00107.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00108.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00109.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00110.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00111.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00112.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00113.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00114.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00115.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00116.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00117.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00118.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00119.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00120.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00121.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00122.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00123.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00124.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00125.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00126.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00127.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00128.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00129.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00130.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00131.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00132.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00133.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00134.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00135.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00136.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00137.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00138.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00139.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00140.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00141.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00142.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00143.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00144.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00145.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00146.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00147.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00148.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00149.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00150.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00151.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00152.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00153.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00154.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00155.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00156.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00157.h26405/08/2021 01:35:01 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00157.h264
+05/08/2021 01:36:01 PM INFO     Recording saved to file 157
+05/08/2021 01:36:01 PM INFO     fileNumber: 157 saved in Json config file
+05/08/2021 01:36:01 PM INFO     Checking disk Space...
+05/08/2021 01:36:01 PM INFO     Recording stopped for file 157
+05/08/2021 01:36:01 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00158.h264
+05/08/2021 01:37:01 PM INFO     Recording saved to file 158
+05/08/2021 01:37:01 PM INFO     fileNumber: 158 saved in Json config file
+05/08/2021 01:37:01 PM INFO     Checking disk Space...
+05/08/2021 01:37:01 PM INFO     Recording stopped for file 158
+05/08/2021 01:37:01 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00159.h264
+05/08/2021 01:38:01 PM INFO     Recording saved to file 159
+05/08/2021 01:38:01 PM INFO     fileNumber: 159 saved in Json config file
+05/08/2021 01:38:01 PM INFO     Checking disk Space...
+05/08/2021 01:38:01 PM INFO     Recording stopped for file 159
+05/08/2021 01:38:02 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00160.h264
+05/08/2021 01:39:02 PM INFO     Recording saved to file 160
+05/08/2021 01:39:02 PM INFO     fileNumber: 160 saved in Json config file
+05/08/2021 01:39:02 PM INFO     Checking disk Space...
+05/08/2021 01:39:02 PM INFO     Recording stopped for file 160
+05/08/2021 01:39:02 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00161.h264
+05/08/2021 01:40:02 PM INFO     Recording saved to file 161
+05/08/2021 01:40:02 PM INFO     fileNumber: 161 saved in Json config file
+05/08/2021 01:40:02 PM INFO     Checking disk Space...
+05/08/2021 01:40:02 PM INFO     Recording stopped for file 161
+05/08/2021 01:40:02 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00162.h264
+05/08/2021 01:41:02 PM INFO     Recording saved to file 162
+05/08/2021 01:41:02 PM INFO     fileNumber: 162 saved in Json config file
+05/08/2021 01:41:02 PM INFO     Checking disk Space...
+05/08/2021 01:41:03 PM INFO     Recording stopped for file 162
+05/08/2021 01:41:03 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00163.h264
+05/08/2021 01:42:03 PM INFO     Recording saved to file 163
+05/08/2021 01:42:03 PM INFO     fileNumber: 163 saved in Json config file
+05/08/2021 01:42:03 PM INFO     Checking disk Space...
+05/08/2021 01:42:03 PM INFO     Recording stopped for file 163
+05/08/2021 01:42:03 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00164.h264
+05/08/2021 01:43:03 PM INFO     Recording saved to file 164
+05/08/2021 01:43:03 PM INFO     fileNumber: 164 saved in Json config file
+05/08/2021 01:43:03 PM INFO     Checking disk Space...
+05/08/2021 01:43:03 PM INFO     Recording stopped for file 164
+05/08/2021 01:43:04 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00165.h264
+05/08/2021 01:44:04 PM INFO     Recording saved to file 165
+05/08/2021 01:44:04 PM INFO     fileNumber: 165 saved in Json config file
+05/08/2021 01:44:04 PM INFO     Checking disk Space...
+05/08/2021 01:44:04 PM INFO     Recording stopped for file 165
+05/08/2021 01:44:04 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00166.h264
+05/08/2021 01:45:04 PM INFO     Recording saved to file 166
+05/08/2021 01:45:04 PM INFO     fileNumber: 166 saved in Json config file
+05/08/2021 01:45:04 PM INFO     Checking disk Space...
+05/08/2021 01:45:04 PM INFO     Recording stopped for file 166
+05/08/2021 01:45:04 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00167.h264
+05/08/2021 01:46:04 PM INFO     Recording saved to file 167
+05/08/2021 01:46:04 PM INFO     fileNumber: 167 saved in Json config file
+05/08/2021 01:46:04 PM INFO     Checking disk Space...
+05/08/2021 01:46:04 PM INFO     Recording stopped for file 167
+05/08/2021 01:46:05 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00168.h264
+05/08/2021 01:47:05 PM INFO     Recording saved to file 168
+05/08/2021 01:47:05 PM INFO     fileNumber: 168 saved in Json config file
+05/08/2021 01:47:05 PM INFO     Checking disk Space...
+05/08/2021 01:47:05 PM INFO     Recording stopped for file 168
+05/08/2021 01:47:05 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00169.h264
+05/08/2021 01:48:05 PM INFO     Recording saved to file 169
+05/08/2021 01:48:05 PM INFO     fileNumber: 169 saved in Json config file
+05/08/2021 01:48:05 PM INFO     Checking disk Space...
+05/08/2021 01:48:05 PM INFO     Recording stopped for file 169
+05/08/2021 01:48:05 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00170.h264
+05/08/2021 01:49:05 PM INFO     Recording saved to file 170
+05/08/2021 01:49:05 PM INFO     fileNumber: 170 saved in Json config file
+05/08/2021 01:49:05 PM INFO     Checking disk Space...
+05/08/2021 01:49:06 PM INFO     Recording stopped for file 170
+05/08/2021 01:49:06 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00171.h264
+05/08/2021 01:50:06 PM INFO     Recording saved to file 171
+05/08/2021 01:50:06 PM INFO     fileNumber: 171 saved in Json config file
+05/08/2021 01:50:06 PM INFO     Checking disk Space...
+05/08/2021 01:50:06 PM INFO     Recording stopped for file 171
+05/08/2021 01:50:06 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00172.h264
+05/08/2021 01:51:06 PM INFO     Recording saved to file 172
+05/08/2021 01:51:06 PM INFO     fileNumber: 172 saved in Json config file
+05/08/2021 01:51:06 PM INFO     Checking disk Space...
+05/08/2021 01:51:06 PM INFO     Recording stopped for file 172
+05/08/2021 01:51:06 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00173.h264
+05/08/2021 01:52:07 PM INFO     Recording saved to file 173
+05/08/2021 01:52:07 PM INFO     fileNumber: 173 saved in Json config file
+05/08/2021 01:52:07 PM INFO     Checking disk Space...
+05/08/2021 01:52:07 PM INFO     Recording stopped for file 173
+05/08/2021 01:52:07 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00174.h264
+05/08/2021 01:53:07 PM INFO     Recording saved to file 174
+05/08/2021 01:53:07 PM INFO     fileNumber: 174 saved in Json config file
+05/08/2021 01:53:07 PM INFO     Checking disk Space...
+05/08/2021 01:53:07 PM INFO     Recording stopped for file 174
+05/08/2021 01:53:07 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00175.h264
+05/08/2021 01:54:07 PM INFO     Recording saved to file 175
+05/08/2021 01:54:07 PM INFO     fileNumber: 175 saved in Json config file
+05/08/2021 01:54:07 PM INFO     Checking disk Space...
+05/08/2021 01:54:07 PM INFO     Recording stopped for file 175
+05/08/2021 01:54:07 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00176.h264
+05/08/2021 01:55:08 PM INFO     Recording saved to file 176
+05/08/2021 01:55:08 PM INFO     fileNumber: 176 saved in Json config file
+05/08/2021 01:55:08 PM INFO     Checking disk Space...
+05/08/2021 01:55:08 PM INFO     Recording stopped for file 176
+05/08/2021 01:55:08 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00177.h264
+05/08/2021 01:56:08 PM INFO     Recording saved to file 177
+05/08/2021 01:56:08 PM INFO     fileNumber: 177 saved in Json config file
+05/08/2021 01:56:08 PM INFO     Checking disk Space...
+05/08/2021 01:56:08 PM INFO     Recording stopped for file 177
+05/08/2021 01:56:08 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00178.h264
+05/08/2021 01:57:08 PM INFO     Recording saved to file 178
+05/08/2021 01:57:08 PM INFO     fileNumber: 178 saved in Json config file
+05/08/2021 01:57:08 PM INFO     Checking disk Space...
+05/08/2021 01:57:08 PM INFO     Recording stopped for file 178
+05/08/2021 01:57:09 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00179.h264
+05/08/2021 01:58:09 PM INFO     Recording saved to file 179
+05/08/2021 01:58:09 PM INFO     fileNumber: 179 saved in Json config file
+05/08/2021 01:58:09 PM INFO     Checking disk Space...
+05/08/2021 01:58:09 PM INFO     Recording stopped for file 179
+05/08/2021 01:58:09 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00180.h264
+05/08/2021 01:59:09 PM INFO     Recording saved to file 180
+05/08/2021 01:59:09 PM INFO     fileNumber: 180 saved in Json config file
+05/08/2021 01:59:09 PM INFO     Checking disk Space...
+05/08/2021 01:59:09 PM INFO     Recording stopped for file 180
+05/08/2021 01:59:09 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00181.h264
+05/08/2021 02:00:10 PM INFO     Recording saved to file 181
+05/08/2021 02:00:10 PM INFO     fileNumber: 181 saved in Json config file
+05/08/2021 02:00:10 PM INFO     Checking disk Space...
+05/08/2021 02:00:10 PM INFO     Recording stopped for file 181
+05/08/2021 02:00:10 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00182.h264
+05/08/2021 02:01:10 PM INFO     Recording saved to file 182
+05/08/2021 02:01:10 PM INFO     fileNumber: 182 saved in Json config file
+05/08/2021 02:01:10 PM INFO     Checking disk Space...
+05/08/2021 02:01:10 PM INFO     Recording stopped for file 182
+05/08/2021 02:01:10 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00183.h264
+05/08/2021 02:02:10 PM INFO     Recording saved to file 183
+05/08/2021 02:02:10 PM INFO     fileNumber: 183 saved in Json config file
+05/08/2021 02:02:10 PM INFO     Checking disk Space...
+05/08/2021 02:02:10 PM INFO     Recording stopped for file 183
+05/08/2021 02:02:10 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00184.h264
+05/08/2021 02:03:11 PM INFO     Recording saved to file 184
+05/08/2021 02:03:11 PM INFO     fileNumber: 184 saved in Json config file
+05/08/2021 02:03:11 PM INFO     Checking disk Space...
+05/08/2021 02:03:11 PM INFO     Recording stopped for file 184
+05/08/2021 02:03:11 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00185.h264
+05/08/2021 02:04:11 PM INFO     Recording saved to file 185
+05/08/2021 02:04:11 PM INFO     fileNumber: 185 saved in Json config file
+05/08/2021 02:04:11 PM INFO     Checking disk Space...
+05/08/2021 02:04:11 PM INFO     Recording stopped for file 185
+05/08/2021 02:04:11 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00186.h264
+05/08/2021 02:05:11 PM INFO     Recording saved to file 186
+05/08/2021 02:05:11 PM INFO     fileNumber: 186 saved in Json config file
+05/08/2021 02:05:11 PM INFO     Checking disk Space...
+05/08/2021 02:05:11 PM INFO     Recording stopped for file 186
+05/08/2021 02:05:11 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00187.h264
+05/08/2021 02:06:12 PM INFO     Recording saved to file 187
+05/08/2021 02:06:12 PM INFO     fileNumber: 187 saved in Json config file
+05/08/2021 02:06:12 PM INFO     Checking disk Space...
+05/08/2021 02:06:12 PM INFO     Recording stopped for file 187
+05/08/2021 02:06:12 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00188.h264
+05/08/2021 02:07:12 PM INFO     Recording saved to file 188
+05/08/2021 02:07:12 PM INFO     fileNumber: 188 saved in Json config file
+05/08/2021 02:07:12 PM INFO     Checking disk Space...
+05/08/2021 02:07:12 PM INFO     Recording stopped for file 188
+05/08/2021 02:07:12 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00189.h264
+05/08/2021 02:08:12 PM INFO     Recording saved to file 189
+05/08/2021 02:08:12 PM INFO     fileNumber: 189 saved in Json config file
+05/08/2021 02:08:12 PM INFO     Checking disk Space...
+05/08/2021 02:08:12 PM INFO     Recording stopped for file 189
+05/08/2021 02:08:13 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00190.h264
+05/08/2021 02:09:13 PM INFO     Recording saved to file 190
+05/08/2021 02:09:13 PM INFO     fileNumber: 190 saved in Json config file
+05/08/2021 02:09:13 PM INFO     Checking disk Space...
+05/08/2021 02:09:13 PM INFO     Recording stopped for file 190
+05/08/2021 02:09:13 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00191.h264
+05/08/2021 02:10:13 PM INFO     Recording saved to file 191
+05/08/2021 02:10:13 PM INFO     fileNumber: 191 saved in Json config file
+05/08/2021 02:10:13 PM INFO     Checking disk Space...
+05/08/2021 02:10:13 PM INFO     Recording stopped for file 191
+05/08/2021 02:10:13 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00192.h264
+05/08/2021 02:11:13 PM INFO     Recording saved to file 192
+05/08/2021 02:11:13 PM INFO     fileNumber: 192 saved in Json config file
+05/08/2021 02:11:13 PM INFO     Checking disk Space...
+05/08/2021 02:11:13 PM INFO     Recording stopped for file 192
+05/08/2021 02:11:14 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00193.h264
+05/08/2021 02:12:14 PM INFO     Recording saved to file 193
+05/08/2021 02:12:14 PM INFO     fileNumber: 193 saved in Json config file
+05/08/2021 02:12:14 PM INFO     Checking disk Space...
+05/08/2021 02:12:14 PM INFO     Recording stopped for file 193
+05/08/2021 02:12:14 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00194.h264
+05/08/2021 02:13:14 PM INFO     Recording saved to file 194
+05/08/2021 02:13:14 PM INFO     fileNumber: 194 saved in Json config file
+05/08/2021 02:13:14 PM INFO     Checking disk Space...
+05/08/2021 02:13:14 PM INFO     Recording stopped for file 194
+05/08/2021 02:13:14 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00195.h264
+05/08/2021 02:14:14 PM INFO     Recording saved to file 195
+05/08/2021 02:14:14 PM INFO     fileNumber: 195 saved in Json config file
+05/08/2021 02:14:14 PM INFO     Checking disk Space...
+05/08/2021 02:14:14 PM INFO     Recording stopped for file 195
+05/08/2021 02:14:15 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00196.h264
+05/08/2021 02:15:15 PM INFO     Recording saved to file 196
+05/08/2021 02:15:15 PM INFO     fileNumber: 196 saved in Json config file
+05/08/2021 02:15:15 PM INFO     Checking disk Space...
+05/08/2021 02:15:15 PM INFO     Recording stopped for file 196
+05/08/2021 02:15:15 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00197.h264
+05/08/2021 02:16:15 PM INFO     Recording saved to file 197
+05/08/2021 02:16:15 PM INFO     fileNumber: 197 saved in Json config file
+05/08/2021 02:16:15 PM INFO     Checking disk Space...
+05/08/2021 02:16:15 PM INFO     Recording stopped for file 197
+05/08/2021 02:16:15 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00198.h264
+05/08/2021 02:17:15 PM INFO     Recording saved to file 198
+05/08/2021 02:17:15 PM INFO     fileNumber: 198 saved in Json config file
+05/08/2021 02:17:15 PM INFO     Checking disk Space...
+05/08/2021 02:17:16 PM INFO     Recording stopped for file 198
+05/08/2021 02:17:16 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00199.h264
+05/08/2021 02:18:16 PM INFO     Recording saved to file 199
+05/08/2021 02:18:16 PM INFO     fileNumber: 199 saved in Json config file
+05/08/2021 02:18:16 PM INFO     Checking disk Space...
+05/08/2021 02:18:16 PM INFO     Recording stopped for file 199
+05/08/2021 02:18:16 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00200.h264
+05/08/2021 02:19:16 PM INFO     Recording saved to file 200
+05/08/2021 02:19:16 PM INFO     fileNumber: 200 saved in Json config file
+05/08/2021 02:19:16 PM INFO     Checking disk Space...
+05/08/2021 02:19:16 PM INFO     Recording stopped for file 200
+05/08/2021 02:19:17 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00201.h264
+05/08/2021 02:20:17 PM INFO     Recording saved to file 201
+05/08/2021 02:20:17 PM INFO     fileNumber: 201 saved in Json config file
+05/08/2021 02:20:17 PM INFO     Checking disk Space...
+05/08/2021 02:20:17 PM INFO     Recording stopped for file 201
+05/08/2021 02:20:17 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00202.h264
+05/08/2021 02:21:17 PM INFO     Recording saved to file 202
+05/08/2021 02:21:17 PM INFO     fileNumber: 202 saved in Json config file
+05/08/2021 02:21:17 PM INFO     Checking disk Space...
+05/08/2021 02:21:17 PM INFO     Recording stopped for file 202
+05/08/2021 02:21:17 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00203.h264
+05/08/2021 02:22:17 PM INFO     Recording saved to file 203
+05/08/2021 02:22:17 PM INFO     fileNumber: 203 saved in Json config file
+05/08/2021 02:22:17 PM INFO     Checking disk Space...
+05/08/2021 02:22:17 PM INFO     Recording stopped for file 203
+05/08/2021 02:22:18 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00204.h264
+05/08/2021 02:23:18 PM INFO     Recording saved to file 204
+05/08/2021 02:23:18 PM INFO     fileNumber: 204 saved in Json config file
+05/08/2021 02:23:18 PM INFO     Checking disk Space...
+05/08/2021 02:23:18 PM INFO     Recording stopped for file 204
+05/08/2021 02:23:18 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00205.h264
+05/08/2021 02:24:18 PM INFO     Recording saved to file 205
+05/08/2021 02:24:18 PM INFO     fileNumber: 205 saved in Json config file
+05/08/2021 02:24:18 PM INFO     Checking disk Space...
+05/08/2021 02:24:18 PM INFO     Recording stopped for file 205
+05/08/2021 02:24:18 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00206.h264
+05/08/2021 02:25:19 PM INFO     Recording saved to file 206
+05/08/2021 02:25:19 PM INFO     fileNumber: 206 saved in Json config file
+05/08/2021 02:25:19 PM INFO     Checking disk Space...
+05/08/2021 02:25:19 PM INFO     Recording stopped for file 206
+05/08/2021 02:25:19 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00207.h264
+05/08/2021 02:26:19 PM INFO     Recording saved to file 207
+05/08/2021 02:26:19 PM INFO     fileNumber: 207 saved in Json config file
+05/08/2021 02:26:19 PM INFO     Checking disk Space...
+05/08/2021 02:26:19 PM INFO     Recording stopped for file 207
+05/08/2021 02:26:19 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00208.h264
+05/08/2021 02:27:19 PM INFO     Recording saved to file 208
+05/08/2021 02:27:19 PM INFO     fileNumber: 208 saved in Json config file
+05/08/2021 02:27:19 PM INFO     Checking disk Space...
+05/08/2021 02:27:19 PM INFO     Recording stopped for file 208
+05/08/2021 02:27:20 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00209.h264
+05/08/2021 02:28:20 PM INFO     Recording saved to file 209
+05/08/2021 02:28:20 PM INFO     fileNumber: 209 saved in Json config file
+05/08/2021 02:28:20 PM INFO     Checking disk Space...
+05/08/2021 02:28:20 PM INFO     Recording stopped for file 209
+05/08/2021 02:28:20 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00210.h264
+05/08/2021 02:29:20 PM INFO     Recording saved to file 210
+05/08/2021 02:29:20 PM INFO     fileNumber: 210 saved in Json config file
+05/08/2021 02:29:20 PM INFO     Checking disk Space...
+05/08/2021 02:29:20 PM INFO     Recording stopped for file 210
+05/08/2021 02:29:20 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00211.h264
+05/08/2021 02:30:20 PM INFO     Recording saved to file 211
+05/08/2021 02:30:20 PM INFO     fileNumber: 211 saved in Json config file
+05/08/2021 02:30:20 PM INFO     Checking disk Space...
+05/08/2021 02:30:20 PM INFO     Recording stopped for file 211
+05/08/2021 02:30:21 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00212.h264
+05/08/2021 02:31:21 PM INFO     Recording saved to file 212
+05/08/2021 02:31:21 PM INFO     fileNumber: 212 saved in Json config file
+05/08/2021 02:31:21 PM INFO     Checking disk Space...
+05/08/2021 02:31:21 PM INFO     Recording stopped for file 212
+05/08/2021 02:31:21 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00213.h264
+05/08/2021 02:32:21 PM INFO     Recording saved to file 213
+05/08/2021 02:32:21 PM INFO     fileNumber: 213 saved in Json config file
+05/08/2021 02:32:21 PM INFO     Checking disk Space...
+05/08/2021 02:32:21 PM INFO     Recording stopped for file 213
+05/08/2021 02:32:21 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00214.h264
+05/08/2021 02:33:22 PM INFO     Recording saved to file 214
+05/08/2021 02:33:22 PM INFO     fileNumber: 214 saved in Json config file
+05/08/2021 02:33:22 PM INFO     Checking disk Space...
+05/08/2021 02:33:22 PM INFO     Recording stopped for file 214
+05/08/2021 02:33:22 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00215.h264
+05/08/2021 02:34:22 PM INFO     Recording saved to file 215
+05/08/2021 02:34:22 PM INFO     fileNumber: 215 saved in Json config file
+05/08/2021 02:34:22 PM INFO     Checking disk Space...
+05/08/2021 02:34:22 PM INFO     Recording stopped for file 215
+05/08/2021 02:34:22 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00216.h264
+05/08/2021 02:35:22 PM INFO     Recording saved to file 216
+05/08/2021 02:35:22 PM INFO     fileNumber: 216 saved in Json config file
+05/08/2021 02:35:22 PM INFO     Checking disk Space...
+05/08/2021 02:35:22 PM INFO     Recording stopped for file 216
+05/08/2021 02:35:22 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00217.h264
+05/08/2021 02:36:23 PM INFO     Recording saved to file 217
+05/08/2021 02:36:23 PM INFO     fileNumber: 217 saved in Json config file
+05/08/2021 02:36:23 PM INFO     Checking disk Space...
+05/08/2021 02:36:23 PM INFO     Recording stopped for file 217
+05/08/2021 02:36:23 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00218.h264
+05/08/2021 02:37:23 PM INFO     Recording saved to file 218
+05/08/2021 02:37:23 PM INFO     fileNumber: 218 saved in Json config file
+05/08/2021 02:37:23 PM INFO     Checking disk Space...
+05/08/2021 02:37:23 PM INFO     Recording stopped for file 218
+05/08/2021 02:37:23 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00219.h264
+05/08/2021 02:38:23 PM INFO     Recording saved to file 219
+05/08/2021 02:38:24 PM INFO     fileNumber: 219 saved in Json config file
+05/08/2021 02:38:24 PM INFO     Checking disk Space...
+05/08/2021 02:38:24 PM INFO     Recording stopped for file 219
+05/08/2021 02:38:24 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00220.h264
+05/08/2021 02:39:24 PM INFO     Recording saved to file 220
+05/08/2021 02:39:24 PM INFO     fileNumber: 220 saved in Json config file
+05/08/2021 02:39:24 PM INFO     Checking disk Space...
+05/08/2021 02:39:24 PM INFO     Recording stopped for file 220
+05/08/2021 02:39:24 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00221.h264
+05/08/2021 02:40:24 PM INFO     Recording saved to file 221
+05/08/2021 02:40:24 PM INFO     fileNumber: 221 saved in Json config file
+05/08/2021 02:40:24 PM INFO     Checking disk Space...
+05/08/2021 02:40:24 PM INFO     Recording stopped for file 221
+05/08/2021 02:40:24 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00222.h264
+                                                                                                                                                                                                                                                                                                                                                                      05/08/2021 02:18:14 PM INFO     Dash Cam Started.
+05/08/2021 02:18:16 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00222.h264
+05/08/2021 04:41:41 PM INFO     Recording saved to file 222
+05/08/2021 04:41:41 PM INFO     fileNumber: 222 saved in Json config file
+05/08/2021 04:41:41 PM INFO     Checking disk Space...
+05/08/2021 04:41:41 PM INFO     Recording stopped for file 222
+05/08/2021 04:41:42 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00223.h264
+05/08/2021 04:42:42 PM INFO     Recording saved to file 223
+05/08/2021 04:42:42 PM INFO     fileNumber: 223 saved in Json config file
+05/08/2021 04:42:42 PM INFO     Checking disk Space...
+05/08/2021 04:42:43 PM INFO     Recording stopped for file 223
+05/08/2021 04:42:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00224.h264
+05/08/2021 04:43:43 PM INFO     Recording saved to file 224
+05/08/2021 04:43:43 PM INFO     fileNumber: 224 saved in Json config file
+05/08/2021 04:43:43 PM INFO     Checking disk Space...
+05/08/2021 04:43:43 PM INFO     Recording stopped for file 224
+05/08/2021 04:43:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00225.h264
+05/08/2021 04:44:43 PM INFO     Recording saved to file 225
+05/08/2021 04:44:43 PM INFO     fileNumber: 225 saved in Json config file
+05/08/2021 04:44:43 PM INFO     Checking disk Space...
+05/08/2021 04:44:43 PM INFO     Recording stopped for file 225
+05/08/2021 04:44:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00226.h264
+05/08/2021 04:45:44 PM INFO     Recording saved to file 226
+05/08/2021 04:45:44 PM INFO     fileNumber: 226 saved in Json config file
+05/08/2021 04:45:44 PM INFO     Checking disk Space...
+05/08/2021 04:45:44 PM INFO     Recording stopped for file 226
+05/08/2021 04:45:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00227.h264
+05/08/2021 04:46:15 PM INFO     Connected to wi-fi, ip is : b'192.168.0.200 \n'
+05/08/2021 04:46:16 PM INFO     Connected to internet successfuly, sending email..
+192.168.0.200
+05/08/2021 04:46:44 PM INFO     Recording saved to file 227
+05/08/2021 04:46:44 PM INFO     fileNumber: 227 saved in Json config file
+05/08/2021 04:46:44 PM INFO     Checking disk Space...
+05/08/2021 04:46:44 PM INFO     Recording stopped for file 227
+05/08/2021 04:46:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00228.h264
+05/08/2021 04:47:44 PM INFO     Recording saved to file 228
+05/08/2021 04:47:44 PM INFO     fileNumber: 228 saved in Json config file
+05/08/2021 04:47:44 PM INFO     Checking disk Space...
+05/08/2021 04:47:44 PM INFO     Recording stopped for file 228
+05/08/2021 04:47:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00229.h264
+05/08/2021 04:48:45 PM INFO     Recording saved to file 229
+05/08/2021 04:48:45 PM INFO     fileNumber: 229 saved in Json config file
+05/08/2021 04:48:45 PM INFO     Checking disk Space...
+05/08/2021 04:48:45 PM INFO     Recording stopped for file 229
+05/08/2021 04:48:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00230.h264
+05/08/2021 04:49:45 PM INFO     Recording saved to file 230
+05/08/2021 04:49:45 PM INFO     fileNumber: 230 saved in Json config file
+05/08/2021 04:49:45 PM INFO     Checking disk Space...
+05/08/2021 04:49:45 PM INFO     Recording stopped for file 230
+05/08/2021 04:49:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00231.h264
+05/08/2021 04:50:45 PM INFO     Recording saved to file 231
+05/08/2021 04:50:45 PM INFO     fileNumber: 231 saved in Json config file
+05/08/2021 04:50:45 PM INFO     Checking disk Space...
+05/08/2021 04:50:45 PM INFO     Recording stopped for file 231
+05/08/2021 04:50:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00232.h264
+05/08/2021 04:51:46 PM INFO     Recording saved to file 232
+05/08/2021 04:51:46 PM INFO     fileNumber: 232 saved in Json config file
+05/08/2021 04:51:46 PM INFO     Checking disk Space...
+05/08/2021 04:51:46 PM INFO     Recording stopped for file 232
+05/08/2021 04:51:46 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00233.h264
+05/08/2021 04:52:46 PM INFO     Recording saved to file 233
+05/08/2021 04:52:46 PM INFO     fileNumber: 233 saved in Json config file
+05/08/2021 04:52:46 PM INFO     Checking disk Space...
+05/08/2021 04:52:46 PM INFO     Recording stopped for file 233
+05/08/2021 04:52:46 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00234.h264
+05/08/2021 04:53:46 PM INFO     Recording saved to file 234
+05/08/2021 04:53:46 PM INFO     fileNumber: 234 saved in Json config file
+05/08/2021 04:53:46 PM INFO     Checking disk Space...
+05/08/2021 04:53:46 PM INFO     Recording stopped for file 234
+05/08/2021 04:53:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00235.h264
+05/08/2021 04:54:47 PM INFO     Recording saved to file 235
+05/08/2021 04:54:47 PM INFO     fileNumber: 235 saved in Json config file
+05/08/2021 04:54:47 PM INFO     Checking disk Space...
+05/08/2021 04:54:47 PM INFO     Recording stopped for file 235
+05/08/2021 04:54:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00236.h264
+05/08/2021 04:55:47 PM INFO     Recording saved to file 236
+05/08/2021 04:55:47 PM INFO     fileNumber: 236 saved in Json config file
+05/08/2021 04:55:47 PM INFO     Checking disk Space...
+05/08/2021 04:55:47 PM INFO     Recording stopped for file 236
+05/08/2021 04:55:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00237.h264
+05/08/2021 04:56:47 PM INFO     Recording saved to file 237
+05/08/2021 04:56:47 PM INFO     fileNumber: 237 saved in Json config file
+05/08/2021 04:56:47 PM INFO     Checking disk Space...
+05/08/2021 04:56:47 PM INFO     Recording stopped for file 237
+05/08/2021 04:56:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00238.h264
+05/08/2021 04:57:48 PM INFO     Recording saved to file 238
+05/08/2021 04:57:48 PM INFO     fileNumber: 238 saved in Json config file
+05/08/2021 04:57:48 PM INFO     Checking disk Space...
+05/08/2021 04:57:48 PM INFO     Recording stopped for file 238
+05/08/2021 04:57:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00239.h264
+05/08/2021 04:58:48 PM INFO     Recording saved to file 239
+05/08/2021 04:58:48 PM INFO     fileNumber: 239 saved in Json config file
+05/08/2021 04:58:48 PM INFO     Checking disk Space...
+05/08/2021 04:58:48 PM INFO     Recording stopped for file 239
+05/08/2021 04:58:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00240.h264
+05/08/2021 04:59:49 PM INFO     Recording saved to file 240
+05/08/2021 04:59:49 PM INFO     fileNumber: 240 saved in Json config file
+05/08/2021 04:59:49 PM INFO     Checking disk Space...
+05/08/2021 04:59:49 PM INFO     Recording stopped for file 240
+05/08/2021 04:59:49 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00241.h264
+05/08/2021 05:00:49 PM INFO     Recording saved to file 241
+05/08/2021 05:00:49 PM INFO     fileNumber: 241 saved in Json config file
+05/08/2021 05:00:49 PM INFO     Checking disk Space...
+05/08/2021 05:00:49 PM INFO     Recording stopped for file 241
+05/08/2021 05:00:49 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00242.h264
+05/08/2021 05:01:49 PM INFO     Recording saved to file 242
+05/08/2021 05:01:49 PM INFO     fileNumber: 242 saved in Json config file
+05/08/2021 05:01:49 PM INFO     Checking disk Space...
+05/08/2021 05:01:49 PM INFO     Recording stopped for file 242
+05/08/2021 05:01:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00243.h264
+05/08/2021 05:02:50 PM INFO     Recording saved to file 243
+05/08/2021 05:02:50 PM INFO     fileNumber: 243 saved in Json config file
+05/08/2021 05:02:50 PM INFO     Checking disk Space...
+05/08/2021 05:02:50 PM INFO     Recording stopped for file 243
+05/08/2021 05:02:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00244.h264
+05/08/2021 05:03:50 PM INFO     Recording saved to file 244
+05/08/2021 05:03:50 PM INFO     fileNumber: 244 saved in Json config file
+05/08/2021 05:03:50 PM INFO     Checking disk Space...
+05/08/2021 05:03:50 PM INFO     Recording stopped for file 244
+05/08/2021 05:03:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00245.h264
+05/08/2021 05:04:50 PM INFO     Recording saved to file 245
+05/08/2021 05:04:50 PM INFO     fileNumber: 245 saved in Json config file
+05/08/2021 05:04:50 PM INFO     Checking disk Space...
+05/08/2021 05:04:50 PM INFO     Recording stopped for file 245
+05/08/2021 05:04:51 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00246.h264
+05/08/2021 05:05:51 PM INFO     Recording saved to file 246
+05/08/2021 05:05:51 PM INFO     fileNumber: 246 saved in Json config file
+05/08/2021 05:05:51 PM INFO     Checking disk Space...
+05/08/2021 05:05:51 PM INFO     Recording stopped for file 246
+05/08/2021 05:05:51 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00247.h264
+05/08/2021 05:06:51 PM INFO     Recording saved to file 247
+05/08/2021 05:06:51 PM INFO     fileNumber: 247 saved in Json config file
+05/08/2021 05:06:51 PM INFO     Checking disk Space...
+05/08/2021 05:06:51 PM INFO     Recording stopped for file 247
+05/08/2021 05:06:51 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00248.h264
+05/08/2021 05:07:51 PM INFO     Recording saved to file 248
+05/08/2021 05:07:51 PM INFO     fileNumber: 248 saved in Json config file
+05/08/2021 05:07:52 PM INFO     Checking disk Space...
+05/08/2021 05:07:52 PM INFO     Recording stopped for file 248
+05/08/2021 05:07:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00249.h264
+05/08/2021 05:08:52 PM INFO     Recording saved to file 249
+05/08/2021 05:08:52 PM INFO     fileNumber: 249 saved in Json config file
+05/08/2021 05:08:52 PM INFO     Checking disk Space...
+05/08/2021 05:08:52 PM INFO     Recording stopped for file 249
+05/08/2021 05:08:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00250.h264
+05/08/2021 05:09:52 PM INFO     Recording saved to file 250
+05/08/2021 05:09:52 PM INFO     fileNumber: 250 saved in Json config file
+05/08/2021 05:09:52 PM INFO     Checking disk Space...
+05/08/2021 05:09:52 PM INFO     Recording stopped for file 250
+05/08/2021 05:09:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00251.h264
+05/08/2021 05:10:53 PM INFO     Recording saved to file 251
+05/08/2021 05:10:53 PM INFO     fileNumber: 251 saved in Json config file
+05/08/2021 05:10:53 PM INFO     Checking disk Space...
+05/08/2021 05:10:53 PM INFO     Recording stopped for file 251
+05/08/2021 05:10:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00252.h264
+05/08/2021 05:11:53 PM INFO     Recording saved to file 252
+05/08/2021 05:11:53 PM INFO     fileNumber: 252 saved in Json config file
+05/08/2021 05:11:53 PM INFO     Checking disk Space...
+05/08/2021 05:11:53 PM INFO     Recording stopped for file 252
+05/08/2021 05:11:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00253.h264
+05/08/2021 05:12:53 PM INFO     Recording saved to file 253
+05/08/2021 05:12:53 PM INFO     fileNumber: 253 saved in Json config file
+05/08/2021 05:12:53 PM INFO     Checking disk Space...
+05/08/2021 05:12:53 PM INFO     Recording stopped for file 253
+05/08/2021 05:12:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00254.h264
+05/08/2021 05:13:54 PM INFO     Recording saved to file 254
+05/08/2021 05:13:54 PM INFO     fileNumber: 254 saved in Json config file
+05/08/2021 05:13:54 PM INFO     Checking disk Space...
+05/08/2021 05:13:54 PM INFO     Recording stopped for file 254
+05/08/2021 05:13:54 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00255.h264
+05/08/2021 05:14:54 PM INFO     Recording saved to file 255
+05/08/2021 05:14:54 PM INFO     fileNumber: 255 saved in Json config file
+05/08/2021 05:14:54 PM INFO     Checking disk Space...
+05/08/2021 05:14:54 PM INFO     Recording stopped for file 255
+05/08/2021 05:14:54 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00256.h264
+05/08/2021 05:15:54 PM INFO     Recording saved to file 256
+05/08/2021 05:15:54 PM INFO     fileNumber: 256 saved in Json config file
+05/08/2021 05:15:54 PM INFO     Checking disk Space...
+05/08/2021 05:15:54 PM INFO     Recording stopped for file 256
+05/08/2021 05:15:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00257.h264
+05/08/2021 05:16:55 PM INFO     Recording saved to file 257
+05/08/2021 05:16:55 PM INFO     fileNumber: 257 saved in Json config file
+05/08/2021 05:16:55 PM INFO     Checking disk Space...
+05/08/2021 05:16:55 PM INFO     Recording stopped for file 257
+05/08/2021 05:16:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00258.h264
+05/08/2021 05:17:55 PM INFO     Recording saved to file 258
+05/08/2021 05:17:55 PM INFO     fileNumber: 258 saved in Json config file
+05/08/2021 05:17:55 PM INFO     Checking disk Space...
+05/08/2021 05:17:55 PM INFO     Recording stopped for file 258
+05/08/2021 05:17:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00259.h264
+05/08/2021 05:18:55 PM INFO     Recording saved to file 259
+05/08/2021 05:18:55 PM INFO     fileNumber: 259 saved in Json config file
+05/08/2021 05:18:55 PM INFO     Checking disk Space...
+05/08/2021 05:18:55 PM INFO     Recording stopped for file 259
+05/08/2021 05:18:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00260.h264
+05/08/2021 05:19:56 PM INFO     Recording saved to file 260
+05/08/2021 05:19:56 PM INFO     fileNumber: 260 saved in Json config file
+05/08/2021 05:19:56 PM INFO     Checking disk Space...
+05/08/2021 05:19:56 PM INFO     Recording stopped for file 260
+05/08/2021 05:19:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00261.h264
+05/08/2021 05:20:56 PM INFO     Recording saved to file 261
+05/08/2021 05:20:56 PM INFO     fileNumber: 261 saved in Json config file
+05/08/2021 05:20:56 PM INFO     Checking disk Space...
+05/08/2021 05:20:56 PM INFO     Recording stopped for file 261
+05/08/2021 05:20:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00262.h264
+05/08/2021 05:21:56 PM INFO     Recording saved to file 262
+05/08/2021 05:21:56 PM INFO     fileNumber: 262 saved in Json config file
+05/08/2021 05:21:56 PM INFO     Checking disk Space...
+05/08/2021 05:21:56 PM INFO     Recording stopped for file 262
+05/08/2021 05:21:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00263.h264
+05/08/2021 05:22:57 PM INFO     Recording saved to file 263
+05/08/2021 05:22:57 PM INFO     fileNumber: 263 saved in Json config file
+05/08/2021 05:22:57 PM INFO     Checking disk Space...
+05/08/2021 05:22:57 PM INFO     Recording stopped for file 263
+05/08/2021 05:22:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00264.h264
+05/08/2021 05:23:57 PM INFO     Recording saved to file 264
+05/08/2021 05:23:57 PM INFO     fileNumber: 264 saved in Json config file
+05/08/2021 05:23:57 PM INFO     Checking disk Space...
+05/08/2021 05:23:57 PM INFO     Recording stopped for file 264
+05/08/2021 05:23:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00265.h264
+05/08/2021 05:24:57 PM INFO     Recording saved to file 265
+05/08/2021 05:24:57 PM INFO     fileNumber: 265 saved in Json config file
+05/08/2021 05:24:58 PM INFO     Checking disk Space...
+05/08/2021 05:24:58 PM INFO     Recording stopped for file 265
+05/08/2021 05:24:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00266.h264
+05/08/2021 05:25:58 PM INFO     Recording saved to file 266
+05/08/2021 05:25:58 PM INFO     fileNumber: 266 saved in Json config file
+05/08/2021 05:25:58 PM INFO     Checking disk Space...
+05/08/2021 05:25:58 PM INFO     Recording stopped for file 266
+05/08/2021 05:25:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00267.h264
+05/08/2021 05:26:58 PM INFO     Recording saved to file 267
+05/08/2021 05:26:58 PM INFO     fileNumber: 267 saved in Json config file
+05/08/2021 05:26:58 PM INFO     Checking disk Space...
+05/08/2021 05:26:58 PM INFO     Recording stopped for file 267
+05/08/2021 05:26:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00268.h264
+05/08/2021 05:27:58 PM INFO     Recording saved to file 268
+05/08/2021 05:27:58 PM INFO     fileNumber: 268 saved in Json config file
+05/08/2021 05:27:58 PM INFO     Checking disk Space...
+05/08/2021 05:27:59 PM INFO     Recording stopped for file 268
+05/08/2021 05:27:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00269.h264
+05/08/2021 05:28:59 PM INFO     Recording saved to file 269
+05/08/2021 05:28:59 PM INFO     fileNumber: 269 saved in Json config file
+05/08/2021 05:28:59 PM INFO     Checking disk Space...
+05/08/2021 05:28:59 PM INFO     Recording stopped for file 269
+05/08/2021 05:28:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00270.h264
+05/08/2021 05:29:59 PM INFO     Recording saved to file 270
+05/08/2021 05:29:59 PM INFO     fileNumber: 270 saved in Json config file
+05/08/2021 05:29:59 PM INFO     Checking disk Space...
+05/08/2021 05:29:59 PM INFO     Recording stopped for file 270
+05/08/2021 05:29:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00271.h264
+05/08/2021 05:31:00 PM INFO     Recording saved to file 271
+05/08/2021 05:31:00 PM INFO     fileNumber: 271 saved in Json config file
+05/08/2021 05:31:00 PM INFO     Checking disk Space...
+05/08/2021 05:31:00 PM INFO     Recording stopped for file 271
+05/08/2021 05:31:00 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00272.h264
+05/08/2021 05:32:00 PM INFO     Recording saved to file 272
+05/08/2021 05:32:00 PM INFO     fileNumber: 272 saved in Json config file
+05/08/2021 05:32:00 PM INFO     Checking disk Space...
+05/08/2021 05:32:00 PM INFO     Recording stopped for file 272
+05/08/2021 05:32:00 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00273.h264
+05/08/2021 05:33:00 PM INFO     Recording saved to file 273
+05/08/2021 05:33:00 PM INFO     fileNumber: 273 saved in Json config file
+05/08/2021 05:33:00 PM INFO     Checking disk Space...
+05/08/2021 05:33:00 PM INFO     Recording stopped for file 273
+05/08/2021 05:33:01 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00274.h264
+05/08/2021 05:34:01 PM INFO     Recording saved to file 274
+05/08/2021 05:34:01 PM INFO     fileNumber: 274 saved in Json config file
+05/08/2021 05:34:01 PM INFO     Checking disk Space...
+05/08/2021 05:34:01 PM INFO     Recording stopped for file 274
+05/08/2021 05:34:01 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00275.h264
+05/08/2021 05:35:01 PM INFO     Recording saved to file 275
+05/08/2021 05:35:01 PM INFO     fileNumber: 275 saved in Json config file
+05/08/2021 05:35:01 PM INFO     Checking disk Space...
+05/08/2021 05:35:01 PM INFO     Recording stopped for file 275
+05/08/2021 05:35:01 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00276.h264
+05/08/2021 05:36:01 PM INFO     Recording saved to file 276
+05/08/2021 05:36:01 PM INFO     fileNumber: 276 saved in Json config file
+05/08/2021 05:36:01 PM INFO     Checking disk Space...
+05/08/2021 05:36:01 PM INFO     Recording stopped for file 276
+05/08/2021 05:36:02 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00277.h264
+05/08/2021 05:37:02 PM INFO     Recording saved to file 277
+05/08/2021 05:37:02 PM INFO     fileNumber: 277 saved in Json config file
+05/08/2021 05:37:02 PM INFO     Checking disk Space...
+05/08/2021 05:37:02 PM INFO     Recording stopped for file 277
+05/08/2021 05:37:02 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00278.h264
+05/08/2021 05:38:02 PM INFO     Recording saved to file 278
+05/08/2021 05:38:02 PM INFO     fileNumber: 278 saved in Json config file
+05/08/2021 05:38:02 PM INFO     Checking disk Space...
+05/08/2021 05:38:02 PM INFO     Recording stopped for file 278
+05/08/2021 05:38:02 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00279.h264
+05/08/2021 05:39:02 PM INFO     Recording saved to file 279
+05/08/2021 05:39:02 PM INFO     fileNumber: 279 saved in Json config file
+05/08/2021 05:39:02 PM INFO     Checking disk Space...
+05/08/2021 05:39:02 PM INFO     Recording stopped for file 279
+05/08/2021 05:39:03 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00280.h264
+05/08/2021 05:40:03 PM INFO     Recording saved to file 280
+05/08/2021 05:40:03 PM INFO     fileNumber: 280 saved in Json config file
+05/08/2021 05:40:03 PM INFO     Checking disk Space...
+05/08/2021 05:40:03 PM INFO     Recording stopped for file 280
+05/08/2021 05:40:03 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00281.h264
+05/08/2021 05:41:03 PM INFO     Recording saved to file 281
+05/08/2021 05:41:03 PM INFO     fileNumber: 281 saved in Json config file
+05/08/2021 05:41:03 PM INFO     Checking disk Space...
+05/08/2021 05:41:03 PM INFO     Recording stopped for file 281
+05/08/2021 05:41:03 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00282.h264
+05/08/2021 05:42:03 PM INFO     Recording saved to file 282
+05/08/2021 05:42:03 PM INFO     fileNumber: 282 saved in Json config file
+05/08/2021 05:42:03 PM INFO     Checking disk Space...
+05/08/2021 05:42:04 PM INFO     Recording stopped for file 282
+05/08/2021 05:42:04 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00283.h264
+05/08/2021 05:43:04 PM INFO     Recording saved to file 283
+05/08/2021 05:43:04 PM INFO     fileNumber: 283 saved in Json config file
+05/08/2021 05:43:04 PM INFO     Checking disk Space...
+05/08/2021 05:43:04 PM INFO     Recording stopped for file 283
+05/08/2021 05:43:04 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00284.h264
+05/08/2021 05:44:04 PM INFO     Recording saved to file 284
+05/08/2021 05:44:04 PM INFO     fileNumber: 284 saved in Json config file
+05/08/2021 05:44:04 PM INFO     Checking disk Space...
+05/08/2021 05:44:04 PM INFO     Recording stopped for file 284
+05/08/2021 05:44:05 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00285.h264
+05/08/2021 05:45:05 PM INFO     Recording saved to file 285
+05/08/2021 05:45:05 PM INFO     fileNumber: 285 saved in Json config file
+05/08/2021 05:45:05 PM INFO     Checking disk Space...
+05/08/2021 05:45:05 PM INFO     Recording stopped for file 285
+05/08/2021 05:45:05 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00286.h264
+05/08/2021 05:46:05 PM INFO     Recording saved to file 286
+05/08/2021 05:46:05 PM INFO     fileNumber: 286 saved in Json config file
+05/08/2021 05:46:05 PM INFO     Checking disk Space...
+05/08/2021 05:46:05 PM INFO     Recording stopped for file 286
+05/08/2021 05:46:05 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00287.h264
+05/08/2021 05:47:05 PM INFO     Recording saved to file 287
+05/08/2021 05:47:05 PM INFO     fileNumber: 287 saved in Json config file
+05/08/2021 05:47:05 PM INFO     Checking disk Space...
+05/08/2021 05:47:05 PM INFO     Recording stopped for file 287
+05/08/2021 05:47:05 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00288.h264
+05/08/2021 05:48:05 PM INFO     Recording saved to file 288
+05/08/2021 05:48:05 PM INFO     fileNumber: 288 saved in Json config file
+05/08/2021 05:48:05 PM INFO     Checking disk Space...
+05/08/2021 05:48:06 PM INFO     Recording stopped for file 288
+05/08/2021 05:48:06 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00289.h264
+05/08/2021 05:49:06 PM INFO     Recording saved to file 289
+05/08/2021 05:49:06 PM INFO     fileNumber: 289 saved in Json config file
+05/08/2021 05:49:06 PM INFO     Checking disk Space...
+05/08/2021 05:49:06 PM INFO     Recording stopped for file 289
+05/08/2021 05:49:06 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00290.h264
+05/08/2021 05:50:06 PM INFO     Recording saved to file 290
+05/08/2021 05:50:06 PM INFO     fileNumber: 290 saved in Json config file
+05/08/2021 05:50:06 PM INFO     Checking disk Space...
+05/08/2021 05:50:06 PM INFO     Recording stopped for file 290
+05/08/2021 05:50:06 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00291.h264
+05/08/2021 05:51:07 PM INFO     Recording saved to file 291
+05/08/2021 05:51:07 PM INFO     fileNumber: 291 saved in Json config file
+05/08/2021 05:51:07 PM INFO     Checking disk Space...
+05/08/2021 05:51:07 PM INFO     Recording stopped for file 291
+05/08/2021 05:51:07 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00292.h264
+05/08/2021 05:52:07 PM INFO     Recording saved to file 292
+05/08/2021 05:52:07 PM INFO     fileNumber: 292 saved in Json config file
+05/08/2021 05:52:07 PM INFO     Checking disk Space...
+05/08/2021 05:52:07 PM INFO     Recording stopped for file 292
+05/08/2021 05:52:07 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00293.h264
+05/08/2021 05:53:07 PM INFO     Recording saved to file 293
+05/08/2021 05:53:07 PM INFO     fileNumber: 293 saved in Json config file
+05/08/2021 05:53:07 PM INFO     Checking disk Space...
+05/08/2021 05:53:07 PM INFO     Recording stopped for file 293
+05/08/2021 05:53:08 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00294.h264
+05/08/2021 05:54:08 PM INFO     Recording saved to file 294
+05/08/2021 05:54:08 PM INFO     fileNumber: 294 saved in Json config file
+05/08/2021 05:54:08 PM INFO     Checking disk Space...
+05/08/2021 05:54:08 PM INFO     Recording stopped for file 294
+05/08/2021 05:54:08 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00295.h264
+05/08/2021 05:55:08 PM INFO     Recording saved to file 295
+05/08/2021 05:55:08 PM INFO     fileNumber: 295 saved in Json config file
+05/08/2021 05:55:08 PM INFO     Checking disk Space...
+05/08/2021 05:55:08 PM INFO     Recording stopped for file 295
+05/08/2021 05:55:08 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00296.h264
+05/08/2021 05:56:08 PM INFO     Recording saved to file 296
+05/08/2021 05:56:08 PM INFO     fileNumber: 296 saved in Json config file
+05/08/2021 05:56:08 PM INFO     Checking disk Space...
+05/08/2021 05:56:09 PM INFO     Recording stopped for file 296
+05/08/2021 05:56:09 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00297.h264
+05/08/2021 05:57:09 PM INFO     Recording saved to file 297
+05/08/2021 05:57:09 PM INFO     fileNumber: 297 saved in Json config file
+05/08/2021 05:57:09 PM INFO     Checking disk Space...
+05/08/2021 05:57:09 PM INFO     Recording stopped for file 297
+05/08/2021 05:57:09 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00298.h264
+05/08/2021 05:58:09 PM INFO     Recording saved to file 298
+05/08/2021 05:58:09 PM INFO     fileNumber: 298 saved in Json config file
+05/08/2021 05:58:09 PM INFO     Checking disk Space...
+05/08/2021 05:58:09 PM INFO     Recording stopped for file 298
+05/08/2021 05:58:10 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00299.h264
+05/08/2021 05:59:10 PM INFO     Recording saved to file 299
+05/08/2021 05:59:10 PM INFO     fileNumber: 299 saved in Json config file
+05/08/2021 05:59:10 PM INFO     Checking disk Space...
+05/08/2021 05:59:10 PM INFO     Recording stopped for file 299
+05/08/2021 05:59:10 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00300.h264
+05/08/2021 06:00:10 PM INFO     Recording saved to file 300
+05/08/2021 06:00:10 PM INFO     fileNumber: 300 saved in Json config file
+05/08/2021 06:00:10 PM INFO     Checking disk Space...
+05/08/2021 06:00:10 PM INFO     Recording stopped for file 300
+05/08/2021 06:00:10 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00301.h264
+05/08/2021 06:01:10 PM INFO     Recording saved to file 301
+05/08/2021 06:01:10 PM INFO     fileNumber: 301 saved in Json config file
+05/08/2021 06:01:10 PM INFO     Checking disk Space...
+05/08/2021 06:01:10 PM INFO     Recording stopped for file 301
+05/08/2021 06:01:11 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00302.h264
+05/08/2021 06:02:11 PM INFO     Recording saved to file 302
+05/08/2021 06:02:11 PM INFO     fileNumber: 302 saved in Json config file
+05/08/2021 06:02:11 PM INFO     Checking disk Space...
+05/08/2021 06:02:11 PM INFO     Recording stopped for file 302
+05/08/2021 06:02:11 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00303.h264
+05/08/2021 06:03:11 PM INFO     Recording saved to file 303
+05/08/2021 06:03:11 PM INFO     fileNumber: 303 saved in Json config file
+05/08/2021 06:03:11 PM INFO     Checking disk Space...
+05/08/2021 06:03:11 PM INFO     Recording stopped for file 303
+05/08/2021 06:03:11 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00304.h264
+05/08/2021 06:04:11 PM INFO     Recording saved to file 304
+05/08/2021 06:04:11 PM INFO     fileNumber: 304 saved in Json config file
+05/08/2021 06:04:11 PM INFO     Checking disk Space...
+05/08/2021 06:04:11 PM INFO     Recording stopped for file 304
+05/08/2021 06:04:12 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00305.h264
+05/08/2021 06:05:12 PM INFO     Recording saved to file 305
+05/08/2021 06:05:12 PM INFO     fileNumber: 305 saved in Json config file
+05/08/2021 06:05:12 PM INFO     Checking disk Space...
+05/08/2021 06:05:12 PM INFO     Recording stopped for file 305
+05/08/2021 06:05:12 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00306.h264
+05/08/2021 06:06:12 PM INFO     Recording saved to file 306
+05/08/2021 06:06:12 PM INFO     fileNumber: 306 saved in Json config file
+05/08/2021 06:06:12 PM INFO     Checking disk Space...
+05/08/2021 06:06:12 PM INFO     Recording stopped for file 306
+05/08/2021 06:06:12 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00307.h264
+05/08/2021 06:07:12 PM INFO     Recording saved to file 307
+05/08/2021 06:07:12 PM INFO     fileNumber: 307 saved in Json config file
+05/08/2021 06:07:12 PM INFO     Checking disk Space...
+05/08/2021 06:07:12 PM INFO     Recording stopped for file 307
+05/08/2021 06:07:13 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00308.h264
+05/08/2021 06:08:13 PM INFO     Recording saved to file 308
+05/08/2021 06:08:13 PM INFO     fileNumber: 308 saved in Json config file
+05/08/2021 06:08:13 PM INFO     Checking disk Space...
+05/08/2021 06:08:13 PM INFO     Recording stopped for file 308
+05/08/2021 06:08:13 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00309.h264
+05/08/2021 06:09:13 PM INFO     Recording saved to file 309
+05/08/2021 06:09:13 PM INFO     fileNumber: 309 saved in Json config file
+05/08/2021 06:09:13 PM INFO     Checking disk Space...
+05/08/2021 06:09:13 PM INFO     Recording stopped for file 309
+05/08/2021 06:09:13 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00310.h264
+05/08/2021 06:10:13 PM INFO     Recording saved to file 310
+05/08/2021 06:10:14 PM INFO     fileNumber: 310 saved in Json config file
+05/08/2021 06:10:14 PM INFO     Checking disk Space...
+05/08/2021 06:10:14 PM INFO     Recording stopped for file 310
+05/08/2021 06:10:14 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00311.h264
+05/08/2021 06:11:14 PM INFO     Recording saved to file 311
+05/08/2021 06:11:14 PM INFO     fileNumber: 311 saved in Json config file
+05/08/2021 06:11:14 PM INFO     Checking disk Space...
+05/08/2021 06:11:14 PM INFO     Recording stopped for file 311
+05/08/2021 06:11:14 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00312.h264
+05/08/2021 06:12:14 PM INFO     Recording saved to file 312
+05/08/2021 06:12:14 PM INFO     fileNumber: 312 saved in Json config file
+05/08/2021 06:12:14 PM INFO     Checking disk Space...
+05/08/2021 06:12:14 PM INFO     Recording stopped for file 312
+05/08/2021 06:12:14 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00313.h264
+05/08/2021 06:13:14 PM INFO     Recording saved to file 313
+05/08/2021 06:13:14 PM INFO     fileNumber: 313 saved in Json config file
+05/08/2021 06:13:14 PM INFO     Checking disk Space...
+05/08/2021 06:13:15 PM INFO     Recording stopped for file 313
+05/08/2021 06:13:15 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00314.h264
+05/08/2021 06:14:15 PM INFO     Recording saved to file 314
+05/08/2021 06:14:15 PM INFO     fileNumber: 314 saved in Json config file
+05/08/2021 06:14:15 PM INFO     Checking disk Space...
+05/08/2021 06:14:15 PM INFO     Recording stopped for file 314
+/home/pi/Raspi_DashCam/code/videos/Video00222.h264
+Recording to /home/pi/Raspi_DashCam/code/videos/video00222.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00223.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00224.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00225.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00226.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00227.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00228.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00229.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00230.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00231.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00232.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00233.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00234.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00235.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00236.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00237.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00238.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00239.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00240.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00241.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00242.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00243.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00244.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00245.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00246.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00247.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00248.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00249.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00250.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00251.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00252.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00253.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00254.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00255.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00256.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00257.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00258.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00259.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00260.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00261.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00262.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00263.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00264.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00265.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00266.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00267.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00268.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00269.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00270.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00271.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00272.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00273.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00274.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00275.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00276.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00277.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00278.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00279.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00280.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00281.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00282.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00283.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00284.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00285.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00286.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00287.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00288.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00289.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00290.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00291.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00292.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00293.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00294.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00295.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00296.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00297.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00298.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00299.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00300.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00301.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00302.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00303.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00304.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00305.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00306.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00307.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00308.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00309.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00310.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00311.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00312.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00313.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00314.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00315.h26405/08/2021 06:14:15 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00315.h264
+05/08/2021 06:15:15 PM INFO     Recording saved to file 315
+05/08/2021 06:15:15 PM INFO     fileNumber: 315 saved in Json config file
+05/08/2021 06:15:15 PM INFO     Checking disk Space...
+05/08/2021 06:15:15 PM INFO     Recording stopped for file 315
+05/08/2021 06:15:15 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00316.h264
+05/08/2021 06:16:15 PM INFO     Recording saved to file 316
+05/08/2021 06:16:15 PM INFO     fileNumber: 316 saved in Json config file
+05/08/2021 06:16:15 PM INFO     Checking disk Space...
+05/08/2021 06:16:16 PM INFO     Recording stopped for file 316
+05/08/2021 06:16:16 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00317.h264
+05/08/2021 06:17:16 PM INFO     Recording saved to file 317
+05/08/2021 06:17:16 PM INFO     fileNumber: 317 saved in Json config file
+05/08/2021 06:17:16 PM INFO     Checking disk Space...
+05/08/2021 06:17:16 PM INFO     Recording stopped for file 317
+05/08/2021 06:17:16 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00318.h264
+05/08/2021 06:18:16 PM INFO     Recording saved to file 318
+05/08/2021 06:18:16 PM INFO     fileNumber: 318 saved in Json config file
+05/08/2021 06:18:16 PM INFO     Checking disk Space...
+05/08/2021 06:18:16 PM INFO     Recording stopped for file 318
+05/08/2021 06:18:16 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00319.h264
+05/08/2021 06:19:17 PM INFO     Recording saved to file 319
+05/08/2021 06:19:17 PM INFO     fileNumber: 319 saved in Json config file
+05/08/2021 06:19:17 PM INFO     Checking disk Space...
+05/08/2021 06:19:17 PM INFO     Recording stopped for file 319
+05/08/2021 06:19:17 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00320.h264
+05/08/2021 06:20:17 PM INFO     Recording saved to file 320
+05/08/2021 06:20:17 PM INFO     fileNumber: 320 saved in Json config file
+05/08/2021 06:20:17 PM INFO     Checking disk Space...
+05/08/2021 06:20:17 PM INFO     Recording stopped for file 320
+05/08/2021 06:20:17 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00321.h264
+05/08/2021 06:21:17 PM INFO     Recording saved to file 321
+05/08/2021 06:21:17 PM INFO     fileNumber: 321 saved in Json config file
+05/08/2021 06:21:17 PM INFO     Checking disk Space...
+05/08/2021 06:21:17 PM INFO     Recording stopped for file 321
+05/08/2021 06:21:18 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00322.h264
+05/08/2021 06:22:18 PM INFO     Recording saved to file 322
+05/08/2021 06:22:18 PM INFO     fileNumber: 322 saved in Json config file
+05/08/2021 06:22:18 PM INFO     Checking disk Space...
+05/08/2021 06:22:18 PM INFO     Recording stopped for file 322
+05/08/2021 06:22:18 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00323.h264
+05/08/2021 06:23:18 PM INFO     Recording saved to file 323
+05/08/2021 06:23:18 PM INFO     fileNumber: 323 saved in Json config file
+05/08/2021 06:23:18 PM INFO     Checking disk Space...
+05/08/2021 06:23:18 PM INFO     Recording stopped for file 323
+05/08/2021 06:23:18 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00324.h264
+05/08/2021 06:24:18 PM INFO     Recording saved to file 324
+05/08/2021 06:24:18 PM INFO     fileNumber: 324 saved in Json config file
+05/08/2021 06:24:18 PM INFO     Checking disk Space...
+05/08/2021 06:24:19 PM INFO     Recording stopped for file 324
+05/08/2021 06:24:19 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00325.h264
+05/08/2021 06:25:19 PM INFO     Recording saved to file 325
+05/08/2021 06:25:19 PM INFO     fileNumber: 325 saved in Json config file
+05/08/2021 06:25:19 PM INFO     Checking disk Space...
+05/08/2021 06:25:19 PM INFO     Recording stopped for file 325
+05/08/2021 06:25:19 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00326.h264
+05/08/2021 06:26:19 PM INFO     Recording saved to file 326
+05/08/2021 06:26:19 PM INFO     fileNumber: 326 saved in Json config file
+05/08/2021 06:26:19 PM INFO     Checking disk Space...
+05/08/2021 06:26:19 PM INFO     Recording stopped for file 326
+05/08/2021 06:26:19 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00327.h264
+05/08/2021 06:27:19 PM INFO     Recording saved to file 327
+05/08/2021 06:27:19 PM INFO     fileNumber: 327 saved in Json config file
+05/08/2021 06:27:20 PM INFO     Checking disk Space...
+05/08/2021 06:27:20 PM INFO     Recording stopped for file 327
+05/08/2021 06:27:20 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00328.h264
+05/08/2021 06:28:20 PM INFO     Recording saved to file 328
+05/08/2021 06:28:20 PM INFO     fileNumber: 328 saved in Json config file
+05/08/2021 06:28:20 PM INFO     Checking disk Space...
+05/08/2021 06:28:20 PM INFO     Recording stopped for file 328
+05/08/2021 06:28:20 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00329.h264
+05/08/2021 06:29:20 PM INFO     Recording saved to file 329
+05/08/2021 06:29:20 PM INFO     fileNumber: 329 saved in Json config file
+05/08/2021 06:29:20 PM INFO     Checking disk Space...
+05/08/2021 06:29:20 PM INFO     Recording stopped for file 329
+05/08/2021 06:29:20 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00330.h264
+05/08/2021 06:30:21 PM INFO     Recording saved to file 330
+05/08/2021 06:30:21 PM INFO     fileNumber: 330 saved in Json config file
+05/08/2021 06:30:21 PM INFO     Checking disk Space...
+05/08/2021 06:30:21 PM INFO     Recording stopped for file 330
+05/08/2021 06:30:21 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00331.h264
+05/08/2021 06:31:21 PM INFO     Recording saved to file 331
+05/08/2021 06:31:21 PM INFO     fileNumber: 331 saved in Json config file
+05/08/2021 06:31:21 PM INFO     Checking disk Space...
+05/08/2021 06:31:21 PM INFO     Recording stopped for file 331
+05/08/2021 06:31:21 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00332.h264
+05/08/2021 06:32:21 PM INFO     Recording saved to file 332
+05/08/2021 06:32:21 PM INFO     fileNumber: 332 saved in Json config file
+05/08/2021 06:32:21 PM INFO     Checking disk Space...
+05/08/2021 06:32:21 PM INFO     Recording stopped for file 332
+05/08/2021 06:32:21 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00333.h264
+05/08/2021 06:33:22 PM INFO     Recording saved to file 333
+05/08/2021 06:33:22 PM INFO     fileNumber: 333 saved in Json config file
+05/08/2021 06:33:22 PM INFO     Checking disk Space...
+05/08/2021 06:33:22 PM INFO     Recording stopped for file 333
+05/08/2021 06:33:22 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00334.h264
+05/08/2021 06:34:22 PM INFO     Recording saved to file 334
+05/08/2021 06:34:22 PM INFO     fileNumber: 334 saved in Json config file
+05/08/2021 06:34:22 PM INFO     Checking disk Space...
+05/08/2021 06:34:22 PM INFO     Recording stopped for file 334
+05/08/2021 06:34:22 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00335.h264
+05/08/2021 06:35:22 PM INFO     Recording saved to file 335
+05/08/2021 06:35:22 PM INFO     fileNumber: 335 saved in Json config file
+05/08/2021 06:35:22 PM INFO     Checking disk Space...
+05/08/2021 06:35:22 PM INFO     Recording stopped for file 335
+05/08/2021 06:35:23 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00336.h264
+05/08/2021 06:36:23 PM INFO     Recording saved to file 336
+05/08/2021 06:36:23 PM INFO     fileNumber: 336 saved in Json config file
+05/08/2021 06:36:23 PM INFO     Checking disk Space...
+05/08/2021 06:36:23 PM INFO     Recording stopped for file 336
+05/08/2021 06:36:23 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00337.h264
+05/08/2021 06:37:23 PM INFO     Recording saved to file 337
+05/08/2021 06:37:23 PM INFO     fileNumber: 337 saved in Json config file
+05/08/2021 06:37:23 PM INFO     Checking disk Space...
+05/08/2021 06:37:23 PM INFO     Recording stopped for file 337
+05/08/2021 06:37:23 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00338.h264
+05/08/2021 06:38:23 PM INFO     Recording saved to file 338
+05/08/2021 06:38:23 PM INFO     fileNumber: 338 saved in Json config file
+05/08/2021 06:38:23 PM INFO     Checking disk Space...
+05/08/2021 06:38:24 PM INFO     Recording stopped for file 338
+05/08/2021 06:38:24 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00339.h264
+05/08/2021 06:39:24 PM INFO     Recording saved to file 339
+05/08/2021 06:39:24 PM INFO     fileNumber: 339 saved in Json config file
+05/08/2021 06:39:24 PM INFO     Checking disk Space...
+05/08/2021 06:39:24 PM INFO     Recording stopped for file 339
+05/08/2021 06:39:24 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00340.h264
+05/08/2021 06:40:24 PM INFO     Recording saved to file 340
+05/08/2021 06:40:24 PM INFO     fileNumber: 340 saved in Json config file
+05/08/2021 06:40:24 PM INFO     Checking disk Space...
+05/08/2021 06:40:24 PM INFO     Recording stopped for file 340
+05/08/2021 06:40:24 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00341.h264
+05/08/2021 06:41:24 PM INFO     Recording saved to file 341
+05/08/2021 06:41:25 PM INFO     fileNumber: 341 saved in Json config file
+05/08/2021 06:41:25 PM INFO     Checking disk Space...
+05/08/2021 06:41:25 PM INFO     Recording stopped for file 341
+05/08/2021 06:41:25 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00342.h264
+05/08/2021 06:42:25 PM INFO     Recording saved to file 342
+05/08/2021 06:42:25 PM INFO     fileNumber: 342 saved in Json config file
+05/08/2021 06:42:25 PM INFO     Checking disk Space...
+05/08/2021 06:42:25 PM INFO     Recording stopped for file 342
+05/08/2021 06:42:25 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00343.h264
+05/08/2021 06:43:25 PM INFO     Recording saved to file 343
+05/08/2021 06:43:25 PM INFO     fileNumber: 343 saved in Json config file
+05/08/2021 06:43:25 PM INFO     Checking disk Space...
+05/08/2021 06:43:25 PM INFO     Recording stopped for file 343
+05/08/2021 06:43:25 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00344.h264
+05/08/2021 06:44:26 PM INFO     Recording saved to file 344
+05/08/2021 06:44:26 PM INFO     fileNumber: 344 saved in Json config file
+05/08/2021 06:44:26 PM INFO     Checking disk Space...
+05/08/2021 06:44:26 PM INFO     Recording stopped for file 344
+05/08/2021 06:44:26 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00345.h264
+05/08/2021 06:45:26 PM INFO     Recording saved to file 345
+05/08/2021 06:45:26 PM INFO     fileNumber: 345 saved in Json config file
+05/08/2021 06:45:26 PM INFO     Checking disk Space...
+05/08/2021 06:45:26 PM INFO     Recording stopped for file 345
+05/08/2021 06:45:26 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00346.h264
+05/08/2021 06:46:26 PM INFO     Recording saved to file 346
+05/08/2021 06:46:26 PM INFO     fileNumber: 346 saved in Json config file
+05/08/2021 06:46:26 PM INFO     Checking disk Space...
+05/08/2021 06:46:26 PM INFO     Recording stopped for file 346
+05/08/2021 06:46:26 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00347.h264
+05/08/2021 06:47:27 PM INFO     Recording saved to file 347
+05/08/2021 06:47:27 PM INFO     fileNumber: 347 saved in Json config file
+05/08/2021 06:47:27 PM INFO     Checking disk Space...
+05/08/2021 06:47:27 PM INFO     Recording stopped for file 347
+05/08/2021 06:47:27 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00348.h264
+05/08/2021 06:48:27 PM INFO     Recording saved to file 348
+05/08/2021 06:48:27 PM INFO     fileNumber: 348 saved in Json config file
+05/08/2021 06:48:27 PM INFO     Checking disk Space...
+05/08/2021 06:48:27 PM INFO     Recording stopped for file 348
+05/08/2021 06:48:27 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00349.h264
+05/08/2021 06:49:27 PM INFO     Recording saved to file 349
+05/08/2021 06:49:27 PM INFO     fileNumber: 349 saved in Json config file
+05/08/2021 06:49:27 PM INFO     Checking disk Space...
+05/08/2021 06:49:27 PM INFO     Recording stopped for file 349
+05/08/2021 06:49:28 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00350.h264
+05/08/2021 06:50:28 PM INFO     Recording saved to file 350
+05/08/2021 06:50:28 PM INFO     fileNumber: 350 saved in Json config file
+05/08/2021 06:50:28 PM INFO     Checking disk Space...
+05/08/2021 06:50:28 PM INFO     Recording stopped for file 350
+05/08/2021 06:50:28 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00351.h264
+05/08/2021 06:51:28 PM INFO     Recording saved to file 351
+05/08/2021 06:51:28 PM INFO     fileNumber: 351 saved in Json config file
+05/08/2021 06:51:28 PM INFO     Checking disk Space...
+05/08/2021 06:51:28 PM INFO     Recording stopped for file 351
+05/08/2021 06:51:29 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00352.h264
+05/08/2021 06:52:29 PM INFO     Recording saved to file 352
+05/08/2021 06:52:29 PM INFO     fileNumber: 352 saved in Json config file
+05/08/2021 06:52:29 PM INFO     Checking disk Space...
+05/08/2021 06:52:29 PM INFO     Recording stopped for file 352
+05/08/2021 06:52:29 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00353.h264
+05/08/2021 06:53:29 PM INFO     Recording saved to file 353
+05/08/2021 06:53:29 PM INFO     fileNumber: 353 saved in Json config file
+05/08/2021 06:53:29 PM INFO     Checking disk Space...
+05/08/2021 06:53:29 PM INFO     Recording stopped for file 353
+05/08/2021 06:53:29 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00354.h264
+05/08/2021 06:54:29 PM INFO     Recording saved to file 354
+05/08/2021 06:54:29 PM INFO     fileNumber: 354 saved in Json config file
+05/08/2021 06:54:29 PM INFO     Checking disk Space...
+05/08/2021 06:54:29 PM INFO     Recording stopped for file 354
+05/08/2021 06:54:30 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00355.h264
+05/08/2021 06:55:30 PM INFO     Recording saved to file 355
+05/08/2021 06:55:30 PM INFO     fileNumber: 355 saved in Json config file
+05/08/2021 06:55:30 PM INFO     Checking disk Space...
+05/08/2021 06:55:30 PM INFO     Recording stopped for file 355
+05/08/2021 06:55:30 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00356.h264
+05/08/2021 06:56:30 PM INFO     Recording saved to file 356
+05/08/2021 06:56:30 PM INFO     fileNumber: 356 saved in Json config file
+05/08/2021 06:56:30 PM INFO     Checking disk Space...
+05/08/2021 06:56:30 PM INFO     Recording stopped for file 356
+05/08/2021 06:56:30 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00357.h264
+05/08/2021 06:57:30 PM INFO     Recording saved to file 357
+05/08/2021 06:57:30 PM INFO     fileNumber: 357 saved in Json config file
+05/08/2021 06:57:30 PM INFO     Checking disk Space...
+05/08/2021 06:57:30 PM INFO     Recording stopped for file 357
+05/08/2021 06:57:31 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00358.h264
+05/08/2021 06:58:31 PM INFO     Recording saved to file 358
+05/08/2021 06:58:31 PM INFO     fileNumber: 358 saved in Json config file
+05/08/2021 06:58:31 PM INFO     Checking disk Space...
+05/08/2021 06:58:31 PM INFO     Recording stopped for file 358
+05/08/2021 06:58:31 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00359.h264
+05/08/2021 06:59:31 PM INFO     Recording saved to file 359
+05/08/2021 06:59:31 PM INFO     fileNumber: 359 saved in Json config file
+05/08/2021 06:59:31 PM INFO     Checking disk Space...
+05/08/2021 06:59:31 PM INFO     Recording stopped for file 359
+05/08/2021 06:59:31 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00360.h264
+05/08/2021 07:00:31 PM INFO     Recording saved to file 360
+05/08/2021 07:00:31 PM INFO     fileNumber: 360 saved in Json config file
+05/08/2021 07:00:31 PM INFO     Checking disk Space...
+05/08/2021 07:00:32 PM INFO     Recording stopped for file 360
+05/08/2021 07:00:32 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00361.h264
+05/08/2021 07:01:32 PM INFO     Recording saved to file 361
+05/08/2021 07:01:32 PM INFO     fileNumber: 361 saved in Json config file
+05/08/2021 07:01:32 PM INFO     Checking disk Space...
+05/08/2021 07:01:32 PM INFO     Recording stopped for file 361
+05/08/2021 07:01:32 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00362.h264
+05/08/2021 07:02:32 PM INFO     Recording saved to file 362
+05/08/2021 07:02:32 PM INFO     fileNumber: 362 saved in Json config file
+05/08/2021 07:02:32 PM INFO     Checking disk Space...
+05/08/2021 07:02:32 PM INFO     Recording stopped for file 362
+05/08/2021 07:02:32 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00363.h264
+05/08/2021 07:03:33 PM INFO     Recording saved to file 363
+05/08/2021 07:03:33 PM INFO     fileNumber: 363 saved in Json config file
+05/08/2021 07:03:33 PM INFO     Checking disk Space...
+05/08/2021 07:03:33 PM INFO     Recording stopped for file 363
+05/08/2021 07:03:33 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00364.h264
+05/08/2021 07:04:33 PM INFO     Recording saved to file 364
+05/08/2021 07:04:33 PM INFO     fileNumber: 364 saved in Json config file
+05/08/2021 07:04:33 PM INFO     Checking disk Space...
+05/08/2021 07:04:33 PM INFO     Recording stopped for file 364
+05/08/2021 07:04:33 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00365.h264
+05/08/2021 07:05:33 PM INFO     Recording saved to file 365
+05/08/2021 07:05:33 PM INFO     fileNumber: 365 saved in Json config file
+05/08/2021 07:05:33 PM INFO     Checking disk Space...
+05/08/2021 07:05:33 PM INFO     Recording stopped for file 365
+05/08/2021 07:05:34 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00366.h264
+05/08/2021 07:06:34 PM INFO     Recording saved to file 366
+05/08/2021 07:06:34 PM INFO     fileNumber: 366 saved in Json config file
+05/08/2021 07:06:34 PM INFO     Checking disk Space...
+05/08/2021 07:06:34 PM INFO     Recording stopped for file 366
+05/08/2021 07:06:34 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00367.h264
+05/08/2021 07:07:34 PM INFO     Recording saved to file 367
+05/08/2021 07:07:34 PM INFO     fileNumber: 367 saved in Json config file
+05/08/2021 07:07:34 PM INFO     Checking disk Space...
+05/08/2021 07:07:34 PM INFO     Recording stopped for file 367
+05/08/2021 07:07:34 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00368.h264
+05/08/2021 07:08:34 PM INFO     Recording saved to file 368
+05/08/2021 07:08:34 PM INFO     fileNumber: 368 saved in Json config file
+05/08/2021 07:08:34 PM INFO     Checking disk Space...
+05/08/2021 07:08:34 PM INFO     Recording stopped for file 368
+05/08/2021 07:08:35 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00369.h264
+05/08/2021 07:09:35 PM INFO     Recording saved to file 369
+05/08/2021 07:09:35 PM INFO     fileNumber: 369 saved in Json config file
+05/08/2021 07:09:35 PM INFO     Checking disk Space...
+05/08/2021 07:09:35 PM INFO     Recording stopped for file 369
+05/08/2021 07:09:35 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00370.h264
+05/08/2021 07:10:35 PM INFO     Recording saved to file 370
+05/08/2021 07:10:35 PM INFO     fileNumber: 370 saved in Json config file
+05/08/2021 07:10:35 PM INFO     Checking disk Space...
+05/08/2021 07:10:35 PM INFO     Recording stopped for file 370
+05/08/2021 07:10:35 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00371.h264
+05/08/2021 07:11:35 PM INFO     Recording saved to file 371
+05/08/2021 07:11:35 PM INFO     fileNumber: 371 saved in Json config file
+05/08/2021 07:11:35 PM INFO     Checking disk Space...
+05/08/2021 07:11:35 PM INFO     Recording stopped for file 371
+05/08/2021 07:11:36 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00372.h264
+05/08/2021 07:12:36 PM INFO     Recording saved to file 372
+05/08/2021 07:12:36 PM INFO     fileNumber: 372 saved in Json config file
+05/08/2021 07:12:36 PM INFO     Checking disk Space...
+05/08/2021 07:12:36 PM INFO     Recording stopped for file 372
+05/08/2021 07:12:36 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00373.h264
+05/08/2021 07:13:36 PM INFO     Recording saved to file 373
+05/08/2021 07:13:36 PM INFO     fileNumber: 373 saved in Json config file
+05/08/2021 07:13:36 PM INFO     Checking disk Space...
+05/08/2021 07:13:36 PM INFO     Recording stopped for file 373
+05/08/2021 07:13:36 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00374.h264
+05/08/2021 07:14:36 PM INFO     Recording saved to file 374
+05/08/2021 07:14:36 PM INFO     fileNumber: 374 saved in Json config file
+05/08/2021 07:14:36 PM INFO     Checking disk Space...
+05/08/2021 07:14:36 PM INFO     Recording stopped for file 374
+05/08/2021 07:14:37 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00375.h264
+05/08/2021 07:15:37 PM INFO     Recording saved to file 375
+05/08/2021 07:15:37 PM INFO     fileNumber: 375 saved in Json config file
+05/08/2021 07:15:37 PM INFO     Checking disk Space...
+05/08/2021 07:15:37 PM INFO     Recording stopped for file 375
+05/08/2021 07:15:37 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00376.h264
+05/08/2021 07:16:37 PM INFO     Recording saved to file 376
+05/08/2021 07:16:37 PM INFO     fileNumber: 376 saved in Json config file
+05/08/2021 07:16:37 PM INFO     Checking disk Space...
+05/08/2021 07:16:37 PM INFO     Recording stopped for file 376
+05/08/2021 07:16:37 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00377.h264
+05/08/2021 07:17:38 PM INFO     Recording saved to file 377
+05/08/2021 07:17:38 PM INFO     fileNumber: 377 saved in Json config file
+05/08/2021 07:17:38 PM INFO     Checking disk Space...
+05/08/2021 07:17:38 PM INFO     Recording stopped for file 377
+05/08/2021 07:17:38 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00378.h264
+05/08/2021 07:18:38 PM INFO     Recording saved to file 378
+05/08/2021 07:18:38 PM INFO     fileNumber: 378 saved in Json config file
+05/08/2021 07:18:38 PM INFO     Checking disk Space...
+05/08/2021 07:18:38 PM INFO     Recording stopped for file 378
+05/08/2021 07:18:38 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00379.h264
+05/08/2021 07:19:38 PM INFO     Recording saved to file 379
+05/08/2021 07:19:38 PM INFO     fileNumber: 379 saved in Json config file
+05/08/2021 07:19:38 PM INFO     Checking disk Space...
+05/08/2021 07:19:38 PM INFO     Recording stopped for file 379
+05/08/2021 07:19:39 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00380.h264
+05/08/2021 07:20:39 PM INFO     Recording saved to file 380
+05/08/2021 07:20:39 PM INFO     fileNumber: 380 saved in Json config file
+05/08/2021 07:20:39 PM INFO     Checking disk Space...
+05/08/2021 07:20:39 PM INFO     Recording stopped for file 380
+05/08/2021 07:20:39 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00381.h264
+05/08/2021 07:21:39 PM INFO     Recording saved to file 381
+05/08/2021 07:21:39 PM INFO     fileNumber: 381 saved in Json config file
+05/08/2021 07:21:39 PM INFO     Checking disk Space...
+05/08/2021 07:21:39 PM INFO     Recording stopped for file 381
+05/08/2021 07:21:39 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00382.h264
+05/08/2021 07:22:39 PM INFO     Recording saved to file 382
+05/08/2021 07:22:39 PM INFO     fileNumber: 382 saved in Json config file
+05/08/2021 07:22:39 PM INFO     Checking disk Space...
+05/08/2021 07:22:39 PM INFO     Recording stopped for file 382
+05/08/2021 07:22:40 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00383.h264
+05/08/2021 07:23:40 PM INFO     Recording saved to file 383
+05/08/2021 07:23:40 PM INFO     fileNumber: 383 saved in Json config file
+05/08/2021 07:23:40 PM INFO     Checking disk Space...
+05/08/2021 07:23:40 PM INFO     Recording stopped for file 383
+05/08/2021 07:23:40 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00384.h264
+05/08/2021 07:24:40 PM INFO     Recording saved to file 384
+05/08/2021 07:24:40 PM INFO     fileNumber: 384 saved in Json config file
+05/08/2021 07:24:40 PM INFO     Checking disk Space...
+05/08/2021 07:24:40 PM INFO     Recording stopped for file 384
+05/08/2021 07:24:40 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00385.h264
+05/08/2021 07:25:40 PM INFO     Recording saved to file 385
+05/08/2021 07:25:40 PM INFO     fileNumber: 385 saved in Json config file
+05/08/2021 07:25:40 PM INFO     Checking disk Space...
+05/08/2021 07:25:40 PM INFO     Recording stopped for file 385
+05/08/2021 07:25:41 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00386.h264
+05/08/2021 07:26:41 PM INFO     Recording saved to file 386
+05/08/2021 07:26:41 PM INFO     fileNumber: 386 saved in Json config file
+05/08/2021 07:26:41 PM INFO     Checking disk Space...
+05/08/2021 07:26:41 PM INFO     Recording stopped for file 386
+05/08/2021 07:26:41 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00387.h264
+05/08/2021 07:27:41 PM INFO     Recording saved to file 387
+05/08/2021 07:27:41 PM INFO     fileNumber: 387 saved in Json config file
+05/08/2021 07:27:41 PM INFO     Checking disk Space...
+05/08/2021 07:27:41 PM INFO     Recording stopped for file 387
+05/08/2021 07:27:41 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00388.h264
+05/08/2021 07:28:41 PM INFO     Recording saved to file 388
+05/08/2021 07:28:41 PM INFO     fileNumber: 388 saved in Json config file
+05/08/2021 07:28:41 PM INFO     Checking disk Space...
+05/08/2021 07:28:42 PM INFO     Recording stopped for file 388
+05/08/2021 07:28:42 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00389.h264
+05/08/2021 07:29:42 PM INFO     Recording saved to file 389
+05/08/2021 07:29:42 PM INFO     fileNumber: 389 saved in Json config file
+05/08/2021 07:29:42 PM INFO     Checking disk Space...
+05/08/2021 07:29:42 PM INFO     Recording stopped for file 389
+05/08/2021 07:29:42 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00390.h264
+05/08/2021 07:30:42 PM INFO     Recording saved to file 390
+05/08/2021 07:30:42 PM INFO     fileNumber: 390 saved in Json config file
+05/08/2021 07:30:42 PM INFO     Checking disk Space...
+05/08/2021 07:30:42 PM INFO     Recording stopped for file 390
+05/08/2021 07:30:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00391.h264
+05/08/2021 07:31:43 PM INFO     Recording saved to file 391
+05/08/2021 07:31:43 PM INFO     fileNumber: 391 saved in Json config file
+05/08/2021 07:31:43 PM INFO     Checking disk Space...
+05/08/2021 07:31:43 PM INFO     Recording stopped for file 391
+05/08/2021 07:31:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00392.h264
+05/08/2021 07:32:43 PM INFO     Recording saved to file 392
+05/08/2021 07:32:43 PM INFO     fileNumber: 392 saved in Json config file
+05/08/2021 07:32:43 PM INFO     Checking disk Space...
+05/08/2021 07:32:43 PM INFO     Recording stopped for file 392
+05/08/2021 07:32:43 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00393.h264
+05/08/2021 07:33:43 PM INFO     Recording saved to file 393
+05/08/2021 07:33:43 PM INFO     fileNumber: 393 saved in Json config file
+05/08/2021 07:33:43 PM INFO     Checking disk Space...
+05/08/2021 07:33:44 PM INFO     Recording stopped for file 393
+05/08/2021 07:33:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00394.h264
+05/08/2021 07:34:44 PM INFO     Recording saved to file 394
+05/08/2021 07:34:44 PM INFO     fileNumber: 394 saved in Json config file
+05/08/2021 07:34:44 PM INFO     Checking disk Space...
+05/08/2021 07:34:44 PM INFO     Recording stopped for file 394
+05/08/2021 07:34:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00395.h264
+05/08/2021 07:35:44 PM INFO     Recording saved to file 395
+05/08/2021 07:35:44 PM INFO     fileNumber: 395 saved in Json config file
+05/08/2021 07:35:44 PM INFO     Checking disk Space...
+05/08/2021 07:35:44 PM INFO     Recording stopped for file 395
+05/08/2021 07:35:44 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00396.h264
+05/08/2021 07:36:44 PM INFO     Recording saved to file 396
+05/08/2021 07:36:44 PM INFO     fileNumber: 396 saved in Json config file
+05/08/2021 07:36:44 PM INFO     Checking disk Space...
+05/08/2021 07:36:45 PM INFO     Recording stopped for file 396
+05/08/2021 07:36:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00397.h264
+05/08/2021 07:37:45 PM INFO     Recording saved to file 397
+05/08/2021 07:37:45 PM INFO     fileNumber: 397 saved in Json config file
+05/08/2021 07:37:45 PM INFO     Checking disk Space...
+05/08/2021 07:37:45 PM INFO     Recording stopped for file 397
+05/08/2021 07:37:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00398.h264
+05/08/2021 07:38:45 PM INFO     Recording saved to file 398
+05/08/2021 07:38:45 PM INFO     fileNumber: 398 saved in Json config file
+05/08/2021 07:38:45 PM INFO     Checking disk Space...
+05/08/2021 07:38:45 PM INFO     Recording stopped for file 398
+05/08/2021 07:38:45 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00399.h264
+05/08/2021 07:39:46 PM INFO     Recording saved to file 399
+05/08/2021 07:39:46 PM INFO     fileNumber: 399 saved in Json config file
+05/08/2021 07:39:46 PM INFO     Checking disk Space...
+05/08/2021 07:39:46 PM INFO     Recording stopped for file 399
+05/08/2021 07:39:46 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00400.h264
+05/08/2021 07:40:46 PM INFO     Recording saved to file 400
+05/08/2021 07:40:46 PM INFO     fileNumber: 400 saved in Json config file
+05/08/2021 07:40:46 PM INFO     Checking disk Space...
+05/08/2021 07:40:46 PM INFO     Recording stopped for file 400
+05/08/2021 07:40:46 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00401.h264
+05/08/2021 07:41:46 PM INFO     Recording saved to file 401
+05/08/2021 07:41:46 PM INFO     fileNumber: 401 saved in Json config file
+05/08/2021 07:41:46 PM INFO     Checking disk Space...
+05/08/2021 07:41:46 PM INFO     Recording stopped for file 401
+05/08/2021 07:41:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00402.h264
+05/08/2021 07:42:47 PM INFO     Recording saved to file 402
+05/08/2021 07:42:47 PM INFO     fileNumber: 402 saved in Json config file
+05/08/2021 07:42:47 PM INFO     Checking disk Space...
+05/08/2021 07:42:47 PM INFO     Recording stopped for file 402
+05/08/2021 07:42:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00403.h264
+05/08/2021 07:43:47 PM INFO     Recording saved to file 403
+05/08/2021 07:43:47 PM INFO     fileNumber: 403 saved in Json config file
+05/08/2021 07:43:47 PM INFO     Checking disk Space...
+05/08/2021 07:43:47 PM INFO     Recording stopped for file 403
+05/08/2021 07:43:47 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00404.h264
+05/08/2021 07:44:47 PM INFO     Recording saved to file 404
+05/08/2021 07:44:47 PM INFO     fileNumber: 404 saved in Json config file
+05/08/2021 07:44:47 PM INFO     Checking disk Space...
+05/08/2021 07:44:47 PM INFO     Recording stopped for file 404
+05/08/2021 07:44:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00405.h264
+05/08/2021 07:45:48 PM INFO     Recording saved to file 405
+05/08/2021 07:45:48 PM INFO     fileNumber: 405 saved in Json config file
+05/08/2021 07:45:48 PM INFO     Checking disk Space...
+05/08/2021 07:45:48 PM INFO     Recording stopped for file 405
+05/08/2021 07:45:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00406.h264
+05/08/2021 07:46:48 PM INFO     Recording saved to file 406
+05/08/2021 07:46:48 PM INFO     fileNumber: 406 saved in Json config file
+05/08/2021 07:46:48 PM INFO     Checking disk Space...
+05/08/2021 07:46:48 PM INFO     Recording stopped for file 406
+05/08/2021 07:46:48 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00407.h264
+05/08/2021 07:47:48 PM INFO     Recording saved to file 407
+05/08/2021 07:47:48 PM INFO     fileNumber: 407 saved in Json config file
+05/08/2021 07:47:48 PM INFO     Checking disk Space...
+05/08/2021 07:47:49 PM INFO     Recording stopped for file 407
+05/08/2021 07:47:49 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00408.h264
+05/08/2021 07:48:49 PM INFO     Recording saved to file 408
+05/08/2021 07:48:49 PM INFO     fileNumber: 408 saved in Json config file
+05/08/2021 07:48:49 PM INFO     Checking disk Space...
+05/08/2021 07:48:49 PM INFO     Recording stopped for file 408
+05/08/2021 07:48:49 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00409.h264
+05/08/2021 07:49:49 PM INFO     Recording saved to file 409
+05/08/2021 07:49:49 PM INFO     fileNumber: 409 saved in Json config file
+
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00316.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00317.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00318.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00319.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00320.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00321.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00322.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00323.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00324.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00325.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00326.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00327.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00328.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00329.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00330.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00331.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00332.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00333.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00334.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00335.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00336.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00337.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00338.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00339.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00340.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00341.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00342.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00343.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00344.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00345.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00346.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00347.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00348.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00349.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00350.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00351.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00352.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00353.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00354.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00355.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00356.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00357.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00358.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00359.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00360.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00361.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00362.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00363.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00364.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00365.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00366.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00367.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00368.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00369.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00370.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00371.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00372.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00373.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00374.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00375.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00376.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00377.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00378.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00379.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00380.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00381.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00382.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00383.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00384.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00385.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00386.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00387.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00388.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00389.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00390.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00391.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00392.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00393.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00394.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00395.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00396.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00397.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00398.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00399.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00400.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00401.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00402.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00403.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00404.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00405.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00406.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00407.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00408.h264
+Checking disk Space...
+Recording to /home/pi/Raspi_DashCam/code/videos/video00409.h264
+Checking disk Space...05/08/2021 07:49:49 PM INFO     Checking disk Space...
+05/08/2021 07:49:49 PM INFO     Recording stopped for file 409
+05/08/2021 07:49:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00410.h264
+05/08/2021 07:50:50 PM INFO     Recording saved to file 410
+05/08/2021 07:50:50 PM INFO     fileNumber: 410 saved in Json config file
+05/08/2021 07:50:50 PM INFO     Checking disk Space...
+05/08/2021 07:50:50 PM INFO     Recording stopped for file 410
+05/08/2021 07:50:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00411.h264
+05/08/2021 07:51:50 PM INFO     Recording saved to file 411
+05/08/2021 07:51:50 PM INFO     fileNumber: 411 saved in Json config file
+05/08/2021 07:51:50 PM INFO     Checking disk Space...
+05/08/2021 07:51:50 PM INFO     Recording stopped for file 411
+05/08/2021 07:51:50 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00412.h264
+05/08/2021 07:52:50 PM INFO     Recording saved to file 412
+05/08/2021 07:52:51 PM INFO     fileNumber: 412 saved in Json config file
+05/08/2021 07:52:51 PM INFO     Checking disk Space...
+05/08/2021 07:52:51 PM INFO     Recording stopped for file 412
+05/08/2021 07:52:51 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00413.h264
+05/08/2021 07:53:52 PM INFO     Recording saved to file 413
+05/08/2021 07:53:52 PM INFO     fileNumber: 413 saved in Json config file
+05/08/2021 07:53:52 PM INFO     Checking disk Space...
+05/08/2021 07:53:52 PM INFO     Recording stopped for file 413
+05/08/2021 07:53:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00414.h264
+05/08/2021 07:54:52 PM INFO     Recording saved to file 414
+05/08/2021 07:54:52 PM INFO     fileNumber: 414 saved in Json config file
+05/08/2021 07:54:52 PM INFO     Checking disk Space...
+05/08/2021 07:54:52 PM INFO     Recording stopped for file 414
+05/08/2021 07:54:52 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00415.h264
+05/08/2021 07:55:52 PM INFO     Recording saved to file 415
+05/08/2021 07:55:52 PM INFO     fileNumber: 415 saved in Json config file
+05/08/2021 07:55:52 PM INFO     Checking disk Space...
+05/08/2021 07:55:52 PM INFO     Recording stopped for file 415
+05/08/2021 07:55:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00416.h264
+05/08/2021 07:56:53 PM INFO     Recording saved to file 416
+05/08/2021 07:56:53 PM INFO     fileNumber: 416 saved in Json config file
+05/08/2021 07:56:53 PM INFO     Checking disk Space...
+05/08/2021 07:56:53 PM INFO     Recording stopped for file 416
+05/08/2021 07:56:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00417.h264
+05/08/2021 07:57:53 PM INFO     Recording saved to file 417
+05/08/2021 07:57:53 PM INFO     fileNumber: 417 saved in Json config file
+05/08/2021 07:57:53 PM INFO     Checking disk Space...
+05/08/2021 07:57:53 PM INFO     Recording stopped for file 417
+05/08/2021 07:57:53 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00418.h264
+05/08/2021 07:58:53 PM INFO     Recording saved to file 418
+05/08/2021 07:58:53 PM INFO     fileNumber: 418 saved in Json config file
+05/08/2021 07:58:53 PM INFO     Checking disk Space...
+05/08/2021 07:58:54 PM INFO     Recording stopped for file 418
+05/08/2021 07:58:54 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00419.h264
+05/08/2021 07:59:54 PM INFO     Recording saved to file 419
+05/08/2021 07:59:54 PM INFO     fileNumber: 419 saved in Json config file
+05/08/2021 07:59:54 PM INFO     Checking disk Space...
+05/08/2021 07:59:54 PM INFO     Recording stopped for file 419
+05/08/2021 07:59:54 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00420.h264
+05/08/2021 08:00:54 PM INFO     Recording saved to file 420
+05/08/2021 08:00:54 PM INFO     fileNumber: 420 saved in Json config file
+05/08/2021 08:00:54 PM INFO     Checking disk Space...
+05/08/2021 08:00:54 PM INFO     Recording stopped for file 420
+05/08/2021 08:00:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00421.h264
+05/08/2021 08:01:55 PM INFO     Recording saved to file 421
+05/08/2021 08:01:55 PM INFO     fileNumber: 421 saved in Json config file
+05/08/2021 08:01:55 PM INFO     Checking disk Space...
+05/08/2021 08:01:55 PM INFO     Recording stopped for file 421
+05/08/2021 08:01:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00422.h264
+05/08/2021 08:02:55 PM INFO     Recording saved to file 422
+05/08/2021 08:02:55 PM INFO     fileNumber: 422 saved in Json config file
+05/08/2021 08:02:55 PM INFO     Checking disk Space...
+05/08/2021 08:02:55 PM INFO     Recording stopped for file 422
+05/08/2021 08:02:55 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00423.h264
+05/08/2021 08:03:55 PM INFO     Recording saved to file 423
+05/08/2021 08:03:55 PM INFO     fileNumber: 423 saved in Json config file
+05/08/2021 08:03:55 PM INFO     Checking disk Space...
+05/08/2021 08:03:55 PM INFO     Recording stopped for file 423
+05/08/2021 08:03:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00424.h264
+05/08/2021 08:04:56 PM INFO     Recording saved to file 424
+05/08/2021 08:04:56 PM INFO     fileNumber: 424 saved in Json config file
+05/08/2021 08:04:56 PM INFO     Checking disk Space...
+05/08/2021 08:04:56 PM INFO     Recording stopped for file 424
+05/08/2021 08:04:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00425.h264
+05/08/2021 08:05:56 PM INFO     Recording saved to file 425
+05/08/2021 08:05:56 PM INFO     fileNumber: 425 saved in Json config file
+05/08/2021 08:05:56 PM INFO     Checking disk Space...
+05/08/2021 08:05:56 PM INFO     Recording stopped for file 425
+05/08/2021 08:05:56 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00426.h264
+05/08/2021 08:06:56 PM INFO     Recording saved to file 426
+05/08/2021 08:06:56 PM INFO     fileNumber: 426 saved in Json config file
+05/08/2021 08:06:56 PM INFO     Checking disk Space...
+05/08/2021 08:06:57 PM INFO     Recording stopped for file 426
+05/08/2021 08:06:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00427.h264
+05/08/2021 08:07:57 PM INFO     Recording saved to file 427
+05/08/2021 08:07:57 PM INFO     fileNumber: 427 saved in Json config file
+05/08/2021 08:07:57 PM INFO     Checking disk Space...
+05/08/2021 08:07:57 PM INFO     Recording stopped for file 427
+05/08/2021 08:07:57 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00428.h264
+05/08/2021 08:08:57 PM INFO     Recording saved to file 428
+05/08/2021 08:08:57 PM INFO     fileNumber: 428 saved in Json config file
+05/08/2021 08:08:57 PM INFO     Checking disk Space...
+05/08/2021 08:08:57 PM INFO     Recording stopped for file 428
+05/08/2021 08:08:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00429.h264
+05/08/2021 08:09:58 PM INFO     Recording saved to file 429
+05/08/2021 08:09:58 PM INFO     fileNumber: 429 saved in Json config file
+05/08/2021 08:09:58 PM INFO     Checking disk Space...
+05/08/2021 08:09:58 PM INFO     Recording stopped for file 429
+05/08/2021 08:09:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00430.h264
+05/08/2021 08:10:58 PM INFO     Recording saved to file 430
+05/08/2021 08:10:58 PM INFO     fileNumber: 430 saved in Json config file
+05/08/2021 08:10:58 PM INFO     Checking disk Space...
+05/08/2021 08:10:58 PM INFO     Recording stopped for file 430
+05/08/2021 08:10:58 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00431.h264
+05/08/2021 08:11:58 PM INFO     Recording saved to file 431
+05/08/2021 08:11:58 PM INFO     fileNumber: 431 saved in Json config file
+05/08/2021 08:11:58 PM INFO     Checking disk Space...
+05/08/2021 08:11:58 PM INFO     Recording stopped for file 431
+05/08/2021 08:11:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00432.h264
+05/08/2021 08:12:59 PM INFO     Recording saved to file 432
+05/08/2021 08:12:59 PM INFO     fileNumber: 432 saved in Json config file
+05/08/2021 08:12:59 PM INFO     Checking disk Space...
+05/08/2021 08:12:59 PM INFO     Recording stopped for file 432
+05/08/2021 08:12:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00433.h264
+05/08/2021 08:13:59 PM INFO     Recording saved to file 433
+05/08/2021 08:13:59 PM INFO     fileNumber: 433 saved in Json config file
+05/08/2021 08:13:59 PM INFO     Checking disk Space...
+05/08/2021 08:13:59 PM INFO     Recording stopped for file 433
+05/08/2021 08:13:59 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00434.h264
+05/08/2021 08:15:00 PM INFO     Recording saved to file 434
+05/08/2021 08:15:00 PM INFO     fileNumber: 434 saved in Json config file
+05/08/2021 08:15:00 PM INFO     Checking disk Space...
+05/08/2021 08:15:00 PM INFO     Recording stopped for file 434
+05/08/2021 08:15:00 PM INFO     Recording to next file /home/pi/Raspi_DashCam/code/videos/video00435.h264

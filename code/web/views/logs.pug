@@ -1,0 +1,15 @@
+extends layout
+block content
+    .page-header.header-filter(data-parallax='true' style="background-image: url('/img/header.jpg')")
+            .container
+                .row
+                    .col-md-12
+
+    .main.main-raised.logs
+        .info.info-lg
+            .icon.icon-primary
+                i.material-icons article 
+            h4.info-title Logs
+            pre #{logs}
+            a.btn.btn-primary.mr-2(href='/logs') Refresh
+            a.btn.btn-secondary(href='/') Go to Preview
