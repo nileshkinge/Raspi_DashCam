@@ -19,5 +19,16 @@ install raspberry pi imager or balena ethcher
     6) git clone https://github.com/nileshkinge/Raspi_DashCam
     7) cd /Raspi_DashCam/code/
     8) sudo chmod +x setup.sh
-    9) bash setup.sh    
-   10) sudo reboot
+    9) sudo bash setup.sh
+   10) sudo chmod -x apSetup.sh
+   11) sudo bash apSetup.sh ["your password"]
+   12) install node if not already installed
+        curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
+        tar -xzf node-v9.7.1-linux-armv6l.tar.gz
+        sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
+
+        kill -15 $(lsof -t -i:3000)
+
+   13) cd web/
+   14) npm install   
+   15) sudo reboot

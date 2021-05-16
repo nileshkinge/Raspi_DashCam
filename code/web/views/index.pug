@@ -12,9 +12,11 @@ mixin post-card(post)
 
 mixin post-cardd(post)
     - var headerColor = post.isFeatured ? 'card-header-danger' : ''
-    - var videoFilePath = videoFile
+    - var videoFilePath = video.filePath
     .card.mb-3
         video.card-img-top(src=videoFilePath alt='Thumbnail Image' controls autoplay)
+        .card-img-overlay
+            h7.card-title #{video.fileName}
         .card-body
             h4.card-title #{post.title}
             //- p.card-text #{post.header}
@@ -28,7 +30,7 @@ mixin post-cardd(post)
                         span.badge.badge-success #{config.maxFiles}
                     span.badge.badge-default.m-1                     
                         |Space Limit 
-                        span.badge.badge-danger #{config.spaceLimitInPercentage}
+                        span.badge.badge-danger #{config.spaceLimitInPercentage} %
                     span.badge.badge-default.m-1                     
                         |Delete File 
                         span.badge.badge-info #{config.deleteFiles}

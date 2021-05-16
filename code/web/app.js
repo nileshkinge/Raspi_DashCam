@@ -13,7 +13,7 @@ var db = require('/home/pi/Raspi_DashCam/code/web/db');
 
 app.get('/', (req, res) => {
     const posts = db.getPosts();
-    const videoFile = db.convert();
+    const videoModel = db.convert();
     db.getConfig(function (err, content) {
         if(err) throw err;
         let config = JSON.parse(content);
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
         
         res.render('index', {
             posts: posts,
-            videoFile: videoFile,
+            video: videoModel,
             config: config
         });
     });

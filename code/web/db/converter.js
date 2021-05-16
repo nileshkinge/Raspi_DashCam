@@ -21,10 +21,11 @@ function convertH264ToMp4(){
     var h264Files = files.filter(ish264File).sort().reverse();
     var destFilename = 'img/videos/';
     
-    if(h264Files.length > 0){
-        var latestFile = h264Files[0]; 
+    if(h264Files.length > 1){
+        var latestFile = h264Files[1]; 
         var baseName = latestFile.slice(0, -5);
-        var mp4Filename = destFolder + baseName + ".mp4";
+        // var mp4Filename = destFolder + baseName + ".mp4";
+        var mp4Filename = destFolder + "video.mp4";
 	var destFilename = destFilename + baseName + ".mp4";
         var entryFilename = videoFolder + latestFile;
 
@@ -34,8 +35,9 @@ function convertH264ToMp4(){
         console.log(commandString);
         execSync(commandString);
 
+        return  { fileName: baseName, filePath: destFilename};            
     }
-    return destFilename;
+    return  { fileName: '', filePath: destFilename};
 }
 //     console.log(h264Files.length);
 
