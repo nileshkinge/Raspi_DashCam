@@ -12,8 +12,9 @@ mixin post-card(post)
 
 mixin post-cardd(post)
     - var headerColor = post.isFeatured ? 'card-header-danger' : ''
+    - var videoFilePath = videoFile
     .card.mb-3
-        video.card-img-top(src=`/img/video.h264` alt='Thumbnail Image' controls)
+        video.card-img-top(src=videoFilePath alt='Thumbnail Image' controls autoplay)
         .card-body
             h4.card-title #{post.title}
             //- p.card-text #{post.header}
