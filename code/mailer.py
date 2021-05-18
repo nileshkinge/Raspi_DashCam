@@ -16,7 +16,7 @@ def startNodeServer():
     call(["node", "/home/pi/Raspi_DashCam/code/web/app.js"]) 
     loggerHelper.info("node app server has been started.")
 
-startNodeServer()
+# startNodeServer()
 
 if IsConnectionAvailable():
     mail.init()

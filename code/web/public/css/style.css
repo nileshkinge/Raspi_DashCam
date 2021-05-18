@@ -15,6 +15,7 @@
 }
 .brand-color{
   /*#EE5D75*/
+  max-height: 45px;
   filter: invert(45%) sepia(48%) saturate(1853%) hue-rotate(318deg) brightness(102%) contrast(87%);  
 }
 /************/

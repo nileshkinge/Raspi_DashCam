@@ -66,6 +66,13 @@ else
  echo "Remote GPIO is Enabled"
 fi
 
+echo "Installing node js"
+curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
+tar -xzf node-v9.7.1-linux-armv6l.tar.gz
+sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
+node -v && npm -v
+echo "node js installed successfully"
+
 #!/bin/bash
 
 read -p "$(echo -e $IYellow "Do you want to setup email? (Y/N): "$reset)" wantToSetupEmail
@@ -79,6 +86,7 @@ python3 -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPa
 crontab -l > dashcamcron
 #echo new cron into cron file
 echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
 crontab dashcamcron
 rm dashcamcron
 
@@ -96,6 +104,11 @@ sudo timedatectl set-timezone America/New_York
 
 #sudo raspi-config nonint get_hostname
 sudo raspi-config nonint do_resolution 1920 1080
+
+echo "install web app dependencies"
+sudo cd /Raspi_DashCam/code/web && npm install
+echo "web app dependencies installed successfully."
+
 #define SET_HOSTNAME    "sudo raspi-config nonint do_hostname %s"
 #define GET_BOOT_CLI    "sudo raspi-config nonint get_boot_cli"
 #define GET_AUTOLOGIN   "sudo raspi-config nonint get_autologin"
