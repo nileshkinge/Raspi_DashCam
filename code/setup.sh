@@ -105,8 +105,10 @@ sudo timedatectl set-timezone America/New_York
 #sudo raspi-config nonint get_hostname
 sudo raspi-config nonint do_resolution 1920 1080
 
+/bin/bash apSetup.sh
+
 echo "install web app dependencies"
-sudo cd /Raspi_DashCam/code/web && npm install
+sudo npm install /home/pi/Raspi_DashCam/code/web
 echo "web app dependencies installed successfully."
 
 #define SET_HOSTNAME    "sudo raspi-config nonint do_hostname %s"
