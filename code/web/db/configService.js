@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 function readConfig(callback) {
-    fs.readFile('/home/pi/Raspi_DashCam/code/web/db/config.json', (err, data) => {
+    fs.readFile('/home/pi/Raspi_DashCam/code/config.json', (err, data) => {
         callback(err, data);
     });
 }

@@ -26,7 +26,7 @@ function convertH264ToMp4(){
         var baseName = latestFile.slice(0, -5);
         // var mp4Filename = destFolder + baseName + ".mp4";
         var mp4Filename = destFolder + "video.mp4";
-	var destFilename = destFilename + baseName + ".mp4";
+	    var destFilename = destFilename + "video.mp4";
         var entryFilename = videoFolder + latestFile;
 
         

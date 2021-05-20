@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 function readLogs(callback) {
-    fs.readFile('/home/pi/Raspi_DashCam/code/web/db/log.log', (err, data) => {
+    fs.readFile('/home/pi/Raspi_DashCam/code/log.log', (err, data) => {
         callback(err, data);
     });
 }
