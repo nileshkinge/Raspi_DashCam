@@ -4,6 +4,7 @@
 </h1>
 # Raspi_DashCam
 
+## ⚡️ Quick start
 #clone git repo
 git clone https://github.com/nileshkinge/Raspi_DashCam
 
