@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img src="https://github.com/nileshkinge/Raspi_DashCam/blob/main/code/web/public/img/logos/logo-256.png" width="224px"/><br/>
+  Raspberrypi-Dashcam
+</h1>
 # Raspi_DashCam
 
 #clone git repo
