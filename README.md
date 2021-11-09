@@ -15,18 +15,21 @@ A Daschcam built using Raspberry-pi zero W.
 	
 ## Technologies
 Project is created with:
-* Python
-* Node.js
+* [Python](https://www.python.org/downloads/)
+* [Node.js](https://nodejs.org/en/)
 
 ## Hardware
-* Raspberry pi zero W
-* Rasperry pi camera
-* pi zero camera cable (its different that the normal one.)
+* [Raspberry pi zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-w/)
+* [Rasperry pi camera](https://www.raspberrypi.com/products/camera-module-v2/)
+* [Power Supply](https://www.raspberrypi.com/products/micro-usb-power-supply/)
+* [pi zero case](https://www.aliexpress.com/item/32861638369.html)
 	
 ## Setup
-1) install latest os.
-2) add ssh and wpa_supplicant file
-3) git --version
+1)  install latest [Raspberry Pi OS](https://www.raspberrypi.com/software/).
+2)  add ssh and wpa_supplicant file
+3)  Confirm if git is pre installed
+    ```git --version```
+    Git comes pre installed in Raspberry Pi OS. If git is not installed, [install git](https://projects.raspberrypi.org/en/projects/getting-started-with-git/3) before moving on to next step.
 5) cd /home/pi/
 6) git clone https://github.com/nileshkinge/Raspi_DashCam
 7) cd /Raspi_DashCam/code/
