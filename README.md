@@ -4,6 +4,34 @@
 </h1>
 # Raspi_DashCam
 
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Hardware](#hardware)
+* [Setup](#setup)
+
+## General info
+A Daschcam built using Raspberry-pi zero W.
+	
+## Technologies
+Project is created with:
+* Python
+* Node.js
+
+## Hardware
+* Raspberry pi zero W
+* Rasperry pi camera
+* pi zero camera cable (its different that the normal one.)
+	
+## Setup
+To run this project, install it locally using npm:
+
+```
+$ cd ../lorem
+$ npm install
+$ npm start
+```
+
 ## ⚡️ Quick start
 #clone git repo
 git clone https://github.com/nileshkinge/Raspi_DashCam
