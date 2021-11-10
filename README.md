@@ -56,4 +56,4 @@ Project is created with:
     sudo reboot
     ```
 ## TO DO
-* add instruction for interations/inputs on setup.sh run.
+* add instruction for interactions/inputs on setup.sh run.
