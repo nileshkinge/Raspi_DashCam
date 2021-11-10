@@ -9,6 +9,7 @@
 * [Hardware](#hardware)
 * [Software](#software)
 * [Setup](#setup)
+* [To Do](#to-do)
 
 ## General info
 A Daschcam built using Raspberry-pi zero W.
@@ -54,4 +55,5 @@ Project is created with:
     ```
     sudo reboot
     ```
-
+## TO DO
+* add instruction for interations/inputs on setup.sh run.
