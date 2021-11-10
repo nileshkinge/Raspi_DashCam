@@ -38,28 +38,19 @@ Project is created with:
     git --version
     ```
     Git comes pre installed in Raspberry Pi OS. If git is not installed, [install git](https://projects.raspberrypi.org/en/projects/getting-started-with-git/3) before moving on to next step.
-5)  Change directotry to home/pi, you might already be in this directory. 
+5)  Download dashcam repository from Github.
     ```
     cd /home/pi/
-    ```
-6)  Download dashcam repository from Github.
-    ```
     git clone https://github.com/nileshkinge/Raspi_DashCam
-    ```
-7)  Change to below directory in the downloaded repository.
-    ```
     cd /Raspi_DashCam/code/
     ```
-8)  Change mode for setup.sh file.
+6)  Run setup.sh file.
     ```
     sudo chmod +x setup.sh
-    ```
-9)  Run setup.sh file.
-    ```
     sudo bash setup.sh
     ```
     This will install the neccessary packages, web app, also create a access point named dashcam adn password dashcam.
-10) Restart
+7) Restart
     ```
     sudo reboot
     ```
