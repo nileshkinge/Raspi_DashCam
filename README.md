@@ -23,7 +23,7 @@ Project is created with:
 * [Rasperry pi camera](https://www.raspberrypi.com/products/camera-module-v2/)
 * [Power Supply](https://www.raspberrypi.com/products/micro-usb-power-supply/)
 * [pi zero case](https://www.aliexpress.com/item/32861638369.html)
-* Memory card, using 32 gb micro SD card.
+* [Memory card](https://www.amazon.com/Micro-Center-Class-Memory-Adapter/dp/B07K81Z6DF/)
 
 ## Software
 * [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [balenaEtcher](https://www.balena.io/etcher/)
