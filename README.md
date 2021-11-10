@@ -59,7 +59,7 @@ Project is created with:
     sudo bash setup.sh
     ```
     This will install the neccessary packages, web app, also create a access point named dashcam adn password dashcam.
-10) Retart
+10) Restart
     ```
     sudo reboot
     ```
