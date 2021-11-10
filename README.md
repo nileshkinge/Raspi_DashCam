@@ -33,7 +33,7 @@ Project is created with:
 1)  Install latest [Raspberry Pi OS](https://www.raspberrypi.com/software/).
 2)  Add ssh and wpa_supplicant file. This will allow us to access [Pi headless](https://pimylifeup.com/headless-raspberry-pi-setup/).
 3)  Login to Pi using [Putty](https://www.ssh.com/academy/ssh/putty/windows/install). Default login credentioals - login:pi password:raspberry.
-3)  Confirm if Git is installed
+4)  Confirm if Git is installed
     ```
     git --version
     ```
@@ -50,59 +50,17 @@ Project is created with:
     ```
     cd /Raspi_DashCam/code/
     ```
-8) sudo chmod +x setup.sh
-9) sudo bash setup.sh
-10) sudo chmod -x apSetup.sh
-11) sudo bash apSetup.sh ["your password"]
-12) install node if not already installed
-    curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
-    tar -xzf node-v9.7.1-linux-armv6l.tar.gz
-    sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
+8)  Change mode for setup.sh file.
+    ```
+    sudo chmod +x setup.sh
+    ```
+9)  Run setup.sh file.
+    ```
+    sudo bash setup.sh
+    ```
+    This will install the neccessary packages, web app, also create a access point named dashcam adn password dashcam.
+10) Retart
+    ```
+    sudo reboot
+    ```
 
-    kill -15 $(lsof -t -i:3000)
-
-13) cd web/
-14) npm install   
-15) sudo reboot
-
-To run this project, install it locally using npm:
-
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
-
-## ⚡️ Quick start
-#clone git repo
-git clone https://github.com/nileshkinge/Raspi_DashCam
-
-cd /home/pi/Raspi_DashCam/code/
-
-sudo chmod +x setup.sh
-
-sh setup.sh
-
-sudo reboot
-
-install raspberry pi imager or balena ethcher
-    1) install latest os.
-    2) add ssh and wpa_supplicant file
-    3) git --version
-    5) cd /home/pi/
-    6) git clone https://github.com/nileshkinge/Raspi_DashCam
-    7) cd /Raspi_DashCam/code/
-    8) sudo chmod +x setup.sh
-    9) sudo bash setup.sh
-   10) sudo chmod -x apSetup.sh
-   11) sudo bash apSetup.sh ["your password"]
-   12) install node if not already installed
-        curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
-        tar -xzf node-v9.7.1-linux-armv6l.tar.gz
-        sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
-
-        kill -15 $(lsof -t -i:3000)
-
-   13) cd web/
-   14) npm install   
-   15) sudo reboot

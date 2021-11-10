@@ -39,9 +39,7 @@ else
  echo "SSH is Enabled."
 fi
 
-
 #sudo raspi-config nonint do_vnc 0
-
 
 varVNC=$(raspi-config nonint get_vnc 0)
 if [ $varVNC == 0 ]
@@ -52,7 +50,6 @@ else
  sudo raspi-config nonint do_vnc 0
  echo "VNC is Enabled."
 fi
-
 
 #sudo raspi-config nonint do_rgpio 0
 
@@ -105,11 +102,11 @@ sudo timedatectl set-timezone America/New_York
 #sudo raspi-config nonint get_hostname
 sudo raspi-config nonint do_resolution 1920 1080
 
-/bin/bash apSetup.sh Myaccount@123
-
 echo "install web app dependencies"
 sudo npm install /home/pi/Raspi_DashCam/code/web
 echo "web app dependencies installed successfully."
+
+/bin/bash apSetup.sh dashcam
 
 #define SET_HOSTNAME    "sudo raspi-config nonint do_hostname %s"
 #define GET_BOOT_CLI    "sudo raspi-config nonint get_boot_cli"
