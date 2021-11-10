@@ -1,13 +1,13 @@
 <h1 align="center">
   <img src="https://github.com/nileshkinge/Raspi_DashCam/blob/main/code/web/public/img/logos/logo-256.png" width="224px"/><br/>
-  Raspberrypi-Dashcam
+  Raspberry Pi Dashcam
 </h1>
-# Raspi_DashCam
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Hardware](#hardware)
+* [Software](#software)
 * [Setup](#setup)
 
 ## General info
@@ -23,18 +23,33 @@ Project is created with:
 * [Rasperry pi camera](https://www.raspberrypi.com/products/camera-module-v2/)
 * [Power Supply](https://www.raspberrypi.com/products/micro-usb-power-supply/)
 * [pi zero case](https://www.aliexpress.com/item/32861638369.html)
+* Memory card, using 32 gb micro SD card.
+
+## Software
+* [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [balenaEtcher](https://www.balena.io/etcher/)
+* [Putty](https://www.ssh.com/academy/ssh/putty/windows/install)
 	
 ## Setup
-1)  install latest [Raspberry Pi OS](https://www.raspberrypi.com/software/).
-2)  add ssh and wpa_supplicant file
-3)  Confirm if git is pre installed
+1)  Install latest [Raspberry Pi OS](https://www.raspberrypi.com/software/).
+2)  Add ssh and wpa_supplicant file. This will allow us to access [Pi headless](https://pimylifeup.com/headless-raspberry-pi-setup/).
+3)  Login to Pi using [Putty](https://www.ssh.com/academy/ssh/putty/windows/install). Default login credentioals - login:pi password:raspberry.
+3)  Confirm if Git is installed
     ```
     git --version
     ```
     Git comes pre installed in Raspberry Pi OS. If git is not installed, [install git](https://projects.raspberrypi.org/en/projects/getting-started-with-git/3) before moving on to next step.
-5) cd /home/pi/
-6) git clone https://github.com/nileshkinge/Raspi_DashCam
-7) cd /Raspi_DashCam/code/
+5)  Change directotry to home/pi, you might already be in this directory. 
+    ```
+    cd /home/pi/
+    ```
+6)  Download dashcam repository from Github.
+    ```
+    git clone https://github.com/nileshkinge/Raspi_DashCam
+    ```
+7)  Change to below directory in the downloaded repository.
+    ```
+    cd /Raspi_DashCam/code/
+    ```
 8) sudo chmod +x setup.sh
 9) sudo bash setup.sh
 10) sudo chmod -x apSetup.sh
