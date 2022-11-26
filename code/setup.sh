@@ -65,13 +65,12 @@ fi
 
 #!/bin/bash
 
-##write out current crontab
-#crontab -l > dashcamcron
-##echo new cron into cron file
-#echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
-#echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
-#crontab dashcamcron
-#rm dashcamcron
+#write out current crontab
+crontab -l > dashcamcron
+#echo new cron into cron file
+echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+crontab dashcamcron
+rm dashcamcron
 
 read -p "$(echo -e $IYellow "Do you want to setup email? (Y/N): "$reset)" wantToSetupEmail
 
@@ -109,6 +108,14 @@ then
 
     echo "install web app dependencies"
     sudo npm install /home/pi/Raspi_DashCam/code/web
+
+    echo "adding mailer cron job"
+    crontab -l > dashcamcron
+    echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+    #install new cron file
+    crontab dashcamcron
+    rm dashcamcron    
+
     echo "web app dependencies installed successfully."
 fi
 
