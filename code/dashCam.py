@@ -42,14 +42,15 @@ GPIO.setmode(GPIO.BOARD)
 # Create root folder ("dashcam")
 if not os.path.exists(Folder_Root):
     os.makedirs(Folder_Root)
-    print("dashcam folder created")
     loggerHelper.info('Config file created')
 
 # Create videos folder.
 if not os.path.exists(Videos_Folder):
     os.makedirs(Videos_Folder)
-    print('videos folder created')
     loggerHelper.info('videos folder created')
+
+def getFileName(increment):
+    return Videos_Folder + "video%05d.h264" % increment
 
 # Function to delete files (per number from Json config file) if disk space is more than threshold (from condig file)
 def clearSpace():
@@ -60,12 +61,10 @@ def clearSpace():
     deleteFiles = configHelper.getConfigSetting('deleteFiles')
 
     while i < maxFiles:
-        delFilePath = Folder_Root + Videos_Folder + "video%05d.h264" % i
+        delFilePath = getFileName(i)
         i = i + 1
         if os.path.exists(delFilePath):
-            #print('Deleting some files to create space on the drive, please wait ...')
             os.remove(delFilePath)
-            print( 'Deleted file ' + delFilePath ) 
             loggerHelper.info('Deleted file ' + delFilePath)
             filesDeleted = filesDeleted + 1
         if(filesDeleted >= deleteFiles):
@@ -73,10 +72,13 @@ def clearSpace():
 
 # Function to check available disk space. If disk space is above threshold mentioned in the Json config file then call clear_space
 def checkSpace():
-    print('Checking disk Space...')
     loggerHelper.info('Checking disk Space...')
     spaceLimitInPercentage = configHelper.getConfigSetting('spaceLimitInPercentage')
-    if(psutil.disk_usage(".").percent > spaceLimitInPercentage):        
+    diskUsage = psutil.disk_usage(".").percent
+    print('Disk usage: %s' % diskUsage)
+    print('Usage limit: %s' % spaceLimitInPercentage)
+    print('Need cleanup: %s' % (diskUsage > spaceLimitInPercentage))
+    if(diskUsage > spaceLimitInPercentage):        
         clearSpace()
 
 def setGPIOForShutdown():
@@ -102,7 +104,6 @@ def handleShutdown(camera):
         piShutdownDelay = configHelper.getConfigSetting('piShutdownDelay')
         if cntr > piShutdownDelay:
             shutdown = True
-            print('Shutting down RASPI, please wait...')
             loggerHelper.info('Shutting down RASPI, please wait...')
             camera.stop_recording()
             configHelper.setConfigSetting('fileNumber', fileNumber)
@@ -154,16 +155,18 @@ def startRecording():
 
         while fileNumber < maxFiles:
 
-            resolutionX = configHelper.getConfigSetting('resolutionX')
-            resolutionY = configHelper.getConfigSetting('resolutionY')
-            camera.resolution = (resolutionX,resolutionY)
-            framerate = configHelper.getConfigSetting('framerate')
-            camera.framerate = framerate
-            rotationAngle = configHelper.getConfigSetting('rotationAngle')
-            camera.rotation = rotationAngle
+            camera.resolution = (configHelper.getConfigSetting('resolutionX'),configHelper.getConfigSetting('resolutionY'))
+            camera.framerate = configHelper.getConfigSetting('framerate')
+            camera.rotation = configHelper.getConfigSetting('rotationAngle')
+            
+            fileName = getFileName(fileNumber)
 
-            fileName = Videos_Folder + "video%05d.h264" % fileNumber
-            print('Recording to %s' % fileName)
+            if(os.path.exists(fileName)):
+                print('file exists: %s' % fileName)
+                fileNumber = fileNumber+1
+                fileName = getFileName(fileNumber)
+
+            configHelper.setConfigSetting('fileNumber', fileNumber)
             loggerHelper.info('Recording to next file %s' % str(fileName))
             
             durationInMinutes = configHelper.getConfigSetting('durationInMinutes')
@@ -180,13 +183,12 @@ def startRecording():
                                 
                 #handleShutdown(camera)
 
-            loggerHelper.info("Recording saved to file " + str(fileNumber))       
-            configHelper.setConfigSetting('fileNumber', fileNumber)
+            loggerHelper.info("Recording saved to file " + str(fileNumber))                   
             checkSpace()
             time.sleep(0.02)            
         
             camera.stop_recording()
-            loggerHelper.info("Recording stopped for file " + str(fileNumber))
+            loggerHelper.info("Recording successful for file " + str(fileNumber))
             fileNumber = fileNumber +1
 
 startDashCam()

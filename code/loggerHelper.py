@@ -12,18 +12,22 @@ logging.basicConfig(
     datefmt='%m/%d/%Y %I:%M:%S %p')
 
 def info(msg):
+    print(msg)
     logging.info(msg)
 
 def debug(msg):
+    print(msg)
     logging.debug(msg)
 
 def warning(msg):
+    print(msg)
     logging.warning(msg)
 
 def error(msg):
     logging.error(msg)
 
 def log(msg):
+    print(msg)
     fl = (logFile)
     if not os.path.exists(fl):
         fl = open(logFile,"x")

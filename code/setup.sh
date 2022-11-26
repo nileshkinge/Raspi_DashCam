@@ -63,32 +63,26 @@ else
  echo "Remote GPIO is Enabled"
 fi
 
-echo "Installing node js"
-curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
-tar -xzf node-v9.7.1-linux-armv6l.tar.gz
-sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
-node -v && npm -v
-echo "node js installed successfully"
-
 #!/bin/bash
 
+##write out current crontab
+#crontab -l > dashcamcron
+##echo new cron into cron file
+#echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+#echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+#crontab dashcamcron
+#rm dashcamcron
+
 read -p "$(echo -e $IYellow "Do you want to setup email? (Y/N): "$reset)" wantToSetupEmail
-read -p "$(echo -e $IYellow "Enter 'To: ' email: "$reset)" toEmail
-read -p "$(echo -e $IYellow "Enter 'From: ' email (gmail account): "$reset)" fromEmail
-read -sp "$(echo -e $IYellow "Enter your gmail password: "$reset)" gmailPassword
 
-python3 -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
-
-#write out current crontab
-crontab -l > dashcamcron
-#echo new cron into cron file
-echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
-echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
-crontab dashcamcron
-rm dashcamcron
-
-if [ "$wantToSetupEmail" == "Y" ]
+if [[ "$wantToSetupEmail" == "Y" || "$wantToSetupEmail" == "y" ]]
 then
+    read -p "$(echo -e $IYellow "Enter 'To: ' email: "$reset)" toEmail
+    read -p "$(echo -e $IYellow "Enter 'From: ' email (gmail account): "$reset)" fromEmail
+    read -sp "$(echo -e $IYellow "Enter your gmail password: "$reset)" gmailPassword
+
+    python3 -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
+
     echo "adding mailer cron job"
     crontab -l > dashcamcron
     echo "@reboot sleep 300 && python3 /home/pi/Raspi_DashCam/code/mailer.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
@@ -97,16 +91,35 @@ then
     rm dashcamcron
 fi
 
-sudo timedatectl set-timezone America/New_York
+sudo timedatectl set-timezone America/Detroit
 
 #sudo raspi-config nonint get_hostname
 sudo raspi-config nonint do_resolution 1920 1080
 
-echo "install web app dependencies"
-sudo npm install /home/pi/Raspi_DashCam/code/web
-echo "web app dependencies installed successfully."
+read -p "$(echo -e $IYellow "Do you want to setup UI? (Y/N): "$reset)" wantToSetupWebUi
 
-/bin/bash apSetup.sh dashcam
+if [[ "$wantToSetupWebUi" == "Y" || "$wantToSetupWebUi" == "y" ]]
+then    
+    echo "Installing node js"
+    curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
+    tar -xzf node-v9.7.1-linux-armv6l.tar.gz
+    sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
+    node -v && npm -v
+    echo "node js installed successfully"
+
+    echo "install web app dependencies"
+    sudo npm install /home/pi/Raspi_DashCam/code/web
+    echo "web app dependencies installed successfully."
+fi
+
+read -p "$(echo -e $IYellow "Do you want to setup as access point? (Y/N): "$reset)" wantToSetupAP
+if [[ "$wantToSetupAP" == "Y" || "$wantToSetupAP" == "y" ]]
+then
+    echo "Setting up access point."
+    /bin/bash apSetup.sh dashcam
+    echo "access point setup successfull."
+fi
+echo "Setup done successfully."
 
 #define SET_HOSTNAME    "sudo raspi-config nonint do_hostname %s"
 #define GET_BOOT_CLI    "sudo raspi-config nonint get_boot_cli"

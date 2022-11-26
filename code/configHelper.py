@@ -62,7 +62,7 @@ def getDefaultConfig():
     config['durationInMinutes'] = 1
     config['maxFiles'] =  99999
     config['spaceLimitInPercentage'] = 80
-    config['deleteFiles'] = 10
+    config['deleteFiles'] = 5
     config['resolutionX'] = 1920
     config['resolutionY'] =  1000
     config['framerate'] =  30
