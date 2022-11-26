@@ -71,6 +71,7 @@ def getDefaultConfig():
     config['piShutdownDelay'] = 5
     config['gpioPinNumber'] = 3
     config['rotationAngle'] = 90
+    config['knownSSID'] = 'kinge'
 
     return config
 

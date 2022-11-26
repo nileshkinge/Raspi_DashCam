@@ -15,6 +15,7 @@ import subprocess
 
 import loggerHelper
 import configHelper
+import connectionUtility
 
 #Global Variable declaration
 
@@ -191,4 +192,7 @@ def startRecording():
             loggerHelper.info("Recording successful for file " + str(fileNumber))
             fileNumber = fileNumber +1
 
-startDashCam()
+if not connectionUtility.connectedToknownSSID():
+    startDashCam()
+else:
+    loggerHelper.info("Connected to KnownSSID from config, recording is being skipped.")
