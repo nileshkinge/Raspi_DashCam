@@ -42,8 +42,8 @@ Project is created with:
 5)  Download dashcam repository from Github.
     ```
     cd /home/pi/
-    git clone https://github.com/nileshkinge/Raspi_DashCam
-    cd /Raspi_DashCam/code/
+    git clone https://github.com/nileshkinge/dashcam
+    cd /dashcam/code/
     ```
 6)  Run setup.sh file.
     ```
