@@ -26,7 +26,7 @@ def IsConnectionAvailable():
 
 def startNodeServer():
     loggerHelper.info("starting node app server.")
-    call(["node", "/home/pi/Raspi_DashCam/code/web/app.js"]) 
+    call(["node", "/home/pi/dashcam/code/web/app.js"]) 
     loggerHelper.info("node app server has been started.")
 
 # startNodeServer()

@@ -4,7 +4,7 @@ IYellow='\e[93m'      # Yellow
 reset='\e[0m'         # reset
 
 function setup_progress () {
-  local setup_logfile=/home/pi/projects/Raspi_DashCam/code/dashCam-setup.log
+  local setup_logfile=/home/pi/dashcam/code/dashCam-setup.log
   if [ -w $setup_logfile ]
   then
     echo "$( date ) : $*" >> "$setup_logfile"
@@ -75,7 +75,7 @@ function setup_dashcam_cronjob(){
     #write out current crontab
     crontab -l > dashcamcron
     #echo new cron into cron file
-    echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+    echo "@reboot python3 /home/pi/dashcam/code/dashCam.py >>/home/pi/dashcam/code/log.log 2>&1" >> dashcamcron
     crontab dashcamcron
     rm dashcamcron
 }
@@ -93,7 +93,7 @@ function setup_email(){
 
         setup_progress "adding mailer cron job"
         crontab -l > dashcamcron
-        echo "@reboot sleep 300 && python3 /home/pi/Raspi_DashCam/code/mailer.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+        echo "@reboot sleep 300 && python3 /home/pi/dashcam/code/mailer.py >>/home/pi/dashcam/code/log.log 2>&1" >> dashcamcron
         #install new cron file
         crontab dashcamcron
         rm dashcamcron
@@ -113,11 +113,11 @@ function setup_UI(){
         setup_progress "node js installed successfully"
 
         setup_progress "install web app dependencies"
-        sudo npm install /home/pi/Raspi_DashCam/code/web
+        sudo npm install /home/pi/dashcam/code/web
 
         setup_progress "adding mailer cron job"
         crontab -l > dashcamcron
-        echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+        echo "@reboot sudo /usr/local/bin/node /home/pi/dashcam/code/web/app.js >>/home/pi/dashcam/code/log.log 2>&1" >> dashcamcron
         #install new cron file
         crontab dashcamcron
         rm dashcamcron    
