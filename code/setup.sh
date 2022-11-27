@@ -3,130 +3,189 @@
 IYellow='\e[93m'      # Yellow
 reset='\e[0m'         # reset
 
-#sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean
-echo "Updating OS, please wait..."
+function setup_progress () {
+  local setup_logfile=/home/pi/projects/Raspi_DashCam/code/dashCam-setup.log
+  if [ -w $setup_logfile ]
+  then
+    echo "$( date ) : $*" >> "$setup_logfile"
+  else
+    echo "$( date ) : $*" >> "$setup_logfile" 2>&1
+  fi
+  echo "$@"
+}
 
-sudo apt-get update && sudo apt-get dist-upgrade -y
+function install_xrdp(){
+    setup_progress "Installing XRDP, please wait..."
+    sudo apt-get install xrdp -y
+}
 
-#sudo apt-get update
-#echo "UpGrading OS, please wait..."
-#sudo apt-get upgrade
+function enable_camera(){
+    echo "0 = ENABLED, 1 = DISABLED"
+    #sudo raspi-config nonint do_camera 0
+    cam=$(sudo raspi-config nonint get_camera 0)
+    if [ $cam == 0 ]
+    then
+    setup_progress "Camera Enabled"
+    else
+    setup_progress "Camera is Disabled, enabeling it now"
+    sudo raspi-config nonint do_camera 0
+    setup_progress "Camera is Enabled."
+    fi
+}
 
-echo "Installing XRDP, please wait..."
-sudo apt-get install xrdp -y
+function enable_ssh(){
+    varssh=$(sudo raspi-config nonint get_ssh 0)
+    if [ $varssh == 0 ]
+    then
+    setup_progress "SSH Enabled"
+    else
+    setup_progress "SSH is Disabled, enabeling it now"
+    sudo raspi-config nonint do_ssh 0
+    setup_progress "SSH is Enabled."
+    fi
+}
 
-echo "0 = ENABLED, 1 = DISABLED"
-#sudo raspi-config nonint do_camera 0
-cam=$(sudo raspi-config nonint get_camera 0)
-if [ $cam == 0 ]
-then
- echo "Camera Enabled"
-else
- echo "Camera is Disabled, enabeling it now"
- sudo raspi-config nonint do_camera 0
- echo "Camera is Enabled."
-fi
+function enable_vnc(){
+    #sudo raspi-config nonint do_vnc 0
+    varVNC=$(raspi-config nonint get_vnc 0)
+    if [ $varVNC == 0 ]
+    then
+    setup_progress "VNC Enabled"
+    else
+    setup_progress "VNC is Disabled, enabeling it now"
+    sudo raspi-config nonint do_vnc 0
+    setup_progress "VNC is Enabled."
+    fi
+}
 
-#sudo raspi-config nonint do_ssh 0
+function enable_remote_GPIO(){
+    #sudo raspi-config nonint do_rgpio 0
+    varRGPIO=$(raspi-config nonint get_rgpio 0)
+    if [ $varRGPIO == 0 ]
+    then
+    setup_progress "Remote GPIO Enabled"
+    else
+    setup_progress "Remote GPIO is Disabled, enabeling it now"
+    sudo raspi-config nonint do_rgpio 0
+    setup_progress "Remote GPIO is Enabled"
+    fi
+}
 
-varssh=$(sudo raspi-config nonint get_ssh 0)
-if [ $varssh == 0 ]
-then
- echo "SSH Enabled"
-else
- echo "SSH is Disabled, enabeling it now"
- sudo raspi-config nonint do_ssh 0
- echo "SSH is Enabled."
-fi
-
-#sudo raspi-config nonint do_vnc 0
-
-varVNC=$(raspi-config nonint get_vnc 0)
-if [ $varVNC == 0 ]
-then
- echo "VNC Enabled"
-else
- echo "VNC is Disabled, enabeling it now"
- sudo raspi-config nonint do_vnc 0
- echo "VNC is Enabled."
-fi
-
-#sudo raspi-config nonint do_rgpio 0
-
-varRGPIO=$(raspi-config nonint get_rgpio 0)
-if [ $varRGPIO == 0 ]
-then
- echo "Remote GPIO Enabled"
-else
- echo "Remote GPIO is Disabled, enabeling it now"
- sudo raspi-config nonint do_rgpio 0
- echo "Remote GPIO is Enabled"
-fi
-
-#!/bin/bash
-
-#write out current crontab
-crontab -l > dashcamcron
-#echo new cron into cron file
-echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
-crontab dashcamcron
-rm dashcamcron
-
-read -p "$(echo -e $IYellow "Do you want to setup email? (Y/N): "$reset)" wantToSetupEmail
-
-if [[ "$wantToSetupEmail" == "Y" || "$wantToSetupEmail" == "y" ]]
-then
-    read -p "$(echo -e $IYellow "Enter 'To: ' email: "$reset)" toEmail
-    read -p "$(echo -e $IYellow "Enter 'From: ' email (gmail account): "$reset)" fromEmail
-    read -sp "$(echo -e $IYellow "Enter your gmail password: "$reset)" gmailPassword
-
-    python3 -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
-
-    echo "adding mailer cron job"
+function setup_dashcam_cronjob(){
+    #write out current crontab
     crontab -l > dashcamcron
-    echo "@reboot sleep 300 && python3 /home/pi/Raspi_DashCam/code/mailer.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
-    #install new cron file
+    #echo new cron into cron file
+    echo "@reboot python3 /home/pi/Raspi_DashCam/code/dashCam.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
     crontab dashcamcron
     rm dashcamcron
-fi
+}
 
-sudo timedatectl set-timezone America/Detroit
+function setup_email(){
+    read -p "$(echo -e $IYellow "Do you want to setup email? (Y/N): "$reset)" wantToSetupEmail
 
-#sudo raspi-config nonint get_hostname
-sudo raspi-config nonint do_resolution 1920 1080
+    if [[ "$wantToSetupEmail" == "Y" || "$wantToSetupEmail" == "y" ]]
+    then
+        read -p "$(echo -e $IYellow "Enter 'To: ' email: "$reset)" toEmail
+        read -p "$(echo -e $IYellow "Enter 'From: ' email (gmail account): "$reset)" fromEmail
+        read -sp "$(echo -e $IYellow "Enter your gmail password: "$reset)" gmailPassword
 
-read -p "$(echo -e $IYellow "Do you want to setup UI? (Y/N): "$reset)" wantToSetupWebUi
+        python3 -c'import mail; mail.initValues("'$toEmail'", "'$fromEmail'", "'$gmailPassword'")'
 
-if [[ "$wantToSetupWebUi" == "Y" || "$wantToSetupWebUi" == "y" ]]
-then    
-    echo "Installing node js"
-    curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
-    tar -xzf node-v9.7.1-linux-armv6l.tar.gz
-    sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
-    node -v && npm -v
-    echo "node js installed successfully"
+        setup_progress "adding mailer cron job"
+        crontab -l > dashcamcron
+        echo "@reboot sleep 300 && python3 /home/pi/Raspi_DashCam/code/mailer.py >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+        #install new cron file
+        crontab dashcamcron
+        rm dashcamcron
+    fi
+}
 
-    echo "install web app dependencies"
-    sudo npm install /home/pi/Raspi_DashCam/code/web
+function setup_UI(){
+    read -p "$(echo -e $IYellow "Do you want to setup UI? (Y/N): "$reset)" wantToSetupWebUi
 
-    echo "adding mailer cron job"
-    crontab -l > dashcamcron
-    echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
-    #install new cron file
-    crontab dashcamcron
-    rm dashcamcron    
+    if [[ "$wantToSetupWebUi" == "Y" || "$wantToSetupWebUi" == "y" ]]
+    then    
+        setup_progress "Installing node js"
+        curl -o node-v9.7.1-linux-armv6l.tar.gz https://nodejs.org/dist/v9.7.1/node-v9.7.1-linux-armv6l.tar.gz
+        tar -xzf node-v9.7.1-linux-armv6l.tar.gz
+        sudo cp -r node-v9.7.1-linux-armv6l/* /usr/local/
+        node -v && npm -v
+        setup_progress "node js installed successfully"
 
-    echo "web app dependencies installed successfully."
-fi
+        setup_progress "install web app dependencies"
+        sudo npm install /home/pi/Raspi_DashCam/code/web
 
-read -p "$(echo -e $IYellow "Do you want to setup as access point? (Y/N): "$reset)" wantToSetupAP
-if [[ "$wantToSetupAP" == "Y" || "$wantToSetupAP" == "y" ]]
-then
-    echo "Setting up access point."
-    /bin/bash apSetup.sh dashcam
-    echo "access point setup successfull."
-fi
-echo "Setup done successfully."
+        setup_progress "adding mailer cron job"
+        crontab -l > dashcamcron
+        echo "@reboot sudo /usr/local/bin/node /home/pi/Raspi_DashCam/code/web/app.js >>/home/pi/Raspi_DashCam/code/log.log 2>&1" >> dashcamcron
+        #install new cron file
+        crontab dashcamcron
+        rm dashcamcron    
+
+        setup_progress "web app dependencies installed successfully."
+    fi
+}
+
+function install_rclone(){
+    read -p "$(echo -e $IYellow "Do you want to install rclone? (Y/N): "$reset)" wantToInstallRclone
+    if [[ "$wantToInstallRclone" == "Y" || "$wantToInstallRclone" == "y" ]]
+    then
+        setup_progress "installing rclone"
+        sudo -v ; curl https://rclone.org/install.sh | sudo bash
+        setup_progress "rclone installed successfully."
+        setup_progress "Please run 'rclone config' command to configure rclone remote. https://rclone.org/docs/"
+    fi    
+}
+
+function setup_accesspoint(){
+    read -p "$(echo -e $IYellow "Do you want to setup as access point? (Y/N): "$reset)" wantToSetupAP
+    if [[ "$wantToSetupAP" == "Y" || "$wantToSetupAP" == "y" ]]
+    then
+        setup_progress "Setting up access point."
+        /bin/bash apSetup.sh dashcam
+        setup_progress "access point setup successfull."
+    fi
+}
+
+function init(){
+    #sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean
+    setup_progress "********************************************************************************************"
+    setup_progress "Updating OS, please wait..."
+    sudo apt-get update && sudo apt-get dist-upgrade -y
+
+    sudo timedatectl set-timezone America/Detroit
+    #sudo raspi-config nonint get_hostname
+    sudo raspi-config nonint do_resolution 1920 1080
+}
+
+function startSetup(){
+    init
+
+    install_xrdp
+    
+    enable_camera
+
+    enable_ssh
+
+    enable_vnc
+
+    enable_remote_GPIO
+
+    setup_dashcam_cronjob
+
+    setup_email
+    
+    setup_UI
+
+    setup_accesspoint
+    
+    install_rclone
+
+    setup_progress "Setup done successfully."
+}
+
+startSetup
+
 
 #define SET_HOSTNAME    "sudo raspi-config nonint do_hostname %s"
 #define GET_BOOT_CLI    "sudo raspi-config nonint get_boot_cli"

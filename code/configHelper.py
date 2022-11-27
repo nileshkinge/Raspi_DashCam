@@ -72,7 +72,11 @@ def getDefaultConfig():
     config['gpioPinNumber'] = 3
     config['rotationAngle'] = 90
     config['knownSSID'] = 'kinge'
-
+    config['remoteArchive'] = 'kinge.local'
+    config['rcloneRemoteName'] = 'kinge:'
+    config['rcloneRemotePath'] = '/mnt/seagateDisk/data/photos/Dashcam/archive'
+    config['copySourcePath'] = '/home/pi/dashcam/code/videos/'
+    
     return config
 
 def createConfig():
@@ -82,7 +86,6 @@ def createConfig():
         with getFile('w') as f:
                 json.dump(config,f,sort_keys=True,indent=4)
                 msg = 'Dash Cam Config is created' 
-                print(msg)
                 loggerHelper.info(msg)
     except:
         loggerHelper.error('Could not create config.json file')

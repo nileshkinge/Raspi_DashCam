@@ -116,16 +116,27 @@ def handleShutdown(camera):
     else:
         cntr = 0
 
-def startDashCam():
-    loggerHelper.info("Dash Cam Started.")
+def init():
+    verify_config()
+    initDashcam()    
+
+def initDashcam():
+    if not connectionUtility.connectedToknownSSID():
+        startDashCam()
+    else:
+        loggerHelper.info("Connected to KnownSSID from config, recording is being skipped.")
+
+def verify_config():
     if not configHelper.fileExists():
         configHelper.createConfig()
 
+def startDashCam():
+    loggerHelper.info("Dash Cam Started.")
+    
     setGPIOForShutdown()
     fileNumber = configHelper.getConfigSetting('fileNumber')
     fileName = Videos_Folder + "Video" + str(fileNumber).zfill(5) + "." + "h264"
-    print(fileName)
-    
+        
     try:
         startRecording()
     except:
@@ -192,7 +203,4 @@ def startRecording():
             loggerHelper.info("Recording successful for file " + str(fileNumber))
             fileNumber = fileNumber +1
 
-if not connectionUtility.connectedToknownSSID():
-    startDashCam()
-else:
-    loggerHelper.info("Connected to KnownSSID from config, recording is being skipped.")
+init()
