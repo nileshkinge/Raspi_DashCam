@@ -27,7 +27,7 @@ def error(msg):
     logging.error(msg)
 
 def log(msg):
-    print(msg)
+    #print(msg)
     fl = (logFile)
     if not os.path.exists(fl):
         fl = open(logFile,"x")
