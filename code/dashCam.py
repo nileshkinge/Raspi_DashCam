@@ -16,6 +16,7 @@ import subprocess
 import loggerHelper
 import configHelper
 import connectionUtility
+import copyUtility
 
 #Global Variable declaration
 
@@ -125,6 +126,7 @@ def initDashcam():
         startDashCam()
     else:
         loggerHelper.info("Connected to KnownSSID from config, recording is being skipped.")
+        copyUtility.copy_clips()
 
 def verify_config():
     if not configHelper.fileExists():

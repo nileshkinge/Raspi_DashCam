@@ -10,6 +10,7 @@ def archive_remote_is_reachable():
     if(verify_configuration()):
         remoteArchive = configHelper.getConfigSetting('remoteArchive')
         try:
+            loggerHelper.info("rclone remote is not reachable.")
             return check_output(['ping',remoteArchive, '-q', '-w', '1', '-c', '1'])
         except:
             loggerHelper.warning('rclone remote is not reachable')
@@ -40,15 +41,12 @@ def verify_configuration():
 
 
 def copy_clips():
-    loggerHelper.info("Recordings are being moved.")
-    try:
-        rcloneRemoteName = configHelper.getConfigSetting('rcloneRemoteName')
-        rcloneRemotePath = configHelper.getConfigSetting('rcloneRemotePath')
-        copySourcePath = configHelper.getConfigSetting('copySourcePath')
-        check_output(['rclone', 'move', copySourcePath , (rcloneRemoteName+rcloneRemotePath)])
-    except:
-        loggerHelper.error("There was an error moving recordings.")
-
-if archive_remote_is_reachable():
-    print('archive remote is reachable')
-    copy_clips()
+    if archive_remote_is_reachable():
+        loggerHelper.info("Recordings are being moved.")
+        try:
+            rcloneRemoteName = configHelper.getConfigSetting('rcloneRemoteName')
+            rcloneRemotePath = configHelper.getConfigSetting('rcloneRemotePath')
+            copySourcePath = configHelper.getConfigSetting('copySourcePath')
+            check_output(['rclone', 'move', copySourcePath , (rcloneRemoteName+rcloneRemotePath)])
+        except:
+            loggerHelper.error("There was an error moving recordings.")
