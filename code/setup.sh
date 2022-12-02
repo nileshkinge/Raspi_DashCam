@@ -76,13 +76,12 @@ function setup_dashcam_cronjob(){
     #write out current crontab
     crontab -l > dashcamcron
 
-    echo "Path is set to: $PATH now changing it to"
-    PATH=/bin:/usr/bin:/sbin:/usr/sbin
-    echo $PATH
+    setup_progress "Path is set to: $PATH"
+    echo "PATH=/bin:/usr/bin:/sbin:/usr/sbin" >> dashcamcron
 
     #echo new cron into cron file
     echo "@reboot python3 /home/pi/dashcam/code/dashCam.py >>/home/pi/dashcam/code/log.log 2>&1" >> dashcamcron
-    (crontab -l 2>/dev/null; echo "*/5 * * * * /path/to/job -with args") | crontab -
+    
     crontab dashcamcron
     rm dashcamcron
 }

@@ -10,7 +10,6 @@ def archive_remote_is_reachable():
     if(verify_configuration()):
         remoteArchive = configHelper.getConfigSetting('remoteArchive')
         try:
-            loggerHelper.info("rclone remote is not reachable.")
             return check_output(['ping ' + remoteArchive + ' -q -w 1 -c 1'],shell=True)
         except:
             loggerHelper.warning('rclone remote is not reachable')
