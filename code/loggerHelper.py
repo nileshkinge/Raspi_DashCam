@@ -12,15 +12,15 @@ logging.basicConfig(
     datefmt='%m/%d/%Y %I:%M:%S %p')
 
 def info(msg):
-    print(msg)
+    #print(msg)
     logging.info(msg)
 
 def debug(msg):
-    print(msg)
+    #print(msg)
     logging.debug(msg)
 
 def warning(msg):
-    print(msg)
+    #print(msg)
     logging.warning(msg)
 
 def error(msg):
