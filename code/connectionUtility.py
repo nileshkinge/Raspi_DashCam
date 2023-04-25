@@ -4,12 +4,12 @@ import mail
 import os
 import loggerHelper
 import configHelper
-from subprocess import check_output, call
+from subprocess import check_output, call, STDOUT, CalledProcessError
 
 def connectedToknownSSID():
     try:
-        ssid = check_output(['iwgetid --raw'], stderr=subprocess.STDOUT, shell=True).decode("utf-8")
-    except subprocess.CalledProcessError as e:
+        ssid = check_output(['iwgetid --raw'], stderr=STDOUT, shell=True).decode("utf-8")
+    except CalledProcessError as e:
         loggerHelper.info("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
     
     ssids = ssid.split()
@@ -24,8 +24,8 @@ def connectedToknownSSID():
 
 def IsConnectionAvailable():
     try:
-        wifi_ip = check_output(['hostname -I'], stderr=subprocess.STDOUT, shell=True)
-    except subprocess.CalledProcessError as e:
+        wifi_ip = check_output(['hostname -I'], stderr=STDOUT, shell=True)
+    except CalledProcessError as e:
         loggerHelper.info("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
 
     if wifi_ip is not None:
