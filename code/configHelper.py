@@ -70,7 +70,7 @@ def getDefaultConfig():
     config['piStartTimeDelay'] = 2
     config['piShutdownDelay'] = 5
     config['gpioPinNumber'] = 3
-    config['rotationAngle'] = 90
+    config['rotationAngle'] = 270
     config['knownSSID'] = 'kinge'
     config['remoteArchive'] = 'kinge.local'
     config['rcloneRemoteName'] = 'kinge:'
@@ -85,8 +85,7 @@ def createConfig():
 
         with getFile('w') as f:
                 json.dump(config,f,sort_keys=True,indent=4)
-                msg = 'Dash Cam Config is created' 
-                loggerHelper.info(msg)
+                loggerHelper.info('Dash Cam Config is created')
     except:
         loggerHelper.error('Could not create config.json file')
         raise

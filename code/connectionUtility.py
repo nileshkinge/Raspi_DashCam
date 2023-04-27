@@ -17,7 +17,7 @@ def connectedToknownSSID():
             isConnected = True
 			
     except CalledProcessError as e:
-        loggerHelper.info("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
+        loggerHelper.error("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
 
     loggerHelper.info(("Connected" if isConnected else 'Not connected' ) + " to wi-fi from knownSSID in config")
     return isConnected
@@ -30,7 +30,7 @@ def IsConnectionAvailable():
 
         return True
     except CalledProcessError as e:
-        loggerHelper.info("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
+        loggerHelper.error("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
 
     return False
 

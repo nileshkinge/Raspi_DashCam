@@ -77,9 +77,9 @@ def checkSpace():
     loggerHelper.info('Checking disk Space...')
     spaceLimitInPercentage = configHelper.getConfigSetting('spaceLimitInPercentage')
     diskUsage = psutil.disk_usage(".").percent
-    print('Disk usage: %s' % diskUsage)
-    print('Usage limit: %s' % spaceLimitInPercentage)
-    print('Need cleanup: %s' % (diskUsage > spaceLimitInPercentage))
+    #print('Disk usage: %s' % diskUsage)
+    #print('Usage limit: %s' % spaceLimitInPercentage)
+    #print('Need cleanup: %s' % (diskUsage > spaceLimitInPercentage))
     if(diskUsage > spaceLimitInPercentage):        
         clearSpace()
 
