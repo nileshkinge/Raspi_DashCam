@@ -7,9 +7,9 @@ function setup_progress () {
   local setup_logfile=/home/pi/dashcam/code/dashCam-setup.log
   if [ -w $setup_logfile ]
   then
-    echo "$( date ) : $*" >> "$setup_logfile"
+    echo "$( date '+%m/%d/%Y %I:%M:%S %p' ) : $*" >> "$setup_logfile"
   else
-    echo "$( date ) : $*" >> "$setup_logfile" 2>&1
+    echo "$( date '+%m/%d/%Y %I:%M:%S %p' ) : $*" >> "$setup_logfile" 2>&1
   fi
   echo "$@"
 }
